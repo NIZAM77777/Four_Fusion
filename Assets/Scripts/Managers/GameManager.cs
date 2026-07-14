@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         IsGameOver = true;
         columnButtons.SetActive(false);
+        AudioManager.Instance.PlayVictory();
         UIManager.Instance.ShowWinner(winner);
     }
 

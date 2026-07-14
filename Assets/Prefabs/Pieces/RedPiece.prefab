@@ -105,4 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
   moveSpeed: 12
+  spriteRenderer: {fileID: 4208131346905259403}
   PieceType: 1
