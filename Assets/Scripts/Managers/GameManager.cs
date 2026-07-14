@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [SerializeField]
+    private GameObject columnButtons;
 
     public bool IsGameOver { get; private set; }
 
@@ -14,17 +18,27 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void GameOver()
+    public void EndGame(PieceType winner)
     {
         IsGameOver = true;
+        columnButtons.SetActive(false);
+        UIManager.Instance.ShowWinner(winner);
+    }
 
-        Debug.Log("Game Over");
+    public void DrawGame()
+    {
+        IsGameOver = true;
+        columnButtons.SetActive(false);
+        UIManager.Instance.ShowDraw();
     }
 
     public void RestartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
-        );
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Home()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

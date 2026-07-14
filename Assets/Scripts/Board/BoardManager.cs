@@ -77,6 +77,9 @@ public class BoardManager : MonoBehaviour
 
     public void DropPiece(int column)
     {
+        if (GameManager.Instance.IsGameOver)
+            return;
+
         if (isDroppingPiece)
             return;
 
@@ -112,10 +115,10 @@ public class BoardManager : MonoBehaviour
 
         isDroppingPiece = true;
 
-        StartCoroutine(WaitForPiece(piece));
+        StartCoroutine(WaitForPiece(piece,column,row));
     }
 
-    private IEnumerator WaitForPiece(Piece piece)
+    private IEnumerator WaitForPiece(Piece piece, int column, int row)
     {
         while (piece.IsMoving)
         {
@@ -124,14 +127,29 @@ public class BoardManager : MonoBehaviour
 
         isDroppingPiece = false;
 
+        if (CheckForWin(column, row))
+        {
+            GameManager.Instance.EndGame(currentPlayer);
+            yield break;
+        }
+
+        if (CheckForDraw())
+        {
+            GameManager.Instance.DrawGame();
+            yield break;
+        }
+
         SwitchPlayer();
     }
 
     private void SwitchPlayer()
     {
-        currentPlayer = currentPlayer == PieceType.Red
+        currentPlayer =
+            currentPlayer == PieceType.Red
             ? PieceType.Yellow
             : PieceType.Red;
+
+        UIManager.Instance.UpdateTurn(currentPlayer);
     }
 
     public bool IsColumnFull(int column)
@@ -158,5 +176,73 @@ public class BoardManager : MonoBehaviour
     public Piece GetPiece(int column, int row)
     {
         return spawnedPieces[column, row];
+    }
+
+    private bool CheckForWin(int column, int row)
+    {
+        return CheckDirection(column, row, 1, 0) ||      
+               CheckDirection(column, row, 0, 1) ||      
+               CheckDirection(column, row, 1, 1) ||      
+               CheckDirection(column, row, 1, -1);        
+    }
+
+    private bool CheckDirection(int column, int row, int columnDirection, int rowDirection)
+    {
+        int count = 1;
+
+        count += CountPieces(
+            column,
+            row,
+            columnDirection,
+            rowDirection
+        );
+
+        count += CountPieces(
+            column,
+            row,
+            -columnDirection,
+            -rowDirection
+        );
+
+        return count >= 4;
+    }
+
+    private int CountPieces(
+    int startColumn,
+    int startRow,
+    int columnDirection,
+    int rowDirection)
+    {
+        int count = 0;
+
+        int column = startColumn + columnDirection;
+        int row = startRow + rowDirection;
+
+        while (column >= 0 &&
+              column < columns &&
+              row >= 0 &&
+              row < rows)
+        {
+            if (boardState[column, row] != currentPlayer)
+                break;
+
+            count++;
+
+            column += columnDirection;
+            row += rowDirection;
+        }
+
+        return count;
+    }
+
+    private bool CheckForDraw()
+    {
+        for (int column = 0; column < columns; column++)
+        {
+            if (!IsColumnFull(column))
+                return false;
+        }
+
+        return true;
     }
 }
