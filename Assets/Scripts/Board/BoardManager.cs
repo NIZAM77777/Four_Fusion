@@ -21,10 +21,10 @@ public class BoardManager : MonoBehaviour
     private PieceType[,] boardState;
     private Piece[,] spawnedPieces;
 
-    // Stores winning coordinates instead of Piece objects
     private List<Vector2Int> winningCells = new List<Vector2Int>();
 
     private PieceType currentPlayer = PieceType.Red;
+
 
     private bool isDroppingPiece;
 
@@ -129,7 +129,6 @@ public class BoardManager : MonoBehaviour
             yield return null;
         }
 
-        AudioManager.Instance.PlayPieceDrop();
 
         isDroppingPiece = false;
 
@@ -162,6 +161,12 @@ public class BoardManager : MonoBehaviour
             : PieceType.Red;
 
         UIManager.Instance.UpdateTurn(currentPlayer);
+
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI &&
+            currentPlayer == PieceType.Yellow)
+        {
+            AIManager.Instance.PlayTurn();
+        }
     }
 
     public bool IsColumnFull(int column)
@@ -189,9 +194,7 @@ public class BoardManager : MonoBehaviour
     {
         return boardState[column, row];
     }
-    // ----------------------------
-    // WIN DETECTION
-    // ----------------------------
+  
 
     private bool CheckForWin(int column, int row)
     {
@@ -266,9 +269,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    // ----------------------------
-    // DRAW
-    // ----------------------------
+  
 
     private bool CheckForDraw()
     {
@@ -281,9 +282,7 @@ public class BoardManager : MonoBehaviour
         return true;
     }
 
-    // ----------------------------
-    // WIN EFFECTS
-    // ----------------------------
+   
 
     private void HighlightWinningPieces()
     {
@@ -338,5 +337,85 @@ public class BoardManager : MonoBehaviour
 
             Debug.Log(line);
         }
+    }
+
+    public bool IsValidMove(int column)
+    {
+        if (column < 0 || column >= columns)
+            return false;
+
+        return !IsColumnFull(column);
+    }
+
+    public List<int> GetValidMoves()
+    {
+        List<int> validMoves = new List<int>();
+
+        for (int column = 0; column < columns; column++)
+        {
+            if (IsValidMove(column))
+            {
+                validMoves.Add(column);
+            }
+        }
+
+        return validMoves;
+    }
+
+    private void SimulateMove(int column, PieceType player)
+    {
+        int row = GetNextAvailableRow(column);
+
+        if (row != -1)
+        {
+            boardState[column, row] = player;
+        }
+    }
+
+    private void UndoMove(int column)
+    {
+        for (int row = rows - 1; row >= 0; row--)
+        {
+            if (boardState[column, row] != PieceType.Empty)
+            {
+                boardState[column, row] = PieceType.Empty;
+                return;
+            }
+        }
+    }
+    public PieceType[,] GetBoardCopy()
+    {
+        PieceType[,] copy = new PieceType[columns, rows];
+
+        for (int column = 0; column < columns; column++)
+        {
+            for (int row = 0; row < rows; row++)
+            {
+                copy[column, row] = boardState[column, row];
+            }
+        }
+
+        return copy;
+    }
+
+    public bool IsWinningMove(int column, PieceType player)
+    {
+        if (!IsValidMove(column))
+            return false;
+
+        int row = GetNextAvailableRow(column);
+
+        SimulateMove(column, player);
+
+        PieceType previousPlayer = currentPlayer;
+        currentPlayer = player;
+
+        bool win = CheckForWin(column, row);
+
+        currentPlayer = previousPlayer;
+
+        UndoMove(column);
+
+        return win;
     }
 }
