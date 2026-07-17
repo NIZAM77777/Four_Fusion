@@ -7,6 +7,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject modeSelectionPanel;
     [SerializeField] private GameObject difficultyPanel;
+    [SerializeField] private GameObject settingsPanel;
 
     private void Start()
     {
@@ -15,14 +16,12 @@ public class MainMenuManager : MonoBehaviour
         difficultyPanel.SetActive(false);
     }
 
-    // PLAY
     public void PlayButton()
     {
         mainMenuPanel.SetActive(false);
         modeSelectionPanel.SetActive(true);
     }
 
-    // HUMAN VS HUMAN
     public void HumanVsHuman()
     {
         GameSettings.GameMode = GameMode.HumanVsHuman;
@@ -30,7 +29,6 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    // HUMAN VS AI
     public void HumanVsAI()
     {
         GameSettings.GameMode = GameMode.HumanVsAI;
@@ -39,7 +37,6 @@ public class MainMenuManager : MonoBehaviour
         difficultyPanel.SetActive(true);
     }
 
-    // EASY
     public void Easy()
     {
         GameSettings.Difficulty = Difficulty.Easy;
@@ -47,7 +44,6 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    // MEDIUM
     public void Medium()
     {
         GameSettings.Difficulty = Difficulty.Medium;
@@ -55,7 +51,6 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    // HARD
     public void Hard()
     {
         GameSettings.Difficulty = Difficulty.Hard;
@@ -63,18 +58,28 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    // BACK FROM MODE PANEL
     public void BackToMainMenu()
     {
         modeSelectionPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
     }
 
-    // BACK FROM DIFFICULTY PANEL
     public void BackToModeSelection()
     {
         difficultyPanel.SetActive(false);
         modeSelectionPanel.SetActive(true);
+    }
+
+    public void OpenSettings()
+    {
+        mainMenuPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 
     public void ExitGame()

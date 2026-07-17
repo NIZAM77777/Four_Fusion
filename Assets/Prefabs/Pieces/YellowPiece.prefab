@@ -106,4 +106,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Piece
   moveSpeed: 12
   spriteRenderer: {fileID: 4208131346905259403}
+  bounceHeight: 0.08
+  bounceDuration: 0.07
+  bounceCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  squashScaleY: 0.85
+  stretchScaleY: 1.08
+  squashDuration: 0.05
   PieceType: 2

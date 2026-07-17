@@ -6,6 +6,12 @@ public class Piece : MonoBehaviour
     [SerializeField] private float moveSpeed = 12f;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private float bounceHeight = 0.12f;
+    [SerializeField] private float bounceDuration = 0.08f;
+    [SerializeField] private AnimationCurve bounceCurve;
+
+
+
     private bool isMoving;
     private Vector3 targetPosition;
 
@@ -32,7 +38,10 @@ public class Piece : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
         {
             transform.position = targetPosition;
+
             isMoving = false;
+
+            StartCoroutine(BounceLanding());
         }
     }
 
@@ -84,5 +93,42 @@ public class Piece : MonoBehaviour
         }
 
         transform.localScale = originalScale;
+    }
+
+    private IEnumerator BounceLanding()
+    {
+        Vector3 start = transform.position;
+        Vector3 up = start + Vector3.up * bounceHeight;
+
+        float timer = 0f;
+
+        while (timer < bounceDuration)
+        {
+            timer += Time.deltaTime;
+
+            float t = timer / bounceDuration;
+            t = Mathf.SmoothStep(0f, 1f, t);
+
+            transform.position = Vector3.Lerp(start, up, t);
+
+            yield return null;
+        }
+
+        timer = 0f;
+
+        while (timer < bounceDuration)
+        {
+            timer += Time.deltaTime;
+
+            float t = timer / bounceDuration;
+            t = Mathf.SmoothStep(0f, 1f, t);
+
+            transform.position = Vector3.Lerp(up, start, t);
+
+            yield return null;
+        }
+
+        transform.position = start;
+
     }
 }

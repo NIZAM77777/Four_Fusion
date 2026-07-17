@@ -104,49 +104,68 @@ public class AIManager : MonoBehaviour
     private int Minimax(
      AIBoard board,
      int depth,
-     bool maximizingPlayer)
+     bool maximizingPlayer,
+     int alpha,
+     int beta)
     {
         if (depth == 0)
         {
             return board.EvaluateBoard();
         }
+        int bestScore;
 
         if (maximizingPlayer)
         {
-            int bestScore = int.MinValue;
+             bestScore = int.MinValue;
 
             foreach (int column in board.GetValidMoves())
             {
                 board.MakeMove(column, PieceType.Yellow);
 
-                int score =
-                    Minimax(board, depth - 1, false);
+                int score = Minimax(
+                    board,
+                    depth - 1,
+                    false,
+                    alpha,
+                    beta);
 
                 board.UndoMove(column);
 
-                bestScore =
-                    Mathf.Max(bestScore, score);
+                bestScore = Mathf.Max(bestScore, score);
+
+                alpha = Mathf.Max(alpha, bestScore);
+
+                if (alpha >= beta)
+                    break;
             }
 
             return bestScore;
         }
 
-        int bestScorePlayer = int.MaxValue;
+        bestScore = int.MaxValue;
 
         foreach (int column in board.GetValidMoves())
         {
             board.MakeMove(column, PieceType.Red);
 
-            int score =
-                Minimax(board, depth - 1, true);
+            int score = Minimax(
+                board,
+                depth - 1,
+                true,
+                alpha,
+                beta);
 
             board.UndoMove(column);
 
-            bestScorePlayer =
-                Mathf.Min(bestScorePlayer, score);
+            bestScore = Mathf.Min(bestScore, score);
+
+            beta = Mathf.Min(beta, bestScore);
+
+            if (alpha >= beta)
+                break;
         }
 
-        return bestScorePlayer;
+        return bestScore;
     }
 
     private int FindBestMove()
@@ -166,7 +185,7 @@ public class AIManager : MonoBehaviour
             board.MakeMove(column, PieceType.Yellow);
 
             int score =
-                Minimax(board, 5, false);
+                Minimax(board, 5, false, int.MinValue, int.MaxValue);
 
             board.UndoMove(column);
 

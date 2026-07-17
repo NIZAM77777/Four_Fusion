@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ShowWinnerAfterDelay(PieceType winner)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
 
         UIManager.Instance.ShowWinner(winner);
     }
