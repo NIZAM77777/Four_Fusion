@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -7907073144016532295, guid: 659ff1c4094249a4eb9592f594c6081a, type: 3}
   m_Color: {r: 1, g: 0.8563696, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,7 +114,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  squashScaleY: 0.85
-  stretchScaleY: 1.08
-  squashDuration: 0.05
   PieceType: 2
