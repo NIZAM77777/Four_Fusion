@@ -5,10 +5,18 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
-    [Header("UI")]
+    [Header("Gameplay UI")]
     [SerializeField] private TMP_Text turnText;
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text resultText;
+
+    [Header("Panels")]
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject losePanel;
+    [SerializeField] private GameObject drawPanel;
+    [SerializeField] private GameObject topPanel;
+    [SerializeField] private GameObject bottomPanel;
+
+    [Header("Win Panel")]
+    [SerializeField] private TMP_Text winnerText;
 
     private void Awake()
     {
@@ -20,8 +28,11 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        gameOverPanel.SetActive(false);
-        UpdateTurn(PieceType.Red);
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
+        drawPanel.SetActive(false);
+
+        UpdateTurn(PieceType.Player1);
     }
 
     public void UpdateTurn(PieceType player)
@@ -31,13 +42,36 @@ public class UIManager : MonoBehaviour
 
     public void ShowWinner(PieceType winner)
     {
-        gameOverPanel.SetActive(true);
-        resultText.text = winner + " Wins!";
+        HideAllPanels();
+
+        winPanel.SetActive(true);
+
+        if (winner == PieceType.Player1)
+            winnerText.text = "1";
+        else
+            winnerText.text = "2";
+    }
+
+    public void ShowLoser()
+    {
+        HideAllPanels();
+
+        losePanel.SetActive(true);
     }
 
     public void ShowDraw()
     {
-        gameOverPanel.SetActive(true);
-        resultText.text = "Draw!";
+        HideAllPanels();
+
+        drawPanel.SetActive(true);
+    }
+
+    private void HideAllPanels()
+    {
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
+        drawPanel.SetActive(false);
+        topPanel.SetActive(false);
+        bottomPanel.SetActive(false);
     }
 }

@@ -23,7 +23,7 @@ public class BoardManager : MonoBehaviour
 
     private List<Vector2Int> winningCells = new List<Vector2Int>();
 
-    private PieceType currentPlayer = PieceType.Red;
+    private PieceType currentPlayer = PieceType.Player1;
 
 
     private bool isDroppingPiece;
@@ -93,7 +93,7 @@ public class BoardManager : MonoBehaviour
         boardState[column, row] = currentPlayer;
 
         Piece prefab =
-            currentPlayer == PieceType.Red
+            currentPlayer == PieceType.Player1
             ? redPiecePrefab
             : yellowPiecePrefab;
 
@@ -156,14 +156,14 @@ public class BoardManager : MonoBehaviour
     private void SwitchPlayer()
     {
         currentPlayer =
-            currentPlayer == PieceType.Red
-            ? PieceType.Yellow
-            : PieceType.Red;
+            currentPlayer == PieceType.Player1
+            ? PieceType.Player2
+            : PieceType.Player1;
 
         UIManager.Instance.UpdateTurn(currentPlayer);
 
         if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI &&
-            currentPlayer == PieceType.Yellow)
+            currentPlayer == PieceType.Player2)
         {
             AIManager.Instance.PlayTurn();
         }
@@ -325,11 +325,11 @@ public class BoardManager : MonoBehaviour
                         line += ". ";
                         break;
 
-                    case PieceType.Red:
+                    case PieceType.Player1:
                         line += "R ";
                         break;
 
-                    case PieceType.Yellow:
+                    case PieceType.Player2:
                         line += "Y ";
                         break;
                 }

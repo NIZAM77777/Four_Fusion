@@ -1,6 +1,6 @@
 public enum PieceType
 {
     Empty,
-    Red,
-    Yellow
+    Player1,
+    Player2
 }

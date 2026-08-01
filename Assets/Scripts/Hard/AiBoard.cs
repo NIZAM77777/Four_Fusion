@@ -109,10 +109,10 @@ public class AIBoard
 
         for (int row = 0; row < rows; row++)
         {
-            if (board[center, row] == PieceType.Yellow)
+            if (board[center, row] == PieceType.Player2)
                 score += CENTER_SCORE;
 
-            else if (board[center, row] == PieceType.Red)
+            else if (board[center, row] == PieceType.Player1)
                 score -= CENTER_SCORE;
         }
 
@@ -209,10 +209,10 @@ public class AIBoard
 
         foreach (PieceType piece in window)
         {
-            if (piece == PieceType.Yellow)
+            if (piece == PieceType.Player2)
                 ai++;
 
-            else if (piece == PieceType.Red)
+            else if (piece == PieceType.Player1)
                 player++;
 
             else

@@ -18,7 +18,7 @@ public class InputManager : MonoBehaviour
 
         // Block only the HUMAN during the AI turn.
         if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI &&
-            boardManager.CurrentPlayer == PieceType.Yellow)
+            boardManager.CurrentPlayer == PieceType.Player2)
         {
             return;
         }

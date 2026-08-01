@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject columnButtons;
 
+    [SerializeField] private float resultPanelDelay = 1.5f;
+
     public bool IsGameOver { get; private set; }
 
     public GameMode CurrentGameMode { get; private set; }
@@ -38,17 +40,30 @@ public class GameManager : MonoBehaviour
     {
         IsGameOver = true;
 
-        if (columnButtons != null)
-            columnButtons.SetActive(false);
+        columnButtons.SetActive(false);
 
-        StartCoroutine(ShowWinnerAfterDelay(winner));
+        StartCoroutine(ShowResultAfterDelay(winner));
     }
 
-    private IEnumerator ShowWinnerAfterDelay(PieceType winner)
+    private IEnumerator ShowResultAfterDelay(PieceType winner)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(resultPanelDelay);
 
-        UIManager.Instance.ShowWinner(winner);
+        if (CurrentGameMode == GameMode.HumanVsHuman)
+        {
+            UIManager.Instance.ShowWinner(winner);
+        }
+        else
+        {
+            if (winner == PieceType.Player1)
+            {
+                UIManager.Instance.ShowWinner(winner);
+            }
+            else
+            {
+                UIManager.Instance.ShowLoser();
+            }
+        }
     }
 
     public void DrawGame()
@@ -57,6 +72,13 @@ public class GameManager : MonoBehaviour
 
         if (columnButtons != null)
             columnButtons.SetActive(false);
+
+        StartCoroutine(ShowDrawAfterDelay());
+    }
+
+    private IEnumerator ShowDrawAfterDelay()
+    {
+        yield return new WaitForSeconds(resultPanelDelay);
 
         UIManager.Instance.ShowDraw();
     }

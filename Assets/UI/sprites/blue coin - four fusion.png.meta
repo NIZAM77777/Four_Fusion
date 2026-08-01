@@ -142,12 +142,12 @@ TextureImporter:
       name: blue coin - four fusion_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 1022
-        height: 1517
+        x: 264
+        y: 583
+        width: 494
+        height: 482
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de4c14f0443492b4daf8eb09329dab01
     internalID: 0
     vertices: []
     indices: 

@@ -78,12 +78,12 @@ public class AIManager : MonoBehaviour
 
     private int MediumMove()
     {
-        int move = FindWinningMove(PieceType.Yellow);
+        int move = FindWinningMove(PieceType.Player2);
 
         if (move != -1)
             return move;
 
-        move = FindWinningMove(PieceType.Red);
+        move = FindWinningMove(PieceType.Player1);
 
         if (move != -1)
             return move;
@@ -108,19 +108,24 @@ public class AIManager : MonoBehaviour
      int alpha,
      int beta)
     {
-        if (depth == 0)
+        int evaluation = board.EvaluateBoard();
+
+        // Stop searching if game is won/lost,
+        // no moves left, or depth reached.
+        if (depth == 0 ||
+            Mathf.Abs(evaluation) >= 100000 ||
+            board.GetValidMoves().Count == 0)
         {
-            return board.EvaluateBoard();
+            return evaluation;
         }
-        int bestScore;
 
         if (maximizingPlayer)
         {
-             bestScore = int.MinValue;
+            int bestScore = int.MinValue;
 
             foreach (int column in board.GetValidMoves())
             {
-                board.MakeMove(column, PieceType.Yellow);
+                board.MakeMove(column, PieceType.Player2);
 
                 int score = Minimax(
                     board,
@@ -132,60 +137,61 @@ public class AIManager : MonoBehaviour
                 board.UndoMove(column);
 
                 bestScore = Mathf.Max(bestScore, score);
-
                 alpha = Mathf.Max(alpha, bestScore);
 
-                if (alpha >= beta)
+                if (beta <= alpha)
                     break;
             }
 
             return bestScore;
         }
-
-        bestScore = int.MaxValue;
-
-        foreach (int column in board.GetValidMoves())
+        else
         {
-            board.MakeMove(column, PieceType.Red);
+            int bestScore = int.MaxValue;
 
-            int score = Minimax(
-                board,
-                depth - 1,
-                true,
-                alpha,
-                beta);
+            foreach (int column in board.GetValidMoves())
+            {
+                board.MakeMove(column, PieceType.Player1);
 
-            board.UndoMove(column);
+                int score = Minimax(
+                    board,
+                    depth - 1,
+                    true,
+                    alpha,
+                    beta);
 
-            bestScore = Mathf.Min(bestScore, score);
+                board.UndoMove(column);
 
-            beta = Mathf.Min(beta, bestScore);
+                bestScore = Mathf.Min(bestScore, score);
+                beta = Mathf.Min(beta, bestScore);
 
-            if (alpha >= beta)
-                break;
+                if (beta <= alpha)
+                    break;
+            }
+
+            return bestScore;
         }
-
-        return bestScore;
     }
 
     private int FindBestMove()
     {
-        PieceType[,] copy =
-            boardManager.GetBoardCopy();
+        PieceType[,] copy = boardManager.GetBoardCopy();
 
-        AIBoard board =
-            new AIBoard(copy);
+        AIBoard board = new AIBoard(copy);
 
         int bestColumn = -1;
-
         int bestScore = int.MinValue;
 
         foreach (int column in board.GetValidMoves())
         {
-            board.MakeMove(column, PieceType.Yellow);
+            board.MakeMove(column, PieceType.Player2);
 
-            int score =
-                Minimax(board, 5, false, int.MinValue, int.MaxValue);
+            int score = Minimax(
+                board,
+                6,                  // Increased depth
+                false,
+                int.MinValue,
+                int.MaxValue);
 
             board.UndoMove(column);
 
@@ -194,6 +200,15 @@ public class AIManager : MonoBehaviour
                 bestScore = score;
                 bestColumn = column;
             }
+        }
+
+        // Fallback if no move found
+        if (bestColumn == -1)
+        {
+            List<int> moves = board.GetValidMoves();
+
+            if (moves.Count > 0)
+                bestColumn = moves[Random.Range(0, moves.Count)];
         }
 
         return bestColumn;
