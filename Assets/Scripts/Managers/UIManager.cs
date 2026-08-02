@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Panels")]
     [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject vsBotWinPanel;
     [SerializeField] private GameObject losePanel;
     [SerializeField] private GameObject drawPanel;
     [SerializeField] private GameObject topPanel;
@@ -31,6 +32,7 @@ public class UIManager : MonoBehaviour
         winPanel.SetActive(false);
         losePanel.SetActive(false);
         drawPanel.SetActive(false);
+        vsBotWinPanel.SetActive(false);
 
         UpdateTurn(PieceType.Player1);
     }
@@ -50,6 +52,17 @@ public class UIManager : MonoBehaviour
             winnerText.text = "1";
         else
             winnerText.text = "2";
+    }
+    public void ShowVsBotWinner(PieceType winner)
+    {
+        HideAllPanels();
+
+        vsBotWinPanel.SetActive(true);
+
+        //if (winner == PieceType.Player1)
+        //    winnerText.text = "You";
+        //else
+        //    winnerText.text = "Bot";
     }
 
     public void ShowLoser()

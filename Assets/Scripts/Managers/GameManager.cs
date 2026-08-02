@@ -55,9 +55,11 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            // Human vs Bot
             if (winner == PieceType.Player1)
             {
-                UIManager.Instance.ShowWinner(winner);
+                // You won -> new Vs Bot Win Panel
+                UIManager.Instance.ShowVsBotWinner(winner);
             }
             else
             {
