@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 094bad5bbd8195d43995819f7b37e283
+guid: ddf4b992bc6b4cb40b4626d5b0daee47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2037430856426302132
-    second: color combo panel image - four fusion_0
+      213: -5626108395666820702
+    second: ChatGPT Image Jul 29, 2026, 08_11_00 PM_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: color combo panel image - four fusion_0
+      name: ChatGPT Image Jul 29, 2026, 08_11_00 PM_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1536
+        width: 941
+        height: 1672
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c455a4c4e6799b3e0800000000000000
-      internalID: -2037430856426302132
+      spriteID: 2a1bf68f83c0ce1b0800000000000000
+      internalID: -5626108395666820702
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0613a829d809bf54c9239a6784b72bda
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      color combo panel image - four fusion_0: -2037430856426302132
+      ChatGPT Image Jul 29, 2026, 08_11_00 PM_0: -5626108395666820702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

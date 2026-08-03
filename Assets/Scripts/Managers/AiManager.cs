@@ -10,6 +10,8 @@ public class AIManager : MonoBehaviour
 
     [SerializeField] private float thinkingTime = 2f;
 
+    private readonly int[] searchOrder = { 3, 2, 4, 1, 5, 0, 6 };
+
     private void Awake()
     {
         if (Instance == null)
@@ -123,8 +125,11 @@ public class AIManager : MonoBehaviour
         {
             int bestScore = int.MinValue;
 
-            foreach (int column in board.GetValidMoves())
+            foreach (int column in searchOrder)
             {
+                if (!board.IsValidMove(column))
+                    continue;
+
                 board.MakeMove(column, PieceType.Player2);
 
                 int score = Minimax(
@@ -137,6 +142,7 @@ public class AIManager : MonoBehaviour
                 board.UndoMove(column);
 
                 bestScore = Mathf.Max(bestScore, score);
+
                 alpha = Mathf.Max(alpha, bestScore);
 
                 if (beta <= alpha)
@@ -149,8 +155,11 @@ public class AIManager : MonoBehaviour
         {
             int bestScore = int.MaxValue;
 
-            foreach (int column in board.GetValidMoves())
+            foreach (int column in searchOrder)
             {
+                if (!board.IsValidMove(column))
+                    continue;
+
                 board.MakeMove(column, PieceType.Player1);
 
                 int score = Minimax(
@@ -163,6 +172,7 @@ public class AIManager : MonoBehaviour
                 board.UndoMove(column);
 
                 bestScore = Mathf.Min(bestScore, score);
+
                 beta = Mathf.Min(beta, bestScore);
 
                 if (beta <= alpha)
@@ -182,13 +192,16 @@ public class AIManager : MonoBehaviour
         int bestColumn = -1;
         int bestScore = int.MinValue;
 
-        foreach (int column in board.GetValidMoves())
+        foreach (int column in searchOrder)
         {
+            if (!board.IsValidMove(column))
+                continue;
+
             board.MakeMove(column, PieceType.Player2);
 
             int score = Minimax(
                 board,
-                7,                  // Increased depth
+                7,
                 false,
                 int.MinValue,
                 int.MaxValue);
@@ -201,6 +214,7 @@ public class AIManager : MonoBehaviour
                 bestColumn = column;
             }
         }
+        
 
         // Fallback if no move found
         if (bestColumn == -1)

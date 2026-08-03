@@ -8,13 +8,13 @@ public class AIBoard
     private int rows;
 
     private const int WIN_SCORE = 100000;
-    private const int THREE_SCORE = 100;
-    private const int TWO_SCORE = 10;
+    private const int THREE_SCORE = 600;
+    private const int TWO_SCORE = 80;
 
-    private const int OPPONENT_THREE_SCORE = -120;
-    private const int OPPONENT_TWO_SCORE = -15;
+    private const int OPPONENT_THREE_SCORE = -700;
+    private const int OPPONENT_TWO_SCORE = -100;
 
-    private const int CENTER_SCORE = 6;
+    private const int CENTER_SCORE = 25;
 
     public AIBoard(PieceType[,] boardState)
     {
@@ -239,4 +239,12 @@ public class AIBoard
 
         return 0;
     }
+    public bool IsValidMove(int column)
+    {
+        if (column < 0 || column >= columns)
+            return false;
+
+        return board[column, rows - 1] == PieceType.Empty;
+    }
+
 }

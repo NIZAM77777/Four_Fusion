@@ -105,8 +105,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-
-
     public void UndoLastMove()
     {
         BoardManager.Instance.UndoLastTwoMoves();
