@@ -8,7 +8,7 @@ public class AIManager : MonoBehaviour
 
     [SerializeField] private BoardManager boardManager;
 
-    [SerializeField] private float thinkingTime = 0.5f;
+    [SerializeField] private float thinkingTime = 2f;
 
     private void Awake()
     {

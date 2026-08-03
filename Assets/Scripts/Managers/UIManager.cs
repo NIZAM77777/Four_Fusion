@@ -39,7 +39,20 @@ public class UIManager : MonoBehaviour
 
     public void UpdateTurn(PieceType player)
     {
-        turnText.text = player + " Turn";
+        if (GameSettings.GameMode == GameMode.HumanVsHuman)
+        {
+            if (player == PieceType.Player1)
+                turnText.text = "Player 1 Turn";
+            else
+                turnText.text = "Player 2 Turn";
+        }
+        else
+        {
+            if (player == PieceType.Player1)
+                turnText.text = "Your Turn";
+            else
+                turnText.text = "AI Thinking...";
+        }
     }
 
     public void ShowWinner(PieceType winner)
