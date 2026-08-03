@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
 
     [Header("Win Panel")]
     [SerializeField] private TMP_Text winnerText;
+    [SerializeField] private TMP_Text modeText;
+
 
     private void Awake()
     {
@@ -33,8 +35,33 @@ public class UIManager : MonoBehaviour
         losePanel.SetActive(false);
         drawPanel.SetActive(false);
         vsBotWinPanel.SetActive(false);
-
+        UpdateModeText();
         UpdateTurn(PieceType.Player1);
+    }
+
+    public void UpdateModeText()
+    {
+        if (GameSettings.GameMode == GameMode.HumanVsHuman)
+        {
+            modeText.text = "";
+        }
+        else
+        {
+            switch (GameSettings.Difficulty)
+            {
+                case Difficulty.Easy:
+                    modeText.text = "Easy";
+                    break;
+
+                case Difficulty.Medium:
+                    modeText.text = "Medium";
+                    break;
+
+                case Difficulty.Hard:
+                    modeText.text = "Hard";
+                    break;
+            }
+        }
     }
 
     public void UpdateTurn(PieceType player)
@@ -49,9 +76,26 @@ public class UIManager : MonoBehaviour
         else
         {
             if (player == PieceType.Player1)
+            {
                 turnText.text = "Your Turn";
+            }
             else
-                turnText.text = "AI Thinking...";
+            {
+                switch (GameSettings.Difficulty)
+                {
+                    case Difficulty.Easy:
+                        turnText.text = "AI Thinking...";
+                        break;
+
+                    case Difficulty.Medium:
+                        turnText.text = "AI Thinking...";
+                        break;
+
+                    case Difficulty.Hard:
+                        turnText.text = "AI Thinking...";
+                        break;
+                }
+            }
         }
     }
 
