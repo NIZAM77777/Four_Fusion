@@ -94,4 +94,21 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void ResumeGame()
+    {
+        IsGameOver = false;
+
+        columnButtons.SetActive(true);
+
+        UIManager.Instance.ShowGameplayUI();
+
+    }
+
+
+
+    public void UndoLastMove()
+    {
+        BoardManager.Instance.UndoLastTwoMoves();
+    }
 }

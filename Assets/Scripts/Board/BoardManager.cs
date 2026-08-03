@@ -25,6 +25,10 @@ public class BoardManager : MonoBehaviour
 
     private PieceType currentPlayer = PieceType.Player1;
 
+    private List<MoveData> moveHistory = new List<MoveData>();
+
+    public static BoardManager Instance;
+
 
     private bool isDroppingPiece;
 
@@ -37,6 +41,13 @@ public class BoardManager : MonoBehaviour
         GenerateBoard();
     }
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
     private void GenerateBoard()
     {
         board = new BoardCell[columns, rows];
@@ -121,6 +132,8 @@ public class BoardManager : MonoBehaviour
         }
 
         spawnedPieces[column, row] = piece;
+
+        moveHistory.Add( new MoveData( column, row, currentPlayer, piece ));
 
         piece.MoveTo(targetPosition);
 
@@ -428,5 +441,55 @@ public class BoardManager : MonoBehaviour
         UndoMove(column);
 
         return win;
+    }
+
+    public void UndoLastTwoMoves()
+    {
+        ResetAllPieceHighlights();
+
+        if (moveHistory.Count < 2)
+            return;
+
+        UndoSingleMove();
+
+        UndoSingleMove();
+
+        currentPlayer = PieceType.Player1;
+
+        UIManager.Instance.UpdateTurn(currentPlayer);
+
+        GameManager.Instance.ResumeGame();
+    }
+
+    private void UndoSingleMove()
+    {
+        MoveData move = moveHistory[moveHistory.Count - 1];
+
+        moveHistory.RemoveAt(moveHistory.Count - 1);
+
+        boardState[move.Column, move.Row] = PieceType.Empty;
+
+        spawnedPieces[move.Column, move.Row] = null;
+
+        if (move.PieceObject != null)
+        {
+            Destroy(move.PieceObject.gameObject);
+        }
+    }
+
+    private void ResetAllPieceHighlights()
+    {
+        for (int column = 0; column < columns; column++)
+        {
+            for (int row = 0; row < rows; row++)
+            {
+                Piece piece = spawnedPieces[column, row];
+
+                if (piece != null)
+                {
+                    piece.ResetHighlight();
+                }
+            }
+        }
     }
 }

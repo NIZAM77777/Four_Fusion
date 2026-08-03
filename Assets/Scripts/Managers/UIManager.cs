@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 
     [Header("Gameplay UI")]
     [SerializeField] private TMP_Text turnText;
+    [SerializeField] private TMP_Text winnerText;
+    [SerializeField] private TMP_Text modeText;
 
     [Header("Panels")]
     [SerializeField] private GameObject winPanel;
@@ -15,10 +17,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject drawPanel;
     [SerializeField] private GameObject topPanel;
     [SerializeField] private GameObject bottomPanel;
-
-    [Header("Win Panel")]
-    [SerializeField] private TMP_Text winnerText;
-    [SerializeField] private TMP_Text modeText;
 
 
     private void Awake()
@@ -143,5 +141,14 @@ public class UIManager : MonoBehaviour
         drawPanel.SetActive(false);
         topPanel.SetActive(false);
         bottomPanel.SetActive(false);
+    }
+
+    public void ShowGameplayUI()
+    {
+        losePanel.SetActive(false);
+
+        topPanel.SetActive(true);
+
+        bottomPanel.SetActive(true);
     }
 }

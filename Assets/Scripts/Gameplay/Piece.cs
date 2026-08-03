@@ -47,9 +47,12 @@ public class Piece : MonoBehaviour
 
     public void Highlight()
     {
-        Debug.Log("Highlight Called");
-
         spriteRenderer.color = Color.gold;
+    }
+
+    public void ResetHighlight()
+    {
+        spriteRenderer.color = Color.white;
     }
 
     public void ResetColor()
