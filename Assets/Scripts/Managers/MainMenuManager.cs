@@ -82,6 +82,22 @@ public class MainMenuManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
+    public void SelectCombo1()
+    {
+        GameSettings.Theme = PieceTheme.Combo1;
+
+        PlayerPrefs.SetInt("Theme", 0);
+        PlayerPrefs.Save();
+    }
+
+    public void SelectCombo2()
+    {
+        GameSettings.Theme = PieceTheme.Combo2;
+
+        PlayerPrefs.SetInt("Theme", 1);
+        PlayerPrefs.Save();
+    }
+
     public void ExitGame()
     {
         Application.Quit();

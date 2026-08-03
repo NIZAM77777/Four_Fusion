@@ -188,7 +188,7 @@ public class AIManager : MonoBehaviour
 
             int score = Minimax(
                 board,
-                6,                  // Increased depth
+                7,                  // Increased depth
                 false,
                 int.MinValue,
                 int.MaxValue);

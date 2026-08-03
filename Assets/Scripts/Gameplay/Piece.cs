@@ -49,7 +49,7 @@ public class Piece : MonoBehaviour
     {
         Debug.Log("Highlight Called");
 
-        spriteRenderer.color = Color.green;
+        spriteRenderer.color = Color.gold;
     }
 
     public void ResetColor()
@@ -130,5 +130,10 @@ public class Piece : MonoBehaviour
 
         transform.position = start;
 
+    }
+
+    public void SetSprite(Sprite sprite)
+    {
+        spriteRenderer.sprite = sprite;
     }
 }

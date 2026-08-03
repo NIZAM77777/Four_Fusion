@@ -722,7 +722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 331760103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 170048660}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: SelectCombo2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &331760103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,7 +2145,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1247508599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 170048660}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: SelectCombo1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1247508599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,6 +2707,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766690802}
   m_CullTransparentMesh: 1
+--- !u!1 &1804265997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804265999}
+  - component: {fileID: 1804265998}
+  m_Layer: 0
+  m_Name: ColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1804265998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804265997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d3942907a4cea41837800ac0d57b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PieceThemeManager
+  combo1Player1: {fileID: -3050082906043772028, guid: 3db6aa41402a34546a08a0899c6e0021, type: 3}
+  combo1Player2: {fileID: -7907073144016532295, guid: 659ff1c4094249a4eb9592f594c6081a, type: 3}
+  combo2Player1: {fileID: 4872190484886476812, guid: c1f549400ae1ada47b657aee8e671792, type: 3}
+  combo2Player2: {fileID: 5883246622698088897, guid: 76670eeedfceb334398977aff0aa32dc, type: 3}
+--- !u!4 &1804265999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804265997}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 455.52997, y: 779.574, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037910439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,3 +2916,4 @@ SceneRoots:
   - {fileID: 428509842}
   - {fileID: 742154633}
   - {fileID: 170048661}
+  - {fileID: 1804265999}

@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 97
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,12 +151,12 @@ TextureImporter:
       name: green coin - four fusion_0
       rect:
         serializedVersion: 2
-        x: 270
-        y: 591
+        x: 275
+        y: 570
         width: 477
-        height: 449
+        height: 469
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,72 +165,6 @@ TextureImporter:
       bones: []
       spriteID: 48315c9c1cdeba5d0800000000000000
       internalID: -3050082906043772028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: green coin - four fusion_1
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 589
-        width: 476
-        height: 451
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bff8cf28b7432cc90800000000000000
-      internalID: -7151095553227714565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: green coin - four fusion_2
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 592
-        width: 474
-        height: 448
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e9bf759f3f1ee4d0800000000000000
-      internalID: -3103508735260116507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: green coin - four fusion_3
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 415
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b7ccf0e2e5e71130800000000000000
-      internalID: 3537548794922846130
       vertices: []
       indices: 
       edges: []

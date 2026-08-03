@@ -109,6 +109,17 @@ public class BoardManager : MonoBehaviour
             Quaternion.identity,
             piecesParent);
 
+        if (currentPlayer == PieceType.Player1)
+        {
+            piece.SetSprite(
+                PieceThemeManager.Instance.GetPlayer1Sprite());
+        }
+        else
+        {
+            piece.SetSprite(
+                PieceThemeManager.Instance.GetPlayer2Sprite());
+        }
+
         spawnedPieces[column, row] = piece;
 
         piece.MoveTo(targetPosition);
