@@ -17,6 +17,17 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject drawPanel;
     [SerializeField] private GameObject topPanel;
     [SerializeField] private GameObject bottomPanel;
+    [SerializeField] private GameObject undoButton;
+
+    public void ShowUndoButton()
+    {
+        undoButton.SetActive(true);
+    }
+
+    public void HideUndoButton()
+    {
+        undoButton.SetActive(false);
+    }
 
 
     private void Awake()

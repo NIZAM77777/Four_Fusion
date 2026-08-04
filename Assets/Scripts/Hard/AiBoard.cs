@@ -98,6 +98,8 @@ public class AIBoard
 
         score += EvaluateDiagonalNegative();
 
+        score += EvaluateForks();
+
         return score;
     }
 
@@ -196,10 +198,10 @@ public class AIBoard
     }
 
     private int EvaluateWindow(
-    PieceType a,
-    PieceType b,
-    PieceType c,
-    PieceType d)
+     PieceType a,
+     PieceType b,
+     PieceType c,
+     PieceType d)
     {
         int ai = 0;
         int player = 0;
@@ -219,26 +221,148 @@ public class AIBoard
                 empty++;
         }
 
+        // Winning positions
         if (ai == 4)
             return WIN_SCORE;
 
         if (player == 4)
             return -WIN_SCORE;
 
+        // AI attacking
         if (ai == 3 && empty == 1)
-            return THREE_SCORE;
+            return 1200;
 
         if (ai == 2 && empty == 2)
-            return TWO_SCORE;
+            return 150;
 
+        if (ai == 1 && empty == 3)
+            return 15;
+
+        // Player attacking
         if (player == 3 && empty == 1)
-            return OPPONENT_THREE_SCORE;
+            return -1500;
 
         if (player == 2 && empty == 2)
-            return OPPONENT_TWO_SCORE;
+            return -180;
+
+        if (player == 1 && empty == 3)
+            return -20;
 
         return 0;
     }
+
+    private int EvaluateForks()
+    {
+        int score = 0;
+
+        foreach (int column in GetValidMoves())
+        {
+            // AI fork
+            MakeMove(column, PieceType.Player2);
+
+            int aiWinningMoves = CountWinningMoves(PieceType.Player2);
+
+            UndoMove(column);
+
+            if (aiWinningMoves >= 2)
+            {
+                score += 2500;
+            }
+
+            // Player fork
+            MakeMove(column, PieceType.Player1);
+
+            int playerWinningMoves = CountWinningMoves(PieceType.Player1);
+
+            UndoMove(column);
+
+            if (playerWinningMoves >= 2)
+            {
+                score -= 3000;
+            }
+        }
+
+        return score;
+    }
+
+    private int CountWinningMoves(PieceType player)
+    {
+        int count = 0;
+
+        foreach (int column in GetValidMoves())
+        {
+            MakeMove(column, player);
+
+            if (CheckWinner(player))
+            {
+                count++;
+            }
+
+            UndoMove(column);
+        }
+
+        return count;
+    }
+
+    private bool CheckWinner(PieceType player)
+    {
+        // Horizontal
+        for (int row = 0; row < rows; row++)
+        {
+            for (int column = 0; column < columns - 3; column++)
+            {
+                if (board[column, row] == player &&
+                    board[column + 1, row] == player &&
+                    board[column + 2, row] == player &&
+                    board[column + 3, row] == player)
+                    return true;
+            }
+        }
+
+        // Vertical
+        for (int column = 0; column < columns; column++)
+        {
+            for (int row = 0; row < rows - 3; row++)
+            {
+                if (board[column, row] == player &&
+                    board[column, row + 1] == player &&
+                    board[column, row + 2] == player &&
+                    board[column, row + 3] == player)
+                    return true;
+            }
+        }
+
+        // Positive diagonal
+        for (int column = 0; column < columns - 3; column++)
+        {
+            for (int row = 0; row < rows - 3; row++)
+            {
+                if (board[column, row] == player &&
+                    board[column + 1, row + 1] == player &&
+                    board[column + 2, row + 2] == player &&
+                    board[column + 3, row + 3] == player)
+                    return true;
+            }
+        }
+
+        // Negative diagonal
+        for (int column = 0; column < columns - 3; column++)
+        {
+            for (int row = 3; row < rows; row++)
+            {
+                if (board[column, row] == player &&
+                    board[column + 1, row - 1] == player &&
+                    board[column + 2, row - 2] == player &&
+                    board[column + 3, row - 3] == player)
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+
+
     public bool IsValidMove(int column)
     {
         if (column < 0 || column >= columns)

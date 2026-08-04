@@ -186,11 +186,21 @@ public class BoardManager : MonoBehaviour
 
         UIManager.Instance.UpdateTurn(currentPlayer);
 
-        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI &&
-            currentPlayer == PieceType.Player2)
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI)
         {
-            AIManager.Instance.PlayTurn();
+            if (currentPlayer == PieceType.Player1)
+            {
+                UIManager.Instance.ShowUndoButton();
+            }
+            else
+            {
+                UIManager.Instance.HideUndoButton();
+
+                AIManager.Instance.PlayTurn();
+            }
         }
+
+
     }
 
     public bool IsColumnFull(int column)
