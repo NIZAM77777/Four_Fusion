@@ -16,6 +16,8 @@ public class MainMenuManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
         modeSelectionPanel.SetActive(false);
         difficultyPanel.SetActive(false);
+
+        AdManager.Instance.ShowBanner();
         GameSettings.Theme =
     (PieceTheme)PlayerPrefs.GetInt("Theme", 0);
 

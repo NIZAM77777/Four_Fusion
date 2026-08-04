@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    private int completedGames = 0;
+    [SerializeField] private int interstitialFrequency = 3;
+
     [SerializeField] private GameObject columnButtons;
 
     [SerializeField] private float resultPanelDelay = 1.5f;
@@ -17,6 +20,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CurrentGameMode = GameSettings.GameMode;
+
+        AdManager.Instance.HideBanner();
+
     }
 
     private void Awake()
@@ -55,16 +61,21 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Human vs Bot
             if (winner == PieceType.Player1)
             {
-                // You won -> new Vs Bot Win Panel
                 UIManager.Instance.ShowVsBotWinner(winner);
             }
             else
             {
                 UIManager.Instance.ShowLoser();
             }
+        }
+
+        completedGames++;
+
+        if (completedGames % interstitialFrequency == 0)
+        {
+            AdManager.Instance.ShowInterstitial();
         }
     }
 
@@ -83,6 +94,13 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(resultPanelDelay);
 
         UIManager.Instance.ShowDraw();
+        
+        completedGames++;
+
+        if (completedGames % interstitialFrequency == 0)
+        {
+            AdManager.Instance.ShowInterstitial();
+        }
     }
 
     public void RestartGame()
@@ -115,10 +133,6 @@ public class GameManager : MonoBehaviour
         if (CurrentGameMode != GameMode.HumanVsAI)
             return;
 
-        // Temporary until AdMob is integrated
-        BoardManager.Instance.UndoLastTwoMoves();
-
-        // Later replace the above with:
-        // AdManager.Instance.ShowRewardedUndo();
+        AdManager.Instance.ShowRewardedUndo();
     }
 }
