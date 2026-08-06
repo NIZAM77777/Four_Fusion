@@ -114,4 +114,5 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  winningSprite: {fileID: -6662576732371625245, guid: 1f87a7ae2ce37cb4791a6af128a44e29, type: 3}
   PieceType: 2

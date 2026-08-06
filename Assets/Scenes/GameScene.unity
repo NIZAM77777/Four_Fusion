@@ -2634,6 +2634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6978dacfdc850834d820b0c5bde21ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  interstitialFrequency: 3
   columnButtons: {fileID: 1381854815}
   resultPanelDelay: 1.5
 --- !u!4 &1171677566

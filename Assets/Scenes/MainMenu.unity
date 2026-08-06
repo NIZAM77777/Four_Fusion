@@ -2938,6 +2938,7 @@ MonoBehaviour:
   combo1Player2: {fileID: -7907073144016532295, guid: 659ff1c4094249a4eb9592f594c6081a, type: 3}
   combo2Player1: {fileID: 4872190484886476812, guid: c1f549400ae1ada47b657aee8e671792, type: 3}
   combo2Player2: {fileID: 5883246622698088897, guid: 76670eeedfceb334398977aff0aa32dc, type: 3}
+  winningSprite: {fileID: -6662576732371625245, guid: 1f87a7ae2ce37cb4791a6af128a44e29, type: 3}
 --- !u!4 &1804265999
 Transform:
   m_ObjectHideFlags: 0

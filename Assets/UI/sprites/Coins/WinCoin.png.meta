@@ -1,0 +1,2203 @@
+fileFormatVersion: 2
+guid: 1f87a7ae2ce37cb4791a6af128a44e29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5511044479914838450
+    second: WinCoin_0
+  - first:
+      213: -1248477656582723261
+    second: WinCoin_1
+  - first:
+      213: 291518644258722588
+    second: WinCoin_2
+  - first:
+      213: 7311990262892342436
+    second: WinCoin_3
+  - first:
+      213: 6233287000268790355
+    second: WinCoin_4
+  - first:
+      213: -5272082988832235266
+    second: WinCoin_5
+  - first:
+      213: -7555158825491076282
+    second: WinCoin_6
+  - first:
+      213: -8966700780497973778
+    second: WinCoin_7
+  - first:
+      213: 8410852465273050247
+    second: WinCoin_8
+  - first:
+      213: 1872281943526349009
+    second: WinCoin_9
+  - first:
+      213: -8092391825156674993
+    second: WinCoin_10
+  - first:
+      213: -6564047323211006428
+    second: WinCoin_11
+  - first:
+      213: -3495538858044552508
+    second: WinCoin_12
+  - first:
+      213: 8339277466559707424
+    second: WinCoin_13
+  - first:
+      213: -925004243048338702
+    second: WinCoin_14
+  - first:
+      213: 4608418032314543300
+    second: WinCoin_15
+  - first:
+      213: 3611481575250365448
+    second: WinCoin_16
+  - first:
+      213: 3992954754818011670
+    second: WinCoin_17
+  - first:
+      213: 2987452432246401255
+    second: WinCoin_18
+  - first:
+      213: -5044495762727273140
+    second: WinCoin_19
+  - first:
+      213: -7428832647352840425
+    second: WinCoin_20
+  - first:
+      213: -407728481003486341
+    second: WinCoin_21
+  - first:
+      213: 4477795724374616249
+    second: WinCoin_22
+  - first:
+      213: 5844291714806212117
+    second: WinCoin_23
+  - first:
+      213: 158530745722223788
+    second: WinCoin_24
+  - first:
+      213: 3800770252429392362
+    second: WinCoin_25
+  - first:
+      213: 7611667529772699232
+    second: WinCoin_26
+  - first:
+      213: 5630556172422421975
+    second: WinCoin_27
+  - first:
+      213: 2906795790676334348
+    second: WinCoin_28
+  - first:
+      213: -3310411618606683294
+    second: WinCoin_29
+  - first:
+      213: 1913000028620997550
+    second: WinCoin_30
+  - first:
+      213: 8096665721902883254
+    second: WinCoin_31
+  - first:
+      213: 4093551891859789374
+    second: WinCoin_32
+  - first:
+      213: -6662576732371625245
+    second: WinCoin_33
+  - first:
+      213: 5134323572998141288
+    second: WinCoin_34
+  - first:
+      213: -4363515981760799958
+    second: WinCoin_35
+  - first:
+      213: 7340091991765778865
+    second: WinCoin_36
+  - first:
+      213: 1681882530849029424
+    second: WinCoin_37
+  - first:
+      213: -3331984664934230405
+    second: WinCoin_38
+  - first:
+      213: -7500915986546681438
+    second: WinCoin_39
+  - first:
+      213: -6304164399995330954
+    second: WinCoin_40
+  - first:
+      213: 4476365983080491245
+    second: WinCoin_41
+  - first:
+      213: 4858764312098004157
+    second: WinCoin_42
+  - first:
+      213: 7387733566039986463
+    second: WinCoin_43
+  - first:
+      213: -7459060692587622827
+    second: WinCoin_44
+  - first:
+      213: 1463713526247233982
+    second: WinCoin_45
+  - first:
+      213: 725671541022664535
+    second: WinCoin_46
+  - first:
+      213: 4657556323943499126
+    second: WinCoin_47
+  - first:
+      213: 3903618161020608653
+    second: WinCoin_48
+  - first:
+      213: -371578207939066318
+    second: WinCoin_49
+  - first:
+      213: 6704470465595755322
+    second: WinCoin_50
+  - first:
+      213: -5190736651084590544
+    second: WinCoin_51
+  - first:
+      213: 205757736584841536
+    second: WinCoin_52
+  - first:
+      213: 4431460605152784526
+    second: WinCoin_53
+  - first:
+      213: -4957353303154018995
+    second: WinCoin_54
+  - first:
+      213: -3144844154973721676
+    second: WinCoin_55
+  - first:
+      213: 6121793119010063228
+    second: WinCoin_56
+  - first:
+      213: -5120691472354093516
+    second: WinCoin_57
+  - first:
+      213: -6329920408076937791
+    second: WinCoin_58
+  - first:
+      213: 1160057002972020436
+    second: WinCoin_59
+  - first:
+      213: 3886052931386861271
+    second: WinCoin_60
+  - first:
+      213: -4840020945490400369
+    second: WinCoin_61
+  - first:
+      213: 6030229190568596431
+    second: WinCoin_62
+  - first:
+      213: -1859273762017090926
+    second: WinCoin_63
+  - first:
+      213: -2634837292856292522
+    second: WinCoin_64
+  - first:
+      213: -7725836421238136746
+    second: WinCoin_65
+  - first:
+      213: -1401751141195837348
+    second: WinCoin_66
+  - first:
+      213: -1549628375478366043
+    second: WinCoin_67
+  - first:
+      213: 7244342477716058182
+    second: WinCoin_68
+  - first:
+      213: -1238643484713427793
+    second: WinCoin_69
+  - first:
+      213: -9198548608682241406
+    second: WinCoin_70
+  - first:
+      213: -524623700258595773
+    second: WinCoin_71
+  - first:
+      213: -4877714606385867536
+    second: WinCoin_72
+  - first:
+      213: -1355072363935566163
+    second: WinCoin_73
+  - first:
+      213: 4853785444226674775
+    second: WinCoin_74
+  - first:
+      213: -3253522917626009030
+    second: WinCoin_75
+  - first:
+      213: -8266190011236787587
+    second: WinCoin_76
+  - first:
+      213: 423563376859308714
+    second: WinCoin_77
+  - first:
+      213: -1983464437505158197
+    second: WinCoin_78
+  - first:
+      213: 174780469474838761
+    second: WinCoin_79
+  - first:
+      213: 6465308919382639725
+    second: WinCoin_80
+  - first:
+      213: 1771140927849469595
+    second: WinCoin_81
+  - first:
+      213: -3808713146462067101
+    second: WinCoin_82
+  - first:
+      213: 1893653768795327093
+    second: WinCoin_83
+  - first:
+      213: -2946976150826756086
+    second: WinCoin_84
+  - first:
+      213: -5480247794517218899
+    second: WinCoin_85
+  - first:
+      213: -2571920558751582510
+    second: WinCoin_86
+  - first:
+      213: 769923778256788429
+    second: WinCoin_87
+  - first:
+      213: 1090634080774782207
+    second: WinCoin_88
+  - first:
+      213: 8149931363093991841
+    second: WinCoin_89
+  - first:
+      213: -2571676906948727070
+    second: WinCoin_90
+  - first:
+      213: 8390337651185020123
+    second: WinCoin_91
+  - first:
+      213: -7269254181848709202
+    second: WinCoin_92
+  - first:
+      213: 7066699253432077622
+    second: WinCoin_93
+  - first:
+      213: -6091585042758241023
+    second: WinCoin_94
+  - first:
+      213: -5372865621984801906
+    second: WinCoin_95
+  - first:
+      213: -304116058289386690
+    second: WinCoin_96
+  - first:
+      213: 8535540772341194493
+    second: WinCoin_97
+  - first:
+      213: -4191181321210438564
+    second: WinCoin_98
+  - first:
+      213: 3377318202601274931
+    second: WinCoin_99
+  - first:
+      213: 7470035949025905950
+    second: WinCoin_100
+  - first:
+      213: 2673146467123527873
+    second: WinCoin_101
+  - first:
+      213: -7843797468117533702
+    second: WinCoin_102
+  - first:
+      213: 5777997567685108685
+    second: WinCoin_103
+  - first:
+      213: 7850215702989879962
+    second: WinCoin_104
+  - first:
+      213: 8531848225068522813
+    second: WinCoin_105
+  - first:
+      213: 478581088282853537
+    second: WinCoin_106
+  - first:
+      213: -5157091898106380681
+    second: WinCoin_107
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 140
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WinCoin_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 125
+        width: 1282
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ead43203c5c983a0800000000000000
+      internalID: -6662576732371625245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_34
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 472
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865f77a3618c04740800000000000000
+      internalID: 5134323572998141288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_35
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 704
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b586f555da173c0800000000000000
+      internalID: -4363515981760799958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_36
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 649
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b183ebe6ce3dd560800000000000000
+      internalID: 7340091991765778865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_37
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 659
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df035304f375710800000000000000
+      internalID: 1681882530849029424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_38
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 639
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76db81d99962c1d0800000000000000
+      internalID: -3331984664934230405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_39
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 439
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a916dbd6a467e790800000000000000
+      internalID: -7500915986546681438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_40
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 620
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e5d9c01eb1388a0800000000000000
+      internalID: -6304164399995330954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_41
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 667
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8a722152f3f1e30800000000000000
+      internalID: 4476365983080491245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_42
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 381
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc52f5266ccd6340800000000000000
+      internalID: 4858764312098004157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_43
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 647
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f111b035980868660800000000000000
+      internalID: 7387733566039986463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_44
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 695
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e4c34e1d71c7890800000000000000
+      internalID: -7459060692587622827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_45
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 521
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb996e072b7205410800000000000000
+      internalID: 1463713526247233982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_46
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 619
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757244afb6a121a00800000000000000
+      internalID: 725671541022664535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_47
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 495
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675c602ccc6f2a040800000000000000
+      internalID: 4657556323943499126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_48
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 670
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80a56209007c2630800000000000000
+      internalID: 3903618161020608653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_49
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 733
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236048da693e7daf0800000000000000
+      internalID: -371578207939066318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_50
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 561
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bceecdd501b0d50800000000000000
+      internalID: 6704470465595755322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_51
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 535
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032908d748cc6f7b0800000000000000
+      internalID: -5190736651084590544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_53
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 232
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80f44601f5bf7d30800000000000000
+      internalID: 4431460605152784526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_54
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 915
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45356b9f61f33bb0800000000000000
+      internalID: -4957353303154018995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_55
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 238
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbe3d437e44b54d0800000000000000
+      internalID: -3144844154973721676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_56
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 920
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c738607386af4f450800000000000000
+      internalID: 6121793119010063228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_57
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 200
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43656f98c36afe8b0800000000000000
+      internalID: -5120691472354093516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_58
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 208
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5141c1dea9728a0800000000000000
+      internalID: -6329920408076937791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_59
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 944
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4def95da2b9591010800000000000000
+      internalID: 1160057002972020436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_60
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 171
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6eda94d880ee530800000000000000
+      internalID: 3886052931386861271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_61
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 133
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2896f79ac4dcb0800000000000000
+      internalID: -4840020945490400369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_62
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 211
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc35802df7dafa350800000000000000
+      internalID: 6030229190568596431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_63
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 206
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29264c24d588236e0800000000000000
+      internalID: -1859273762017090926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_64
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 201
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b495e217d2f6bd0800000000000000
+      internalID: -2634837292856292522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_65
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 197
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650635745b058c490800000000000000
+      internalID: -7725836421238136746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_66
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 222
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50168d83cafb8ce0800000000000000
+      internalID: -1401751141195837348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_67
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 199
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a01fb9e33d9e7ae0800000000000000
+      internalID: -1549628375478366043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_68
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 919
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640f98fe913198460800000000000000
+      internalID: 7244342477716058182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_69
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 223
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facdd4230547fcee0800000000000000
+      internalID: -1238643484713427793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_70
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 205
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282d452c6c0385080800000000000000
+      internalID: -9198548608682241406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_71
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 198
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cd551368928b8f0800000000000000
+      internalID: -524623700258595773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_72
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 903
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4d2a2a860ee4cb0800000000000000
+      internalID: -4877714606385867536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_73
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 210
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6fbae4dd0d13de0800000000000000
+      internalID: -1355072363935566163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_74
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 195
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750b713252c1c5340800000000000000
+      internalID: 4853785444226674775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_75
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 207
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a2f42f42a29d2d0800000000000000
+      internalID: -3253522917626009030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_76
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 198
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a595e1bf7984d80800000000000000
+      internalID: -8266190011236787587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_77
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 200
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa26099a5acc0e500800000000000000
+      internalID: 423563376859308714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_78
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 237
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc392e95a915974e0800000000000000
+      internalID: -1983464437505158197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_79
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 244
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e849b439e1fc6200800000000000000
+      internalID: 174780469474838761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_80
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 199
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6487fe153469b950800000000000000
+      internalID: 6465308919382639725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_81
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 236
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b969f9b3a4b549810800000000000000
+      internalID: 1771140927849469595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_82
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 199
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366a4cd929bb42bc0800000000000000
+      internalID: -3808713146462067101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_83
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 232
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a00a8d11c974a10800000000000000
+      internalID: 1893653768795327093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_84
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 231
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a085c68fdcc3a17d0800000000000000
+      internalID: -2946976150826756086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_85
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 163
+        width: 40
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9eeae9aaf32f3b0800000000000000
+      internalID: -5480247794517218899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_86
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 191
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d67611e0e3be4cd0800000000000000
+      internalID: -2571920558751582510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_87
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 195
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb5f1bd8915faa00800000000000000
+      internalID: 769923778256788429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_88
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 168
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcf3840be5b22f00800000000000000
+      internalID: 1090634080774782207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_89
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a15801056f5a1170800000000000000
+      internalID: 8149931363093991841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_90
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 195
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eeee3c7a719f4cd0800000000000000
+      internalID: -2571676906948727070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_91
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 198
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdce77cc3a7707470800000000000000
+      internalID: 8390337651185020123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_92
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 171
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea782e4f5db6e1b90800000000000000
+      internalID: -7269254181848709202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_93
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 195
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d465fa785f11260800000000000000
+      internalID: 7066699253432077622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_94
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 219
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105ff4f9da7567ba0800000000000000
+      internalID: -6091585042758241023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_95
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 199
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b00b7fe2fbf65b0800000000000000
+      internalID: -5372865621984801906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_96
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 198
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b4b276e0097cbf0800000000000000
+      internalID: -304116058289386690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_97
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 208
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe9245fb15547670800000000000000
+      internalID: 8535540772341194493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_98
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 176
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cdfff4bcee5d5c0800000000000000
+      internalID: -4191181321210438564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_99
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 169
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e728fe205aede20800000000000000
+      internalID: 3377318202601274931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_100
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 153
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d46112e16eaa760800000000000000
+      internalID: 7470035949025905950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_101
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 415
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c00d758c8ce81520800000000000000
+      internalID: 2673146467123527873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_102
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 439
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbfebec2cb352390800000000000000
+      internalID: -7843797468117533702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_103
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 533
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc321f6bc229f2050800000000000000
+      internalID: 5777997567685108685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_104
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 473
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab7e2f69191fc60800000000000000
+      internalID: 7850215702989879962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_105
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 487
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d91ccc1c6376670800000000000000
+      internalID: 8531848225068522813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_106
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 645
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0c153d6f244a600800000000000000
+      internalID: 478581088282853537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WinCoin_107
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 457
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ef25bfd345e68b0800000000000000
+      internalID: -5157091898106380681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 168a2d427c3e25d4eb1f493690abe2a5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WinCoin_0: -5511044479914838450
+      WinCoin_1: -1248477656582723261
+      WinCoin_10: -8092391825156674993
+      WinCoin_100: 7470035949025905950
+      WinCoin_101: 2673146467123527873
+      WinCoin_102: -7843797468117533702
+      WinCoin_103: 5777997567685108685
+      WinCoin_104: 7850215702989879962
+      WinCoin_105: 8531848225068522813
+      WinCoin_106: 478581088282853537
+      WinCoin_107: -5157091898106380681
+      WinCoin_11: -6564047323211006428
+      WinCoin_12: -3495538858044552508
+      WinCoin_13: 8339277466559707424
+      WinCoin_14: -925004243048338702
+      WinCoin_15: 4608418032314543300
+      WinCoin_16: 3611481575250365448
+      WinCoin_17: 3992954754818011670
+      WinCoin_18: 2987452432246401255
+      WinCoin_19: -5044495762727273140
+      WinCoin_2: 291518644258722588
+      WinCoin_20: -7428832647352840425
+      WinCoin_21: -407728481003486341
+      WinCoin_22: 4477795724374616249
+      WinCoin_23: 5844291714806212117
+      WinCoin_24: 158530745722223788
+      WinCoin_25: 3800770252429392362
+      WinCoin_26: 7611667529772699232
+      WinCoin_27: 5630556172422421975
+      WinCoin_28: 2906795790676334348
+      WinCoin_29: -3310411618606683294
+      WinCoin_3: 7311990262892342436
+      WinCoin_30: 1913000028620997550
+      WinCoin_31: 8096665721902883254
+      WinCoin_32: 4093551891859789374
+      WinCoin_33: -6662576732371625245
+      WinCoin_34: 5134323572998141288
+      WinCoin_35: -4363515981760799958
+      WinCoin_36: 7340091991765778865
+      WinCoin_37: 1681882530849029424
+      WinCoin_38: -3331984664934230405
+      WinCoin_39: -7500915986546681438
+      WinCoin_4: 6233287000268790355
+      WinCoin_40: -6304164399995330954
+      WinCoin_41: 4476365983080491245
+      WinCoin_42: 4858764312098004157
+      WinCoin_43: 7387733566039986463
+      WinCoin_44: -7459060692587622827
+      WinCoin_45: 1463713526247233982
+      WinCoin_46: 725671541022664535
+      WinCoin_47: 4657556323943499126
+      WinCoin_48: 3903618161020608653
+      WinCoin_49: -371578207939066318
+      WinCoin_5: -5272082988832235266
+      WinCoin_50: 6704470465595755322
+      WinCoin_51: -5190736651084590544
+      WinCoin_52: 205757736584841536
+      WinCoin_53: 4431460605152784526
+      WinCoin_54: -4957353303154018995
+      WinCoin_55: -3144844154973721676
+      WinCoin_56: 6121793119010063228
+      WinCoin_57: -5120691472354093516
+      WinCoin_58: -6329920408076937791
+      WinCoin_59: 1160057002972020436
+      WinCoin_6: -7555158825491076282
+      WinCoin_60: 3886052931386861271
+      WinCoin_61: -4840020945490400369
+      WinCoin_62: 6030229190568596431
+      WinCoin_63: -1859273762017090926
+      WinCoin_64: -2634837292856292522
+      WinCoin_65: -7725836421238136746
+      WinCoin_66: -1401751141195837348
+      WinCoin_67: -1549628375478366043
+      WinCoin_68: 7244342477716058182
+      WinCoin_69: -1238643484713427793
+      WinCoin_7: -8966700780497973778
+      WinCoin_70: -9198548608682241406
+      WinCoin_71: -524623700258595773
+      WinCoin_72: -4877714606385867536
+      WinCoin_73: -1355072363935566163
+      WinCoin_74: 4853785444226674775
+      WinCoin_75: -3253522917626009030
+      WinCoin_76: -8266190011236787587
+      WinCoin_77: 423563376859308714
+      WinCoin_78: -1983464437505158197
+      WinCoin_79: 174780469474838761
+      WinCoin_8: 8410852465273050247
+      WinCoin_80: 6465308919382639725
+      WinCoin_81: 1771140927849469595
+      WinCoin_82: -3808713146462067101
+      WinCoin_83: 1893653768795327093
+      WinCoin_84: -2946976150826756086
+      WinCoin_85: -5480247794517218899
+      WinCoin_86: -2571920558751582510
+      WinCoin_87: 769923778256788429
+      WinCoin_88: 1090634080774782207
+      WinCoin_89: 8149931363093991841
+      WinCoin_9: 1872281943526349009
+      WinCoin_90: -2571676906948727070
+      WinCoin_91: 8390337651185020123
+      WinCoin_92: -7269254181848709202
+      WinCoin_93: 7066699253432077622
+      WinCoin_94: -6091585042758241023
+      WinCoin_95: -5372865621984801906
+      WinCoin_96: -304116058289386690
+      WinCoin_97: 8535540772341194493
+      WinCoin_98: -4191181321210438564
+      WinCoin_99: 3377318202601274931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
