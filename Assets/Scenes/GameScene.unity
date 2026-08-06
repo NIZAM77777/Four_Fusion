@@ -878,7 +878,7 @@ MonoBehaviour:
   drawPanel: {fileID: 1154781377}
   topPanel: {fileID: 293849786}
   bottomPanel: {fileID: 1858505071}
-  undoButton: {fileID: 1525648058}
+  undoButton: {fileID: 1525648060}
 --- !u!4 &420328678
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,7 +2348,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1171677565}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: UndoLastMove
+        m_MethodName: UndoMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3490,7 +3490,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1171677565}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: UndoLastMove
+        m_MethodName: UndoMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
