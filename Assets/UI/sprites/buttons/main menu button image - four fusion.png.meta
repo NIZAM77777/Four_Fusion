@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5dc987ca636d353419d63feb4f05c00f
+guid: 2d3b7c353e4675e4e9eacdf23f3b20ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2986745204020732283
-    second: settings panel image - four fusion_0
+      213: -3266347226230425507
+    second: main menu button image - four fusion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: settings panel image - four fusion_0
+      name: main menu button image - four fusion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 864
-        height: 1821
+        x: 95
+        y: 183
+        width: 1777
+        height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b71e14840fc037920800000000000000
-      internalID: 2986745204020732283
+      spriteID: d58f37be08a9ba2d0800000000000000
+      internalID: -3266347226230425507
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d13257cc4823bf946bd4beae308ee545
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      settings panel image - four fusion_0: 2986745204020732283
+      main menu button image - four fusion_0: -3266347226230425507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

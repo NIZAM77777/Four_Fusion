@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2c72e545f5f4f4b46b1e872eec513662
+guid: 37e24cf1b2743914fa2e0cde26784896
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7011390581733659613
-    second: Home page four fusion - Copy_0
+      213: -5341023640321759694
+    second: restart button - four fusion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Home page four fusion - Copy_0
+      name: restart button - four fusion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 853
-        height: 1844
+        x: 45
+        y: 207
+        width: 1685
+        height: 488
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd311cd06967d4160800000000000000
-      internalID: 7011390581733659613
+      spriteID: 23668ad0c4fd0e5b0800000000000000
+      internalID: -5341023640321759694
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 27d13e84e390f5f49969a846e86166ae
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Home page four fusion - Copy_0: 7011390581733659613
+      restart button - four fusion_0: -5341023640321759694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
