@@ -123,14 +123,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void UndoLastMove()
-    {
-        BoardManager.Instance.UndoLastTwoMoves();
-    }
-
     public void UndoMove()
     {
-        if (CurrentGameMode != GameMode.HumanVsAI)
+        if (!BoardManager.Instance.CanUndo())
             return;
 
         AdManager.Instance.ShowRewardedUndo();

@@ -12,6 +12,9 @@ public class PieceThemeManager : MonoBehaviour
     [SerializeField] private Sprite combo2Player1;
     [SerializeField] private Sprite combo2Player2;
 
+    [Header("Winning Sprite")]
+    [SerializeField] private Sprite winningSprite;
+
     private void Awake()
     {
         Instance = this;
@@ -39,5 +42,15 @@ public class PieceThemeManager : MonoBehaviour
             default:
                 return combo1Player2;
         }
+    }
+
+    public Sprite GetPlayer1WinningSprite()
+    {
+        return winningSprite;
+    }
+
+    public Sprite GetPlayer2WinningSprite()
+    {
+        return winningSprite;
     }
 }

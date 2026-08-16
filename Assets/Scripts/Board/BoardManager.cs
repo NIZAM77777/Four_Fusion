@@ -39,6 +39,9 @@ public class BoardManager : MonoBehaviour
     private void Start()
     {
         GenerateBoard();
+
+        UpdateUndoButton();
+
     }
 
     private void Awake()
@@ -186,21 +189,13 @@ public class BoardManager : MonoBehaviour
 
         UIManager.Instance.UpdateTurn(currentPlayer);
 
-        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI)
+        UpdateUndoButton();
+
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI &&
+            currentPlayer == PieceType.Player2)
         {
-            if (currentPlayer == PieceType.Player1)
-            {
-                UIManager.Instance.ShowUndoButton();
-            }
-            else
-            {
-                UIManager.Instance.HideUndoButton();
-
-                AIManager.Instance.PlayTurn();
-            }
+            AIManager.Instance.PlayTurn();
         }
-
-
     }
 
     public bool IsColumnFull(int column)
@@ -469,6 +464,8 @@ public class BoardManager : MonoBehaviour
         UIManager.Instance.UpdateTurn(currentPlayer);
 
         GameManager.Instance.ResumeGame();
+
+        UpdateUndoButton();
     }
 
     private void UndoSingleMove()
@@ -499,6 +496,45 @@ public class BoardManager : MonoBehaviour
                 {
                     piece.ResetHighlight();
                 }
+            }
+        }
+    }
+
+    public bool CanUndo()
+    {
+        if (moveHistory.Count < 2)
+            return false;
+
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsHuman)
+        {
+            return currentPlayer == PieceType.Player1;
+        }
+
+        // Human vs AI
+        return true;
+    }
+
+    private void UpdateUndoButton()
+    {
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI)
+        {
+            if (currentPlayer == PieceType.Player1)
+                UIManager.Instance.ShowUndoButton();
+            else
+                UIManager.Instance.HideUndoButton();
+        }
+        else
+        {
+            // Human vs Human
+
+            if (currentPlayer == PieceType.Player1 &&
+                CanUndo())
+            {
+                UIManager.Instance.ShowUndoButton();
+            }
+            else
+            {
+                UIManager.Instance.HideUndoButton();
             }
         }
     }

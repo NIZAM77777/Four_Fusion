@@ -10,7 +10,8 @@ public class Piece : MonoBehaviour
     [SerializeField] private float bounceDuration = 0.08f;
     [SerializeField] private AnimationCurve bounceCurve;
 
-
+    [SerializeField] private Sprite normalSprite;
+    [SerializeField] private Sprite winningSprite;
 
     private bool isMoving;
     private Vector3 targetPosition;
@@ -47,17 +48,30 @@ public class Piece : MonoBehaviour
 
     public void Highlight()
     {
-        spriteRenderer.color = Color.gold;
+        if (PieceType == PieceType.Player1)
+        {
+            spriteRenderer.sprite =
+                PieceThemeManager.Instance.GetPlayer1WinningSprite();
+        }
+        else
+        {
+            spriteRenderer.sprite =
+                PieceThemeManager.Instance.GetPlayer2WinningSprite();
+        }
     }
 
     public void ResetHighlight()
     {
-        spriteRenderer.color = Color.white;
-    }
-
-    public void ResetColor()
-    {
-        spriteRenderer.color = Color.white;
+        if (PieceType == PieceType.Player1)
+        {
+            spriteRenderer.sprite =
+                PieceThemeManager.Instance.GetPlayer1Sprite();
+        }
+        else
+        {
+            spriteRenderer.sprite =
+                PieceThemeManager.Instance.GetPlayer2Sprite();
+        }
     }
 
     public void Bounce()

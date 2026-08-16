@@ -197,22 +197,34 @@ public class AdManager : MonoBehaviour
 
     public void ShowRewardedUndo()
     {
-        if (rewardedAd != null &&
-            rewardedAd.CanShowAd())
+#if UNITY_EDITOR
+
+        Debug.Log("Editor: Simulating rewarded ad.");
+
+        if (BoardManager.Instance.CanUndo())
         {
-            rewardedAd.Show((Reward reward) =>
+            BoardManager.Instance.UndoLastTwoMoves();
+        }
+
+#else
+
+    if (rewardedAd != null && rewardedAd.CanShowAd())
+    {
+        rewardedAd.Show((Reward reward) =>
+        {
+            if (BoardManager.Instance.CanUndo())
             {
-                Debug.Log("Reward Earned");
-
                 BoardManager.Instance.UndoLastTwoMoves();
-            });
-        }
-        else
-        {
-            Debug.Log("Rewarded ad not ready.");
-
-            // Optional fallback
-            // BoardManager.Instance.UndoLastTwoMoves();
-        }
+            }
+        });
     }
+    else
+    {
+        UIManager.Instance.ShowAdUnavailableMessage();
+    }
+
+#endif
+    }
+
+    
 }
