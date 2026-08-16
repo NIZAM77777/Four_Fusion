@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    private int freeUndoCount = 0;
+    private const int HUMAN_VS_HUMAN_FREE_UNDOS = 3;
+    private const int HUMAN_VS_AI_FREE_UNDOS = 1;
+
     private int completedGames = 0;
     [SerializeField] private int interstitialFrequency = 3;
 
@@ -21,7 +25,10 @@ public class GameManager : MonoBehaviour
     {
         CurrentGameMode = GameSettings.GameMode;
 
+        freeUndoCount = 0;
+
         AdManager.Instance.HideBanner();
+        BoardManager.Instance.UpdateUndoButton();
 
     }
 
@@ -124,6 +131,33 @@ public class GameManager : MonoBehaviour
     }
 
     public void UndoMove()
+    {
+        if (IsGameOver)
+            return;
+
+        if (!BoardManager.Instance.CanUndo())
+            return;
+
+        int freeUndoLimit =
+            CurrentGameMode == GameMode.HumanVsHuman
+            ? HUMAN_VS_HUMAN_FREE_UNDOS
+            : HUMAN_VS_AI_FREE_UNDOS;
+
+        if (freeUndoCount < freeUndoLimit)
+        {
+            // Free undo
+            freeUndoCount++;
+
+            BoardManager.Instance.UndoLastTwoMoves();
+
+            return;
+        }
+
+        // Free undos finished → rewarded ad
+        AdManager.Instance.ShowRewardedUndo();
+    }
+
+    public void ResultPanelUndo()
     {
         if (!BoardManager.Instance.CanUndo())
             return;

@@ -514,28 +514,21 @@ public class BoardManager : MonoBehaviour
         return true;
     }
 
-    private void UpdateUndoButton()
+    public void UpdateUndoButton()
     {
-        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI)
+        if (GameManager.Instance.IsGameOver)
         {
-            if (currentPlayer == PieceType.Player1)
-                UIManager.Instance.ShowUndoButton();
-            else
-                UIManager.Instance.HideUndoButton();
+            UIManager.Instance.HideUndoButton();
+            return;
+        }
+
+        if (CanUndo())
+        {
+            UIManager.Instance.ShowUndoButton();
         }
         else
         {
-            // Human vs Human
-
-            if (currentPlayer == PieceType.Player1 &&
-                CanUndo())
-            {
-                UIManager.Instance.ShowUndoButton();
-            }
-            else
-            {
-                UIManager.Instance.HideUndoButton();
-            }
+            UIManager.Instance.HideUndoButton();
         }
     }
 }

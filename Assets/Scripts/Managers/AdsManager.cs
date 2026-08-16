@@ -197,17 +197,6 @@ public class AdManager : MonoBehaviour
 
     public void ShowRewardedUndo()
     {
-#if UNITY_EDITOR
-
-        Debug.Log("Editor: Simulating rewarded ad.");
-
-        if (BoardManager.Instance.CanUndo())
-        {
-            BoardManager.Instance.UndoLastTwoMoves();
-        }
-
-#else
-
     if (rewardedAd != null && rewardedAd.CanShowAd())
     {
         rewardedAd.Show((Reward reward) =>
@@ -218,12 +207,7 @@ public class AdManager : MonoBehaviour
             }
         });
     }
-    else
-    {
-        UIManager.Instance.ShowAdUnavailableMessage();
-    }
-
-#endif
+   
     }
 
     
