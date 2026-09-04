@@ -47,5 +47,7 @@ public class InputManager : MonoBehaviour
             return;
 
         boardManager.DropPiece(column.ColumnIndex);
+
+        AudioManager.Instance.PlayPiecePlace();
     }
 }

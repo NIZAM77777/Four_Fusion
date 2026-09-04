@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &152920757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -720,6 +720,7 @@ GameObject:
   - component: {fileID: 376818618}
   - component: {fileID: 376818617}
   - component: {fileID: 376818616}
+  - component: {fileID: 376818619}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -840,6 +841,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376818614}
   m_CullTransparentMesh: 1
+--- !u!114 &376818619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376818614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &420328676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1173,7 @@ GameObject:
   - component: {fileID: 638585259}
   - component: {fileID: 638585258}
   - component: {fileID: 638585257}
+  - component: {fileID: 638585260}
   m_Layer: 5
   m_Name: playagainButton
   m_TagString: Untagged
@@ -1280,6 +1294,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638585255}
   m_CullTransparentMesh: 1
+--- !u!114 &638585260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638585255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &640611339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1946,7 @@ GameObject:
   - component: {fileID: 926405505}
   - component: {fileID: 926405504}
   - component: {fileID: 926405503}
+  - component: {fileID: 926405506}
   m_Layer: 5
   m_Name: homeButton
   m_TagString: Untagged
@@ -2040,6 +2067,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926405501}
   m_CullTransparentMesh: 1
+--- !u!114 &926405506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926405501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &947418891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,6 +2091,7 @@ GameObject:
   - component: {fileID: 947418895}
   - component: {fileID: 947418894}
   - component: {fileID: 947418893}
+  - component: {fileID: 947418896}
   m_Layer: 5
   m_Name: homeButton
   m_TagString: Untagged
@@ -2172,6 +2212,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947418891}
   m_CullTransparentMesh: 1
+--- !u!114 &947418896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947418891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &973118331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,6 +2328,7 @@ GameObject:
   - component: {fileID: 1068742678}
   - component: {fileID: 1068742677}
   - component: {fileID: 1068742676}
+  - component: {fileID: 1068742679}
   m_Layer: 5
   m_Name: UndoButton
   m_TagString: Untagged
@@ -2396,6 +2449,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068742674}
   m_CullTransparentMesh: 1
+--- !u!114 &1068742679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068742674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1096746439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2473,7 @@ GameObject:
   - component: {fileID: 1096746443}
   - component: {fileID: 1096746442}
   - component: {fileID: 1096746441}
+  - component: {fileID: 1096746444}
   m_Layer: 5
   m_Name: tryagainButton
   m_TagString: Untagged
@@ -2528,6 +2594,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096746439}
   m_CullTransparentMesh: 1
+--- !u!114 &1096746444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096746439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1154781377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +3009,7 @@ GameObject:
   - component: {fileID: 1384888199}
   - component: {fileID: 1384888198}
   - component: {fileID: 1384888197}
+  - component: {fileID: 1384888200}
   m_Layer: 5
   m_Name: homebutton
   m_TagString: Untagged
@@ -3051,6 +3130,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384888195}
   m_CullTransparentMesh: 1
+--- !u!114 &1384888200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384888195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1446555626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,6 +3154,7 @@ GameObject:
   - component: {fileID: 1446555630}
   - component: {fileID: 1446555629}
   - component: {fileID: 1446555628}
+  - component: {fileID: 1446555631}
   m_Layer: 5
   m_Name: homebutton
   m_TagString: Untagged
@@ -3183,6 +3275,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446555626}
   m_CullTransparentMesh: 1
+--- !u!114 &1446555631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446555626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1451010333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3390,7 @@ GameObject:
   - component: {fileID: 1456756385}
   - component: {fileID: 1456756384}
   - component: {fileID: 1456756383}
+  - component: {fileID: 1456756386}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -3406,6 +3511,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456756381}
   m_CullTransparentMesh: 1
+--- !u!114 &1456756386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456756381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1525648058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,6 +3535,7 @@ GameObject:
   - component: {fileID: 1525648062}
   - component: {fileID: 1525648061}
   - component: {fileID: 1525648060}
+  - component: {fileID: 1525648063}
   m_Layer: 5
   m_Name: UndoButton
   m_TagString: Untagged
@@ -3538,6 +3656,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525648058}
   m_CullTransparentMesh: 1
+--- !u!114 &1525648063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525648058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1546844791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,6 +3680,7 @@ GameObject:
   - component: {fileID: 1546844795}
   - component: {fileID: 1546844794}
   - component: {fileID: 1546844793}
+  - component: {fileID: 1546844796}
   m_Layer: 5
   m_Name: playagainbutton
   m_TagString: Untagged
@@ -3670,6 +3801,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546844791}
   m_CullTransparentMesh: 1
+--- !u!114 &1546844796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546844791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1594622954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,6 +3980,7 @@ GameObject:
   - component: {fileID: 1952947633}
   - component: {fileID: 1952947632}
   - component: {fileID: 1952947631}
+  - component: {fileID: 1952947634}
   m_Layer: 5
   m_Name: playagainButton
   m_TagString: Untagged
@@ -3957,6 +4101,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952947629}
   m_CullTransparentMesh: 1
+--- !u!114 &1952947634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952947629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbda95bbb7dae4459822177986fe1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &2134310142
 GameObject:
   m_ObjectHideFlags: 0

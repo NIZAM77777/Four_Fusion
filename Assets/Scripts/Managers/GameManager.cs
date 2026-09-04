@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         AdManager.Instance.HideBanner();
         BoardManager.Instance.UpdateUndoButton();
 
+        AudioManager.Instance.StopMusic();
     }
 
     private void Awake()
@@ -65,16 +66,19 @@ public class GameManager : MonoBehaviour
         if (CurrentGameMode == GameMode.HumanVsHuman)
         {
             UIManager.Instance.ShowWinner(winner);
+            AudioManager.Instance.PlayWin();
         }
         else
         {
             if (winner == PieceType.Player1)
             {
                 UIManager.Instance.ShowVsBotWinner(winner);
+                AudioManager.Instance.PlayWin();
             }
             else
             {
                 UIManager.Instance.ShowLoser();
+                AudioManager.Instance.PlayLose();
             }
         }
 
@@ -108,6 +112,7 @@ public class GameManager : MonoBehaviour
         {
             AdManager.Instance.ShowInterstitial();
         }
+        AudioManager.Instance.PlayLose();
     }
 
     public void RestartGame()
@@ -117,6 +122,7 @@ public class GameManager : MonoBehaviour
 
     public void Home()
     {
+        AudioManager.Instance.PlayMusic();
         SceneManager.LoadScene("MainMenu");
     }
 

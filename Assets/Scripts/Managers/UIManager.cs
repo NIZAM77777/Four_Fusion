@@ -137,6 +137,7 @@ public class UIManager : MonoBehaviour
         HideAllPanels();
 
         losePanel.SetActive(true);
+        AudioManager.Instance.
     }
 
     public void ShowDraw()
