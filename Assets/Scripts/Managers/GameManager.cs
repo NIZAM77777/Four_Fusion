@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject columnButtons;
 
-    [SerializeField] private float resultPanelDelay = 1.5f;
+    [SerializeField] private float resultPanelDelay = 1.1f;
 
     public bool IsGameOver { get; private set; }
 
