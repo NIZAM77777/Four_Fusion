@@ -140,6 +140,8 @@ public class BoardManager : MonoBehaviour
 
         piece.MoveTo(targetPosition);
 
+        AudioManager.Instance.PlayPiecePlace();
+
         isDroppingPiece = true;
 
         StartCoroutine(

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject combo1Selected;
     [SerializeField] private GameObject combo2Selected;
+    [SerializeField] private Slider volumeSlider;
 
     private void Start()
     {
@@ -18,12 +20,27 @@ public class MainMenuManager : MonoBehaviour
         difficultyPanel.SetActive(false);
 
         AdManager.Instance.ShowBanner();
+
         GameSettings.Theme =
-    (PieceTheme)PlayerPrefs.GetInt("Theme", 0);
+            (PieceTheme)PlayerPrefs.GetInt("Theme", 0);
 
         UpdateComboHighlight();
+
+        if (AudioManager.Instance != null)
+        {
+            volumeSlider.SetValueWithoutNotify(
+                AudioManager.Instance.GetMasterVolume()
+            );
+        }
     }
 
+    public void SetVolume(float volume)
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetMasterVolume(volume);
+        }
+    }
     public void PlayButton()
     {
         mainMenuPanel.SetActive(false);

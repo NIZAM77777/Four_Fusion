@@ -444,6 +444,7 @@ MonoBehaviour:
   settingsPanel: {fileID: 1766690802}
   combo1Selected: {fileID: 1247941977}
   combo2Selected: {fileID: 1429907183}
+  volumeSlider: {fileID: 710558269}
 --- !u!4 &170048661
 Transform:
   m_ObjectHideFlags: 0
@@ -1531,9 +1532,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 482509507}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: SetMasterVolume
+      - m_Target: {fileID: 170048660}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
