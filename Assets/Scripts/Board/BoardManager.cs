@@ -505,13 +505,22 @@ public class BoardManager : MonoBehaviour
         if (moveHistory.Count < 2)
             return false;
 
-        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsHuman)
+
+        if (GameManager.Instance.CurrentGameMode ==
+            GameMode.HumanVsHuman)
         {
             return currentPlayer == PieceType.Player1;
         }
 
+
         // Human vs AI
-        return true;
+        // Undo is available only during player's turn.
+        return currentPlayer == PieceType.Player1;
+    }
+
+    public bool CanUndoFromResultPanel()
+    {
+        return moveHistory.Count >= 2;
     }
 
     public void UpdateUndoButton()

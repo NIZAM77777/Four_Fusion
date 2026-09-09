@@ -6,23 +6,36 @@ public class AdManager : MonoBehaviour
     public static AdManager Instance;
 
 #if UNITY_ANDROID
+
+    //==================================================
+    // LIVE AD UNIT IDs
+    //==================================================
+
     private string bannerAdUnitId =
-        "ca-app-pub-3940256099942544/6300978111";
+        "ca-app-pub-1729898546273793/6166062447";
 
     private string interstitialAdUnitId =
-        "ca-app-pub-3940256099942544/1033173712";
+        "ca-app-pub-1729898546273793/4852980773";
 
     private string rewardedAdUnitId =
-        "ca-app-pub-3940256099942544/5224354917";
+        "ca-app-pub-1729898546273793/3668605627";
+
 #else
+
     private string bannerAdUnitId = "unused";
     private string interstitialAdUnitId = "unused";
     private string rewardedAdUnitId = "unused";
+
 #endif
 
     private BannerView bannerView;
     private InterstitialAd interstitialAd;
     private RewardedAd rewardedAd;
+
+
+    //==================================================
+    // UNITY
+    //==================================================
 
     private void Awake()
     {
@@ -37,6 +50,7 @@ public class AdManager : MonoBehaviour
         }
     }
 
+
     private void Start()
     {
         MobileAds.Initialize(initStatus =>
@@ -49,8 +63,9 @@ public class AdManager : MonoBehaviour
         });
     }
 
+
     //==================================================
-    // Banner Ads
+    // BANNER ADS
     //==================================================
 
     private void LoadBanner()
@@ -72,6 +87,7 @@ public class AdManager : MonoBehaviour
         Debug.Log("Banner Loaded");
     }
 
+
     public void ShowBanner()
     {
         if (bannerView != null)
@@ -79,6 +95,7 @@ public class AdManager : MonoBehaviour
             bannerView.Show();
         }
     }
+
 
     public void HideBanner()
     {
@@ -88,8 +105,9 @@ public class AdManager : MonoBehaviour
         }
     }
 
+
     //==================================================
-    // Interstitial Ads
+    // INTERSTITIAL ADS
     //==================================================
 
     private void LoadInterstitialAd()
@@ -100,7 +118,7 @@ public class AdManager : MonoBehaviour
             interstitialAd = null;
         }
 
-        var request = new AdRequest();
+        AdRequest request = new AdRequest();
 
         InterstitialAd.Load(
             interstitialAdUnitId,
@@ -109,7 +127,10 @@ public class AdManager : MonoBehaviour
             {
                 if (error != null || ad == null)
                 {
-                    Debug.Log("Interstitial failed to load.");
+                    Debug.Log(
+                        "Interstitial failed to load: " +
+                        error);
+
                     return;
                 }
 
@@ -121,19 +142,27 @@ public class AdManager : MonoBehaviour
             });
     }
 
+
     private void RegisterInterstitialEvents()
     {
         interstitialAd.OnAdFullScreenContentClosed += () =>
         {
+            Debug.Log("Interstitial Ad Closed");
+
             LoadInterstitialAd();
         };
 
         interstitialAd.OnAdFullScreenContentFailed +=
         (AdError error) =>
         {
+            Debug.Log(
+                "Interstitial failed to show: " +
+                error);
+
             LoadInterstitialAd();
         };
     }
+
 
     public void ShowInterstitial()
     {
@@ -142,22 +171,27 @@ public class AdManager : MonoBehaviour
         {
             interstitialAd.Show();
         }
+        else
+        {
+            Debug.Log(
+                "Interstitial ad is not available.");
+        }
     }
 
+
     //==================================================
-    // Rewarded Ads
+    // REWARDED ADS
     //==================================================
 
     private void LoadRewardedAd()
     {
-        // Destroy the old ad if it exists
         if (rewardedAd != null)
         {
             rewardedAd.Destroy();
             rewardedAd = null;
         }
 
-        var request = new AdRequest();
+        AdRequest request = new AdRequest();
 
         RewardedAd.Load(
             rewardedAdUnitId,
@@ -166,7 +200,10 @@ public class AdManager : MonoBehaviour
             {
                 if (error != null || ad == null)
                 {
-                    Debug.Log("Rewarded ad failed to load.");
+                    Debug.Log(
+                        "Rewarded ad failed to load: " +
+                        error);
+
                     return;
                 }
 
@@ -178,6 +215,7 @@ public class AdManager : MonoBehaviour
             });
     }
 
+
     private void RegisterRewardedEvents()
     {
         rewardedAd.OnAdFullScreenContentClosed += () =>
@@ -187,28 +225,40 @@ public class AdManager : MonoBehaviour
             LoadRewardedAd();
         };
 
-        rewardedAd.OnAdFullScreenContentFailed += (AdError error) =>
+        rewardedAd.OnAdFullScreenContentFailed +=
+        (AdError error) =>
         {
-            Debug.Log(error);
+            Debug.Log(
+                "Rewarded ad failed: " +
+                error);
 
             LoadRewardedAd();
         };
     }
 
+
     public void ShowRewardedUndo()
     {
-    if (rewardedAd != null && rewardedAd.CanShowAd())
-    {
-        rewardedAd.Show((Reward reward) =>
+        if (rewardedAd != null &&
+            rewardedAd.CanShowAd())
         {
-            if (BoardManager.Instance.CanUndo())
+            rewardedAd.Show((Reward reward) =>
             {
-                BoardManager.Instance.UndoLastTwoMoves();
-            }
-        });
-    }
-   
-    }
+                Debug.Log(
+                    "Reward earned. Granting undo.");
 
-    
+                if (BoardManager.Instance.CanUndo())
+                {
+                    BoardManager.Instance.UndoLastTwoMoves();
+                }
+            });
+        }
+        else
+        {
+            Debug.Log(
+                "Rewarded ad is not available.");
+
+            UIManager.Instance.ShowAdUnavailableMessage();
+        }
+    }
 }

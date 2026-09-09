@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -19,6 +20,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject topPanel;
     [SerializeField] private GameObject bottomPanel;
     [SerializeField] private Button undoButton;
+
+    [Header("Ad Message")]
+    [SerializeField] private GameObject adUnavailablePanel;
 
     public void ShowUndoButton()
     {
@@ -158,10 +162,39 @@ public class UIManager : MonoBehaviour
 
     public void ShowGameplayUI()
     {
+        winPanel.SetActive(false);
+        vsBotWinPanel.SetActive(false);
         losePanel.SetActive(false);
+        drawPanel.SetActive(false);
 
         topPanel.SetActive(true);
-
         bottomPanel.SetActive(true);
+
+        HideAdUnavailableMessage();
+    }
+
+    public void ShowAdUnavailableMessage()
+    {
+        if (adUnavailablePanel != null)
+        {
+            adUnavailablePanel.SetActive(true);
+        }
+
+        StartCoroutine(HideAdUnavailableAfterDelay());
+    }
+
+    private IEnumerator HideAdUnavailableAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+
+        HideAdUnavailableMessage();
+    }
+
+    public void HideAdUnavailableMessage()
+    {
+        if (adUnavailablePanel != null)
+        {
+            adUnavailablePanel.SetActive(false);
+        }
     }
 }
