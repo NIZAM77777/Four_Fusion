@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 211adece48f92b647acc9ded92fdb524
+guid: 0a521bd2dfc011e4d88582395172806c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3256469835026144749
-    second: win panel - four fusion_0
+      213: -991392318057696248
+    second: FourFusion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,30 +122,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: win panel - four fusion_0
+      name: FourFusion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 852
-        height: 1846
+        x: 89
+        y: 60
+        width: 1084
+        height: 1099
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 312ed7540f1bec2d0800000000000000
-      internalID: -3256469835026144749
+      spriteID: 804be1970fddd32f0800000000000000
+      internalID: -991392318057696248
       vertices: []
       indices: 
       edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      win panel - four fusion_0: -3256469835026144749
+      FourFusion_0: -991392318057696248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
