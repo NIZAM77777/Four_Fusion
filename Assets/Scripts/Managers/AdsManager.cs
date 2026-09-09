@@ -34,6 +34,13 @@ public class AdManager : MonoBehaviour
 
 
     //==================================================
+    // REWARDED ACTION
+    //==================================================
+
+    private bool rewardedUndoFromResultPanel = false;
+
+
+    //==================================================
     // UNITY
     //==================================================
 
@@ -237,7 +244,35 @@ public class AdManager : MonoBehaviour
     }
 
 
+    //==================================================
+    // NORMAL GAMEPLAY REWARDED UNDO
+    //==================================================
+
     public void ShowRewardedUndo()
+    {
+        rewardedUndoFromResultPanel = false;
+
+        ShowRewardedAd();
+    }
+
+
+    //==================================================
+    // RESULT PANEL REWARDED UNDO
+    //==================================================
+
+    public void ShowRewardedResultPanelUndo()
+    {
+        rewardedUndoFromResultPanel = true;
+
+        ShowRewardedAd();
+    }
+
+
+    //==================================================
+    // SHOW REWARDED
+    //==================================================
+
+    private void ShowRewardedAd()
     {
         if (rewardedAd != null &&
             rewardedAd.CanShowAd())
@@ -245,12 +280,34 @@ public class AdManager : MonoBehaviour
             rewardedAd.Show((Reward reward) =>
             {
                 Debug.Log(
-                    "Reward earned. Granting undo.");
+                    "Reward earned.");
 
-                if (BoardManager.Instance.CanUndo())
+                if (BoardManager.Instance == null)
+                    return;
+
+
+                // Result-panel undo
+                if (rewardedUndoFromResultPanel)
                 {
-                    BoardManager.Instance.UndoLastTwoMoves();
+                    if (BoardManager.Instance
+                        .CanUndoFromResultPanel())
+                    {
+                        BoardManager.Instance
+                            .UndoLastTwoMoves();
+                    }
                 }
+                // Normal gameplay undo
+                else
+                {
+                    if (BoardManager.Instance.CanUndo())
+                    {
+                        BoardManager.Instance
+                            .UndoLastTwoMoves();
+                    }
+                }
+
+
+                rewardedUndoFromResultPanel = false;
             });
         }
         else
@@ -258,7 +315,10 @@ public class AdManager : MonoBehaviour
             Debug.Log(
                 "Rewarded ad is not available.");
 
-            UIManager.Instance.ShowAdUnavailableMessage();
+            UIManager.Instance
+                .ShowAdUnavailableMessage();
+
+            rewardedUndoFromResultPanel = false;
         }
     }
 }

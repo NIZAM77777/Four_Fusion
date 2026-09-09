@@ -300,15 +300,12 @@ public class GameManager : MonoBehaviour
 
     public void ResultPanelUndo()
     {
-        // Result-panel undo is ALWAYS rewarded.
-
         if (!BoardManager.Instance
             .CanUndoFromResultPanel())
         {
             return;
         }
 
-
-        AdManager.Instance.ShowRewardedUndo();
+        AdManager.Instance.ShowRewardedResultPanelUndo();
     }
 }

@@ -1213,6 +1213,7 @@ MonoBehaviour:
   piecePlace: {fileID: 8300000, guid: 97cb4fe0f510a0a46910beb12c5ffe75, type: 3}
   win: {fileID: 8300000, guid: 5113be3e8e83d6349b91f4e8745f133f, type: 3}
   lose: {fileID: 8300000, guid: f764a7670e1ec354897d7ff12067007b, type: 3}
+  masterVolume: 1
 --- !u!4 &482509508
 Transform:
   m_ObjectHideFlags: 0
@@ -1524,15 +1525,15 @@ MonoBehaviour:
   m_HandleRect: {fileID: 775974003}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 2.3
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 482509507}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: SetMusicVolume
+        m_MethodName: SetMasterVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
