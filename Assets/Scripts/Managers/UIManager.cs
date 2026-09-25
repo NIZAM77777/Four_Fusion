@@ -1,200 +1,25 @@
-using TMPro;
 using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
+// Scene-compatible facade: presentation lives in FusionUI, actions in GameManager.
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-
-    [Header("Gameplay UI")]
-    [SerializeField] private TMP_Text turnText;
-    [SerializeField] private TMP_Text winnerText;
-    [SerializeField] private TMP_Text modeText;
-
-    [Header("Panels")]
-    [SerializeField] private GameObject winPanel;
-    [SerializeField] private GameObject vsBotWinPanel;
-    [SerializeField] private GameObject losePanel;
-    [SerializeField] private GameObject drawPanel;
-    [SerializeField] private GameObject topPanel;
-    [SerializeField] private GameObject bottomPanel;
-    [SerializeField] private Button undoButton;
-
-    [Header("Ad Message")]
-    [SerializeField] private GameObject adUnavailablePanel;
-
-    public void ShowUndoButton()
-    {
-        undoButton.interactable = true;
-    }
-
-    public void HideUndoButton()
-    {
-        undoButton.interactable = false;
-    }
-
-
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
     }
-
-    private void Start()
-    {
-        winPanel.SetActive(false);
-        losePanel.SetActive(false);
-        drawPanel.SetActive(false);
-        vsBotWinPanel.SetActive(false);
-        UpdateModeText();
-        UpdateTurn(PieceType.Player1);
-    }
-
-    public void UpdateModeText()
-    {
-        if (GameSettings.GameMode == GameMode.HumanVsHuman)
-        {
-            modeText.text = "";
-        }
-        else
-        {
-            switch (GameSettings.Difficulty)
-            {
-                case Difficulty.Easy:
-                    modeText.text = "Easy";
-                    break;
-
-                case Difficulty.Medium:
-                    modeText.text = "Medium";
-                    break;
-
-                case Difficulty.Hard:
-                    modeText.text = "Hard";
-                    break;
-            }
-        }
-    }
-
-    public void UpdateTurn(PieceType player)
-    {
-        if (GameSettings.GameMode == GameMode.HumanVsHuman)
-        {
-            if (player == PieceType.Player1)
-                turnText.text = "Player 1 Turn";
-            else
-                turnText.text = "Player 2 Turn";
-        }
-        else
-        {
-            if (player == PieceType.Player1)
-            {
-                turnText.text = "Your Turn";
-            }
-            else
-            {
-                switch (GameSettings.Difficulty)
-                {
-                    case Difficulty.Easy:
-                        turnText.text = "AI Thinking...";
-                        break;
-
-                    case Difficulty.Medium:
-                        turnText.text = "AI Thinking...";
-                        break;
-
-                    case Difficulty.Hard:
-                        turnText.text = "AI Thinking...";
-                        break;
-                }
-            }
-        }
-    }
-
-    public void ShowWinner(PieceType winner)
-    {
-        HideAllPanels();
-
-        winPanel.SetActive(true);
-
-        if (winner == PieceType.Player1)
-            winnerText.text = "1";
-        else
-            winnerText.text = "2";
-    }
-    public void ShowVsBotWinner(PieceType winner)
-    {
-        HideAllPanels();
-
-        vsBotWinPanel.SetActive(true);
-
-        //if (winner == PieceType.Player1)
-        //    winnerText.text = "You";
-        //else
-        //    winnerText.text = "Bot";
-    }
-
-    public void ShowLoser()
-    {
-        HideAllPanels();
-
-        losePanel.SetActive(true);
-        AudioManager.Instance.PlayLose();
-    }
-
-    public void ShowDraw()
-    {
-        HideAllPanels();
-
-        drawPanel.SetActive(true);
-    }
-
-    private void HideAllPanels()
-    {
-        winPanel.SetActive(false);
-        losePanel.SetActive(false);
-        drawPanel.SetActive(false);
-        topPanel.SetActive(false);
-        bottomPanel.SetActive(false);
-    }
-
-    public void ShowGameplayUI()
-    {
-        winPanel.SetActive(false);
-        vsBotWinPanel.SetActive(false);
-        losePanel.SetActive(false);
-        drawPanel.SetActive(false);
-
-        topPanel.SetActive(true);
-        bottomPanel.SetActive(true);
-
-        HideAdUnavailableMessage();
-    }
-
-    public void ShowAdUnavailableMessage()
-    {
-        if (adUnavailablePanel != null)
-        {
-            adUnavailablePanel.SetActive(true);
-        }
-
-        StartCoroutine(HideAdUnavailableAfterDelay());
-    }
-
-    private IEnumerator HideAdUnavailableAfterDelay()
-    {
-        yield return new WaitForSeconds(2f);
-
-        HideAdUnavailableMessage();
-    }
-
-    public void HideAdUnavailableMessage()
-    {
-        if (adUnavailablePanel != null)
-        {
-            adUnavailablePanel.SetActive(false);
-        }
-    }
+    private void OnDestroy() { if (Instance == this) Instance = null; }
+    private void Start() => UpdateTurn(PieceType.Player1);
+    public void ShowUndoButton() => FusionUI.Instance?.RefreshGameplay();
+    public void HideUndoButton() => FusionUI.Instance?.RefreshGameplay();
+    public void UpdateModeText() => FusionUI.Instance?.RefreshGameplay();
+    public void UpdateTurn(PieceType player) => FusionUI.Instance?.RefreshGameplay();
+    public void ShowWinner(PieceType winner) => FusionUI.Instance?.ShowResult(winner);
+    public void ShowVsBotWinner(PieceType winner) => FusionUI.Instance?.ShowResult(winner);
+    public void ShowLoser() => FusionUI.Instance?.ShowResult(PieceType.Player2);
+    public void ShowDraw() => FusionUI.Instance?.ShowResult(PieceType.Empty);
+    public void ShowGameplayUI() => FusionUI.Instance?.ShowGameplay();
+    public void ShowAdUnavailableMessage() => FusionUI.Instance?.Notify("ADS_UNAVAILABLE");
+    public void HideAdUnavailableMessage() { }
 }

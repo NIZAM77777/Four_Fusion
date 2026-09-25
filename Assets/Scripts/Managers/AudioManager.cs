@@ -3,143 +3,52 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-
-
-    [Header("Audio Sources")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
-
-
-    [Header("Music")]
     [SerializeField] private AudioClip backgroundMusic;
-
-
-    [Header("Sound Effects")]
     [SerializeField] private AudioClip buttonClick;
     [SerializeField] private AudioClip piecePlace;
     [SerializeField] private AudioClip win;
     [SerializeField] private AudioClip lose;
-
-
-    [Header("Volume")]
-    [Range(0f, 1f)]
-    [SerializeField] private float masterVolume = 1f;
-
-
-    private const string MASTER_VOLUME_KEY =
-        "MasterVolume";
-
-
+    [Range(0, 1)] [SerializeField] private float masterVolume = 1;
+    private bool dirty;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-
-            DontDestroyOnLoad(gameObject);
-
-            LoadVolume();
-
-            musicSource.clip = backgroundMusic;
-            musicSource.loop = true;
-            musicSource.Play();
-
-            ApplyVolume();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        masterVolume = Mathf.Clamp01(PlayerPrefs.GetFloat("MasterVolume", 1));
+        if (musicSource == null) musicSource = gameObject.AddComponent<AudioSource>();
+        if (sfxSource == null) sfxSource = gameObject.AddComponent<AudioSource>();
+        musicSource.playOnAwake = sfxSource.playOnAwake = false;
+        musicSource.clip = backgroundMusic;
+        musicSource.loop = true;
+        RefreshSettings();
+        PlayMusic();
     }
-
-
-    //==================================================
-    // SOUND EFFECTS
-    //==================================================
-
-    public void PlayButtonClick()
+    public void PlayButtonClick() => Play(buttonClick);
+    public void PlayPiecePlace() => Play(piecePlace);
+    public void PlayWin() => Play(win);
+    public void PlayLose() => Play(lose);
+    public void PlayDraw() => Play(buttonClick);
+    private void Play(AudioClip clip) { if (clip != null && sfxSource != null && PlayerSettingsStore.SoundEnabled) sfxSource.PlayOneShot(clip); }
+    public void PlayMusic() { if (musicSource != null && musicSource.clip != null && !musicSource.isPlaying) musicSource.Play(); }
+    public void StopMusic() { if (musicSource != null) musicSource.Pause(); }
+    public void RefreshSettings()
     {
-        sfxSource.PlayOneShot(buttonClick);
+        if (musicSource != null) { musicSource.volume = masterVolume; musicSource.mute = !PlayerSettingsStore.MusicEnabled; }
+        if (sfxSource != null) { sfxSource.volume = masterVolume; sfxSource.mute = !PlayerSettingsStore.SoundEnabled; }
     }
-
-
-    public void PlayPiecePlace()
-    {
-        sfxSource.PlayOneShot(piecePlace);
-    }
-
-
-    public void PlayWin()
-    {
-        sfxSource.PlayOneShot(win);
-    }
-
-
-    public void PlayLose()
-    {
-        sfxSource.PlayOneShot(lose);
-    }
-
-
-    //==================================================
-    // MUSIC
-    //==================================================
-
-    public void PlayMusic()
-    {
-        if (!musicSource.isPlaying)
-        {
-            musicSource.Play();
-        }
-    }
-
-
-    public void StopMusic()
-    {
-        musicSource.Stop();
-    }
-
-
-    //==================================================
-    // MASTER VOLUME
-    //==================================================
-
     public void SetMasterVolume(float volume)
     {
-        masterVolume =
-            Mathf.Clamp01(volume);
-
-        ApplyVolume();
-
-        PlayerPrefs.SetFloat(
-            MASTER_VOLUME_KEY,
-            masterVolume);
-
-        PlayerPrefs.Save();
+        masterVolume = Mathf.Clamp01(volume);
+        RefreshSettings();
+        PlayerPrefs.SetFloat("MasterVolume", masterVolume);
+        dirty = true;
     }
-
-
-    public float GetMasterVolume()
-    {
-        return masterVolume;
-    }
-
-
-    private void ApplyVolume()
-    {
-        musicSource.volume =
-            masterVolume;
-
-        sfxSource.volume =
-            masterVolume;
-    }
-
-
-    private void LoadVolume()
-    {
-        masterVolume =
-            PlayerPrefs.GetFloat(
-                MASTER_VOLUME_KEY,
-                1f);
-    }
+    public float GetMasterVolume() => masterVolume;
+    public void SaveSettings() { if (dirty) { PlayerPrefs.Save(); dirty = false; } }
+    private void OnApplicationPause(bool paused) { if (paused) SaveSettings(); }
+    private void OnApplicationQuit() => SaveSettings();
+    private void OnDestroy() { if (Instance == this) { SaveSettings(); Instance = null; } }
 }

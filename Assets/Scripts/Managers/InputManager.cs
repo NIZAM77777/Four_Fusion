@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance.IsGameOver)
+        if (FusionUI.Instance != null || GameManager.Instance == null || GameManager.Instance.InputBlocked || boardManager == null)
             return;
 
         // Block only the HUMAN during the AI turn.
@@ -48,6 +48,5 @@ public class InputManager : MonoBehaviour
 
         boardManager.DropPiece(column.ColumnIndex);
 
-        AudioManager.Instance.PlayPiecePlace();
     }
 }

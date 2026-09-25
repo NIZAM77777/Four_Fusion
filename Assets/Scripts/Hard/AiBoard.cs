@@ -207,19 +207,9 @@ public class AIBoard
         int player = 0;
         int empty = 0;
 
-        PieceType[] window = { a, b, c, d };
-
-        foreach (PieceType piece in window)
-        {
-            if (piece == PieceType.Player2)
-                ai++;
-
-            else if (piece == PieceType.Player1)
-                player++;
-
-            else
-                empty++;
-        }
+        ai = (a == PieceType.Player2 ? 1 : 0) + (b == PieceType.Player2 ? 1 : 0) + (c == PieceType.Player2 ? 1 : 0) + (d == PieceType.Player2 ? 1 : 0);
+        player = (a == PieceType.Player1 ? 1 : 0) + (b == PieceType.Player1 ? 1 : 0) + (c == PieceType.Player1 ? 1 : 0) + (d == PieceType.Player1 ? 1 : 0);
+        empty = 4 - ai - player;
 
         // Winning positions
         if (ai == 4)
@@ -255,8 +245,9 @@ public class AIBoard
     {
         int score = 0;
 
-        foreach (int column in GetValidMoves())
+        for (int column = 0; column < columns; column++)
         {
+            if (!IsValidMove(column)) continue;
             // AI fork
             MakeMove(column, PieceType.Player2);
 
@@ -289,8 +280,9 @@ public class AIBoard
     {
         int count = 0;
 
-        foreach (int column in GetValidMoves())
+        for (int column = 0; column < columns; column++)
         {
+            if (!IsValidMove(column)) continue;
             MakeMove(column, player);
 
             if (CheckWinner(player))
@@ -304,7 +296,7 @@ public class AIBoard
         return count;
     }
 
-    private bool CheckWinner(PieceType player)
+    public bool CheckWinner(PieceType player)
     {
         // Horizontal
         for (int row = 0; row < rows; row++)
@@ -362,6 +354,13 @@ public class AIBoard
     }
 
 
+
+    public bool HasValidMoves()
+    {
+        for (int column = 0; column < columns; column++)
+            if (IsValidMove(column)) return true;
+        return false;
+    }
 
     public bool IsValidMove(int column)
     {

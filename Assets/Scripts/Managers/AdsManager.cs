@@ -1,324 +1,198 @@
+using System;
+using System.Threading;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using GoogleMobileAds.Ump.Api;
 
 public class AdManager : MonoBehaviour
 {
     public static AdManager Instance;
-
-#if UNITY_ANDROID
-
-    //==================================================
-    // LIVE AD UNIT IDs
-    //==================================================
-
-    private string bannerAdUnitId =
-        "ca-app-pub-1729898546273793/6166062447";
-
-    private string interstitialAdUnitId =
-        "ca-app-pub-1729898546273793/4852980773";
-
-    private string rewardedAdUnitId =
-        "ca-app-pub-1729898546273793/3668605627";
-
+#if UNITY_ANDROID && !UNITY_EDITOR && !DEVELOPMENT_BUILD
+    private const string BannerId = "ca-app-pub-1729898546273793/6166062447";
+    private const string InterstitialId = "ca-app-pub-1729898546273793/4852980773";
+    private const string RewardedId = "ca-app-pub-1729898546273793/3668605627";
 #else
-
-    private string bannerAdUnitId = "unused";
-    private string interstitialAdUnitId = "unused";
-    private string rewardedAdUnitId = "unused";
-
+    private const string BannerId = "ca-app-pub-3940256099942544/6300978111";
+    private const string InterstitialId = "ca-app-pub-3940256099942544/1033173712";
+    private const string RewardedId = "ca-app-pub-3940256099942544/5224354917";
 #endif
-
-    private BannerView bannerView;
-    private InterstitialAd interstitialAd;
-    private RewardedAd rewardedAd;
-
-
-    //==================================================
-    // REWARDED ACTION
-    //==================================================
-
-    private bool rewardedUndoFromResultPanel = false;
-
-
-    //==================================================
-    // UNITY
-    //==================================================
+    private BannerView banner;
+    private InterstitialAd interstitial;
+    private RewardedAd rewarded;
+    private SynchronizationContext unityContext;
+    private bool initialized, initializing, bannerWanted, loadingRewarded, loadingInterstitial;
+    private bool consentPending;
+    private float savedTimeScale = 1;
+    public bool IsShowingAd { get; private set; }
+    private static bool Supported => Application.isEditor || Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer;
+    public bool PrivacyOptionsRequired => Supported && ConsentInformation.PrivacyOptionsRequirementStatus == PrivacyOptionsRequirementStatus.Required;
+    public event Action StateChanged;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        unityContext = SynchronizationContext.Current;
     }
-
-
+    private void Dispatch(Action action)
+    {
+        unityContext.Post(_ => { if (this != null && Instance == this) action(); }, null);
+    }
     private void Start()
     {
-        MobileAds.Initialize(initStatus =>
+        if (!Supported || consentPending) return;
+        consentPending = true;
+        ConsentInformation.Update(new ConsentRequestParameters(), error => Dispatch(() =>
         {
-            Debug.Log("AdMob Initialized");
-
-            LoadBanner();
-            LoadRewardedAd();
-            LoadInterstitialAd();
-        });
+            if (error != null) { consentPending = false; Debug.LogWarning("Consent update: " + error.Message); InitializeAds(); return; }
+            bool showingConsent = ConsentInformation.ConsentStatus == ConsentStatus.Required && !IsShowingAd;
+            if (showingConsent) BeginFullScreen();
+            ConsentForm.LoadAndShowConsentFormIfRequired(formError => Dispatch(() =>
+            {
+                consentPending = false;
+                if (showingConsent) EndFullScreen();
+                if (formError != null) Debug.LogWarning("Consent form: " + formError.Message);
+                InitializeAds(); StateChanged?.Invoke();
+            }));
+        }));
+        InitializeAds();
     }
-
-
-    //==================================================
-    // BANNER ADS
-    //==================================================
-
+    private void InitializeAds()
+    {
+        if (initialized || initializing || !ConsentInformation.CanRequestAds()) return;
+        initializing = true;
+        MobileAds.Initialize(_ => Dispatch(() =>
+        {
+            initialized = true; initializing = false;
+            LoadBanner(); LoadRewarded(); LoadInterstitial();
+        }));
+    }
+    public void ShowPrivacyOptions()
+    {
+        if (!PrivacyOptionsRequired || IsShowingAd) return;
+        BeginFullScreen();
+        ConsentForm.ShowPrivacyOptionsForm(error => Dispatch(() =>
+        {
+            EndFullScreen();
+            if (error != null) FusionUI.Instance?.Notify("ERROR_PRIVACY");
+            // Discard inventory collected under the previous consent state.
+            banner?.Destroy(); banner = null;
+            interstitial?.Destroy(); interstitial = null;
+            rewarded?.Destroy(); rewarded = null;
+            if (ConsentInformation.CanRequestAds()) { InitializeAds(); if (initialized) { LoadBanner(); LoadRewarded(); LoadInterstitial(); } }
+            StateChanged?.Invoke();
+        }));
+    }
     private void LoadBanner()
     {
-        if (bannerView != null)
-        {
-            bannerView.Destroy();
-        }
-
-        bannerView = new BannerView(
-            bannerAdUnitId,
-            AdSize.Banner,
-            AdPosition.Bottom);
-
-        AdRequest request = new AdRequest();
-
-        bannerView.LoadAd(request);
-
-        Debug.Log("Banner Loaded");
+        if (!initialized || !ConsentInformation.CanRequestAds() || banner != null) return;
+        banner = new BannerView(BannerId, AdSize.Banner, AdPosition.Bottom);
+        banner.OnBannerAdLoaded += () => Dispatch(() => { if (bannerWanted) banner?.Show(); else banner?.Hide(); });
+        banner.OnBannerAdLoadFailed += error => Dispatch(() => { banner?.Destroy(); banner = null; Retry(nameof(LoadBanner)); });
+        banner.Hide();
+        banner.LoadAd(new AdRequest());
     }
-
-
-    public void ShowBanner()
+    public void ShowBanner() { bannerWanted = true; if (initialized && banner == null) LoadBanner(); banner?.Show(); }
+    public void HideBanner() { bannerWanted = false; banner?.Hide(); }
+    private void Retry(string method) { if (!IsInvoking(method)) Invoke(method, 30); }
+    private void LoadInterstitial()
     {
-        if (bannerView != null)
+        if (!initialized || loadingInterstitial || interstitial != null || !ConsentInformation.CanRequestAds()) return;
+        loadingInterstitial = true;
+        InterstitialAd.Load(InterstitialId, new AdRequest(), (ad, error) => Dispatch(() =>
         {
-            bannerView.Show();
-        }
+            loadingInterstitial = false;
+            if (error != null || ad == null) { ad?.Destroy(); Retry(nameof(LoadInterstitial)); return; }
+            interstitial = ad;
+        }));
     }
-
-
-    public void HideBanner()
-    {
-        if (bannerView != null)
-        {
-            bannerView.Hide();
-        }
-    }
-
-
-    //==================================================
-    // INTERSTITIAL ADS
-    //==================================================
-
-    private void LoadInterstitialAd()
-    {
-        if (interstitialAd != null)
-        {
-            interstitialAd.Destroy();
-            interstitialAd = null;
-        }
-
-        AdRequest request = new AdRequest();
-
-        InterstitialAd.Load(
-            interstitialAdUnitId,
-            request,
-            (InterstitialAd ad, LoadAdError error) =>
-            {
-                if (error != null || ad == null)
-                {
-                    Debug.Log(
-                        "Interstitial failed to load: " +
-                        error);
-
-                    return;
-                }
-
-                interstitialAd = ad;
-
-                RegisterInterstitialEvents();
-
-                Debug.Log("Interstitial Loaded");
-            });
-    }
-
-
-    private void RegisterInterstitialEvents()
-    {
-        interstitialAd.OnAdFullScreenContentClosed += () =>
-        {
-            Debug.Log("Interstitial Ad Closed");
-
-            LoadInterstitialAd();
-        };
-
-        interstitialAd.OnAdFullScreenContentFailed +=
-        (AdError error) =>
-        {
-            Debug.Log(
-                "Interstitial failed to show: " +
-                error);
-
-            LoadInterstitialAd();
-        };
-    }
-
-
     public void ShowInterstitial()
     {
-        if (interstitialAd != null &&
-            interstitialAd.CanShowAd())
-        {
-            interstitialAd.Show();
-        }
-        else
-        {
-            Debug.Log(
-                "Interstitial ad is not available.");
-        }
+        if (IsShowingAd || SceneTransition.IsLoading || GameManager.Instance == null || !GameManager.Instance.IsGameOver) return;
+        if (interstitial == null || !interstitial.CanShowAd()) { interstitial?.Destroy(); interstitial = null; LoadInterstitial(); return; }
+        var ad = interstitial; interstitial = null;
+        bool finished = false;
+        Action finish = () => { if (finished) return; finished = true; EndFullScreen(); ad.Destroy(); LoadInterstitial(); };
+        ad.OnAdFullScreenContentClosed += () => Dispatch(finish);
+        ad.OnAdFullScreenContentFailed += _ => Dispatch(finish);
+        BeginFullScreen();
+        ad.Show();
     }
-
-
-    //==================================================
-    // REWARDED ADS
-    //==================================================
-
-    private void LoadRewardedAd()
+    private void LoadRewarded()
     {
-        if (rewardedAd != null)
+        if (!initialized || loadingRewarded || rewarded != null || !ConsentInformation.CanRequestAds()) return;
+        loadingRewarded = true;
+        RewardedAd.Load(RewardedId, new AdRequest(), (ad, error) => Dispatch(() =>
         {
-            rewardedAd.Destroy();
-            rewardedAd = null;
-        }
-
-        AdRequest request = new AdRequest();
-
-        RewardedAd.Load(
-            rewardedAdUnitId,
-            request,
-            (RewardedAd ad, LoadAdError error) =>
-            {
-                if (error != null || ad == null)
-                {
-                    Debug.Log(
-                        "Rewarded ad failed to load: " +
-                        error);
-
-                    return;
-                }
-
-                rewardedAd = ad;
-
-                Debug.Log("Rewarded ad loaded.");
-
-                RegisterRewardedEvents();
-            });
+            loadingRewarded = false;
+            if (error != null || ad == null) { ad?.Destroy(); Retry(nameof(LoadRewarded)); return; }
+            rewarded = ad;
+        }));
     }
-
-
-    private void RegisterRewardedEvents()
+    public void ShowRewardedUndo() => ShowRewarded(false);
+    public void ShowRewardedResultPanelUndo() => ShowRewarded(true);
+    private void ShowRewarded(bool fromResult)
     {
-        rewardedAd.OnAdFullScreenContentClosed += () =>
+        if (IsShowingAd || SceneTransition.IsLoading) return;
+        var board = BoardManager.Instance;
+        if (board == null || (fromResult ? !board.CanUndoFromResultPanel() : !board.CanUndo())) return;
+        if (rewarded == null || !rewarded.CanShowAd())
         {
-            Debug.Log("Rewarded Ad Closed");
-
-            LoadRewardedAd();
+            rewarded?.Destroy(); rewarded = null;
+            UIManager.Instance?.ShowAdUnavailableMessage();
+            LoadRewarded();
+            return;
+        }
+        var ad = rewarded; rewarded = null;
+        int revision = board.Revision;
+        var transaction = new RewardTransaction();
+        bool finished = false;
+        Action apply = () =>
+        {
+            if (board != null && BoardManager.Instance == board && board.Revision == revision && transaction.TryConsume())
+                board.UndoLastTwoMoves();
         };
-
-        rewardedAd.OnAdFullScreenContentFailed +=
-        (AdError error) =>
+        Action<bool> finish = failed =>
         {
-            Debug.Log(
-                "Rewarded ad failed: " +
-                error);
-
-            LoadRewardedAd();
+            if (finished) return; finished = true;
+            transaction.Close(failed);
+            EndFullScreen();
+            apply();
+            ad.Destroy();
+            LoadRewarded();
+            if (failed) UIManager.Instance?.ShowAdUnavailableMessage();
         };
+        ad.OnAdFullScreenContentClosed += () => Dispatch(() => finish(false));
+        ad.OnAdFullScreenContentFailed += _ => Dispatch(() => finish(true));
+        BeginFullScreen();
+        ad.Show(_ => Dispatch(() => { transaction.Earn(); apply(); }));
     }
-
-
-    //==================================================
-    // NORMAL GAMEPLAY REWARDED UNDO
-    //==================================================
-
-    public void ShowRewardedUndo()
+    private void BeginFullScreen()
     {
-        rewardedUndoFromResultPanel = false;
-
-        ShowRewardedAd();
+        savedTimeScale = Time.timeScale;
+        IsShowingAd = true;
+        Time.timeScale = 0;
+        AudioListener.pause = true;
+        StateChanged?.Invoke();
     }
-
-
-    //==================================================
-    // RESULT PANEL REWARDED UNDO
-    //==================================================
-
-    public void ShowRewardedResultPanelUndo()
+    private void EndFullScreen()
     {
-        rewardedUndoFromResultPanel = true;
-
-        ShowRewardedAd();
+        IsShowingAd = false;
+        Time.timeScale = GameManager.Instance != null && GameManager.Instance.IsPaused ? 0 : savedTimeScale;
+        AudioListener.pause = false;
+        StateChanged?.Invoke();
+        FusionUI.Instance?.RefreshGameplay();
     }
-
-
-    //==================================================
-    // SHOW REWARDED
-    //==================================================
-
-    private void ShowRewardedAd()
+    private void OnApplicationPause(bool paused)
     {
-        if (rewardedAd != null &&
-            rewardedAd.CanShowAd())
-        {
-            rewardedAd.Show((Reward reward) =>
-            {
-                Debug.Log(
-                    "Reward earned.");
-
-                if (BoardManager.Instance == null)
-                    return;
-
-
-                // Result-panel undo
-                if (rewardedUndoFromResultPanel)
-                {
-                    if (BoardManager.Instance
-                        .CanUndoFromResultPanel())
-                    {
-                        BoardManager.Instance
-                            .UndoLastTwoMoves();
-                    }
-                }
-                // Normal gameplay undo
-                else
-                {
-                    if (BoardManager.Instance.CanUndo())
-                    {
-                        BoardManager.Instance
-                            .UndoLastTwoMoves();
-                    }
-                }
-
-
-                rewardedUndoFromResultPanel = false;
-            });
-        }
-        else
-        {
-            Debug.Log(
-                "Rewarded ad is not available.");
-
-            UIManager.Instance
-                .ShowAdUnavailableMessage();
-
-            rewardedUndoFromResultPanel = false;
-        }
+        if (!paused && initialized && !IsShowingAd) { LoadRewarded(); LoadInterstitial(); if (bannerWanted) LoadBanner(); }
+        else if (!paused && !initialized && !IsShowingAd) Start();
+    }
+    private void OnDestroy()
+    {
+        if (Instance != this) return;
+        CancelInvoke(); banner?.Destroy(); interstitial?.Destroy(); rewarded?.Destroy();
+        Instance = null; AudioListener.pause = false;
     }
 }

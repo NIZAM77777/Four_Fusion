@@ -1,0 +1,18 @@
+PASS: Win direction (1, 0)
+PASS: No false opponent win (1, 0)
+PASS: Win direction (0, 1)
+PASS: No false opponent win (0, 1)
+PASS: Win direction (1, 1)
+PASS: No false opponent win (1, 1)
+PASS: Win direction (1, -1)
+PASS: No false opponent win (1, -1)
+PASS: Full-board draw
+PASS: AI full-board termination
+PASS: AI blocks immediate loss
+PASS: AI takes immediate win
+PASS: AI cancellation
+PASS: No reward while ad open
+PASS: Exactly one reward, order=True
+PASS: No reward without earning
+PASS: Exactly one reward, order=False
+PASS: Failed ad cannot reward

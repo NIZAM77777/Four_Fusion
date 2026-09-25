@@ -1,0 +1,3382 @@
+{
+  "files": [
+    {
+      "path": "Assets/_Recovery/0 (1).unity",
+      "bytes": 93791
+    },
+    {
+      "path": "Assets/_Recovery/0.unity",
+      "bytes": 93820
+    },
+    {
+      "path": "Assets/Animations/CompanyLogo.anim",
+      "bytes": 3690
+    },
+    {
+      "path": "Assets/Animations/CompanyLogo.controller",
+      "bytes": 2030
+    },
+    {
+      "path": "Assets/Animations/gamelogo.anim",
+      "bytes": 3687
+    },
+    {
+      "path": "Assets/Animations/GameLogo.controller",
+      "bytes": 2021
+    },
+    {
+      "path": "Assets/Audio/background music/game background music - four fusion.mp3",
+      "bytes": 1355520
+    },
+    {
+      "path": "Assets/Audio/sfx audios/click sound - four fusion.mp3",
+      "bytes": 45139
+    },
+    {
+      "path": "Assets/Audio/sfx audios/coin placement sound - four fusion.mp3",
+      "bytes": 13374
+    },
+    {
+      "path": "Assets/Audio/sfx audios/lose sound - four fusion.mp3",
+      "bytes": 91115
+    },
+    {
+      "path": "Assets/Audio/sfx audios/win sound - four fusion.mp3",
+      "bytes": 34560
+    },
+    {
+      "path": "Assets/DefaultVolumeProfile.asset",
+      "bytes": 18777
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.IOSResolver.dll",
+      "bytes": 85504
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.IOSResolver.pdb",
+      "bytes": 25020
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.JarResolver.dll",
+      "bytes": 364544
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.JarResolver.pdb",
+      "bytes": 74824
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.PackageManagerResolver.dll",
+      "bytes": 74240
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.PackageManagerResolver.pdb",
+      "bytes": 24556
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.VersionHandlerImpl.dll",
+      "bytes": 119296
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/1.2.188/Google.VersionHandlerImpl.pdb",
+      "bytes": 56120
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/CHANGELOG.md",
+      "bytes": 57488
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.188_manifest.txt",
+      "bytes": 887
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll",
+      "bytes": 15360
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/Google.VersionHandler.pdb",
+      "bytes": 6324
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/LICENSE",
+      "bytes": 13395
+    },
+    {
+      "path": "Assets/ExternalDependencyManager/Editor/README.md",
+      "bytes": 41272
+    },
+    {
+      "path": "Assets/GoogleMobileAds/CHANGELOG.md",
+      "bytes": 53316
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/AndroidBuildPreProcessor.cs",
+      "bytes": 11092
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/BuildPreProcessor.cs",
+      "bytes": 2164
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/EditorLocalization.cs",
+      "bytes": 6334
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/EditorLocalizationData.cs",
+      "bytes": 327
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/EditorPathUtils.cs",
+      "bytes": 1636
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/gma_settings_editor_localization_data.json",
+      "bytes": 5449
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleMobileAds.Editor.asmdef",
+      "bytes": 494
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml",
+      "bytes": 1062
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs",
+      "bytes": 3944
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettingsEditor.cs",
+      "bytes": 9313
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml",
+      "bytes": 3775
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml",
+      "bytes": 473
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/GradleProcessor.cs",
+      "bytes": 6726
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/ManifestProcessor.cs",
+      "bytes": 8108
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/PListProcessor.cs",
+      "bytes": 6808
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/1024x768.png",
+      "bytes": 206289
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/300x250.png",
+      "bytes": 46644
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x100.png",
+      "bytes": 27345
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x480.png",
+      "bytes": 64507
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x50.png",
+      "bytes": 14916
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/468x60.png",
+      "bytes": 20218
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/480x320.png",
+      "bytes": 67392
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/728x90.png",
+      "bytes": 32942
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/768x1024.png",
+      "bytes": 181896
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/AdInspectorHome.png",
+      "bytes": 33310
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdInspector/768x1024.prefab",
+      "bytes": 14759
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/1024x768.prefab",
+      "bytes": 14254
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/768x1024.prefab",
+      "bytes": 14269
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab",
+      "bytes": 8684
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/BANNER.prefab",
+      "bytes": 6610
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/CENTER.prefab",
+      "bytes": 8680
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/FULL_BANNER.prefab",
+      "bytes": 6464
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LARGE_BANNER.prefab",
+      "bytes": 6466
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LEADERBOARD.prefab",
+      "bytes": 6466
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/MEDIUM_RECTANGLE.prefab",
+      "bytes": 6468
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/SMART_BANNER.prefab",
+      "bytes": 8685
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/1024x768.prefab",
+      "bytes": 14254
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/768x1024.prefab",
+      "bytes": 14791
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/1024x768.prefab",
+      "bytes": 16523
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/768x1024.prefab",
+      "bytes": 17124
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.png",
+      "bytes": 239390
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.prefab",
+      "bytes": 15376
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Utils.cs",
+      "bytes": 4495
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Android.dll",
+      "bytes": 120320
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Common.dll",
+      "bytes": 37376
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Core.dll",
+      "bytes": 14848
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.dll",
+      "bytes": 45568
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll",
+      "bytes": 98816
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Ump.Android.dll",
+      "bytes": 14848
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll",
+      "bytes": 9728
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Ump.iOS.dll",
+      "bytes": 11776
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll",
+      "bytes": 9728
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll",
+      "bytes": 41472
+    },
+    {
+      "path": "Assets/GoogleMobileAds/GoogleMobileAds_version-11.3.0_manifest.txt",
+      "bytes": 5731
+    },
+    {
+      "path": "Assets/GoogleMobileAds/LICENSE",
+      "bytes": 11342
+    },
+    {
+      "path": "Assets/GoogleMobileAds/link.xml",
+      "bytes": 859
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset",
+      "bytes": 817
+    },
+    {
+      "path": "Assets/InputSystem_Actions.inputactions",
+      "bytes": 41005
+    },
+    {
+      "path": "Assets/Plugins/Android/googlemobileads-unity.aar",
+      "bytes": 247778
+    },
+    {
+      "path": "Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml",
+      "bytes": 620
+    },
+    {
+      "path": "Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/next_gen_exclusions.gradle",
+      "bytes": 183
+    },
+    {
+      "path": "Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/next_gen_resolution_strategy.gradle",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/packaging_options.gradle",
+      "bytes": 102
+    },
+    {
+      "path": "Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties",
+      "bytes": 39
+    },
+    {
+      "path": "Assets/Plugins/Android/gradleTemplate.properties",
+      "bytes": 258
+    },
+    {
+      "path": "Assets/Plugins/Android/mainTemplate.gradle",
+      "bytes": 2300
+    },
+    {
+      "path": "Assets/Plugins/Android/settingsTemplate.gradle",
+      "bytes": 1045
+    },
+    {
+      "path": "Assets/Plugins/iOS/GADUAdNetworkExtras.h",
+      "bytes": 270
+    },
+    {
+      "path": "Assets/Plugins/iOS/NativeTemplates/GADTMediumTemplateView.xib",
+      "bytes": 21448
+    },
+    {
+      "path": "Assets/Plugins/iOS/NativeTemplates/GADTSmallTemplateView.xib",
+      "bytes": 12215
+    },
+    {
+      "path": "Assets/Plugins/iOS/unity-plugin-library.xcframework/Info.plist",
+      "bytes": 1068
+    },
+    {
+      "path": "Assets/Plugins/iOS/unity-plugin-library.xcframework/ios-arm64/unity-plugin-library.framework/Info.plist",
+      "bytes": 673
+    },
+    {
+      "path": "Assets/Plugins/iOS/unity-plugin-library.xcframework/ios-arm64/unity-plugin-library.framework/unity-plugin-library",
+      "bytes": 1604248
+    },
+    {
+      "path": "Assets/Plugins/iOS/unity-plugin-library.xcframework/ios-arm64_x86_64-simulator/unity-plugin-library.framework/Info.plist",
+      "bytes": 700
+    },
+    {
+      "path": "Assets/Plugins/iOS/unity-plugin-library.xcframework/ios-arm64_x86_64-simulator/unity-plugin-library.framework/unity-plugin-library",
+      "bytes": 3549632
+    },
+    {
+      "path": "Assets/Prefabs/BoardCell.prefab",
+      "bytes": 3068
+    },
+    {
+      "path": "Assets/Prefabs/Pieces/RedPiece.prefab",
+      "bytes": 3799
+    },
+    {
+      "path": "Assets/Prefabs/Pieces/YellowPiece.prefab",
+      "bytes": 3453
+    },
+    {
+      "path": "Assets/Scenes/GameScene.unity",
+      "bytes": 126494
+    },
+    {
+      "path": "Assets/Scenes/MainMenu.unity",
+      "bytes": 105783
+    },
+    {
+      "path": "Assets/Scenes/Splash.unity",
+      "bytes": 21603
+    },
+    {
+      "path": "Assets/Scripts/Board/BoardCell.cs",
+      "bytes": 111
+    },
+    {
+      "path": "Assets/Scripts/Board/BoardManager.cs",
+      "bytes": 12794
+    },
+    {
+      "path": "Assets/Scripts/Board/ColumnInput.cs",
+      "bytes": 97
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/ColorTheme.cs",
+      "bytes": 53
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/GameMode.cs",
+      "bytes": 126
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/MoveData.cs",
+      "bytes": 381
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/Piece.cs",
+      "bytes": 3687
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/PieceType.cs",
+      "bytes": 66
+    },
+    {
+      "path": "Assets/Scripts/Gameplay/TurnManager.cs",
+      "bytes": 298
+    },
+    {
+      "path": "Assets/Scripts/Hard/AiBoard.cs",
+      "bytes": 9054
+    },
+    {
+      "path": "Assets/Scripts/Managers/AdsManager.cs",
+      "bytes": 7642
+    },
+    {
+      "path": "Assets/Scripts/Managers/AiManager.cs",
+      "bytes": 5306
+    },
+    {
+      "path": "Assets/Scripts/Managers/AudioManager.cs",
+      "bytes": 2848
+    },
+    {
+      "path": "Assets/Scripts/Managers/ColorManager.cs",
+      "bytes": 1225
+    },
+    {
+      "path": "Assets/Scripts/Managers/GameManager.cs",
+      "bytes": 7214
+    },
+    {
+      "path": "Assets/Scripts/Managers/InputManager.cs",
+      "bytes": 1218
+    },
+    {
+      "path": "Assets/Scripts/Managers/MainMenuManager.cs",
+      "bytes": 3594
+    },
+    {
+      "path": "Assets/Scripts/Managers/SplashManager.cs",
+      "bytes": 336
+    },
+    {
+      "path": "Assets/Scripts/Managers/UIButtonSound.cs",
+      "bytes": 249
+    },
+    {
+      "path": "Assets/Scripts/Managers/UIManager.cs",
+      "bytes": 4959
+    },
+    {
+      "path": "Assets/Scripts/Utilities/CameraController..cs",
+      "bytes": 932
+    },
+    {
+      "path": "Assets/Scripts/Utilities/GameSettings.cs",
+      "bytes": 221
+    },
+    {
+      "path": "Assets/Settings/Lit2DSceneTemplate.scenetemplate",
+      "bytes": 3942809
+    },
+    {
+      "path": "Assets/Settings/Renderer2D.asset",
+      "bytes": 3629
+    },
+    {
+      "path": "Assets/Settings/Scenes/URP2DSceneTemplate.unity",
+      "bytes": 9881
+    },
+    {
+      "path": "Assets/Settings/UniversalRP.asset",
+      "bytes": 4590
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton OFL.txt",
+      "bytes": 4394
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf",
+      "bytes": 42376
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers - OFL.txt",
+      "bytes": 4398
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf",
+      "bytes": 39676
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF",
+      "bytes": 73060
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold - OFL.txt",
+      "bytes": 4402
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf",
+      "bytes": 53056
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - AFL.txt",
+      "bytes": 11357
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - License.txt",
+      "bytes": 154
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf",
+      "bytes": 170760
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity - OFL.txt",
+      "bytes": 4366
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf",
+      "bytes": 1644
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat",
+      "bytes": 2464
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat",
+      "bytes": 3927
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat",
+      "bytes": 4694
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat",
+      "bytes": 3150
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - URP.mat",
+      "bytes": 4831
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat",
+      "bytes": 2975
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab",
+      "bytes": 7583
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab",
+      "bytes": 5797
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab",
+      "bytes": 5793
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset",
+      "bytes": 588
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset",
+      "bytes": 609
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset",
+      "bytes": 585
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset",
+      "bytes": 544
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat",
+      "bytes": 2906
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat",
+      "bytes": 2888
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat",
+      "bytes": 3069
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset",
+      "bytes": 8010
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow - 2 Pass.mat",
+      "bytes": 3136
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat",
+      "bytes": 3081
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat",
+      "bytes": 3233
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat",
+      "bytes": 3213
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat",
+      "bytes": 4642
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat",
+      "bytes": 3044
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset",
+      "bytes": 763493
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset",
+      "bytes": 8126
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat",
+      "bytes": 3082
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat",
+      "bytes": 1690
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat",
+      "bytes": 3188
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset",
+      "bytes": 8040
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat",
+      "bytes": 2909
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat",
+      "bytes": 5745
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat",
+      "bytes": 3011
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - URP.mat",
+      "bytes": 4564
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset",
+      "bytes": 340331
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat",
+      "bytes": 5974
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Outline.mat",
+      "bytes": 4556
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF.asset",
+      "bytes": 2107512
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset",
+      "bytes": 7862
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset",
+      "bytes": 9803
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity",
+      "bytes": 10375
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/02 - Multi-line TextMesh Pro.unity",
+      "bytes": 10445
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/03 - Line Justification.unity",
+      "bytes": 24596
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/04 - Word Wrapping.unity",
+      "bytes": 10389
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/05 - Style Tags.unity",
+      "bytes": 28548
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity",
+      "bytes": 19196
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/07 - Superscript & Subscript Example.unity",
+      "bytes": 10533
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity",
+      "bytes": 15890
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity",
+      "bytes": 26630
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/10 - Bullets & Numbered List Example.unity",
+      "bytes": 19166
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/11 - The Style Tag.unity",
+      "bytes": 15327
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity",
+      "bytes": 22098
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12a - Text Interactions.unity",
+      "bytes": 22236
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/13 - Soft Hyphenation.unity",
+      "bytes": 13939
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity",
+      "bytes": 14912
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/15 - Inline Graphics & Sprites.unity",
+      "bytes": 16827
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/16 - Linked text overflow mode example.unity",
+      "bytes": 30275
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity",
+      "bytes": 19648
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity",
+      "bytes": 276567
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/19 - Masking Texture & Soft Mask.unity",
+      "bytes": 16596
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/20 - Input Field with Scrollbar.unity",
+      "bytes": 62898
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity",
+      "bytes": 6347
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/22 - Basic Scripting Example.unity",
+      "bytes": 12075
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/23 - Animating Vertex Attributes.unity",
+      "bytes": 14217
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example URP.unity",
+      "bytes": 84017
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity",
+      "bytes": 70666
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/25 - Sunny Days Example.unity",
+      "bytes": 16835
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity",
+      "bytes": 97009
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/27 - Double Pass Shader Example.unity",
+      "bytes": 14948
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example/Sky and Fog Volume Profile.asset",
+      "bytes": 1423
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity",
+      "bytes": 60267
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity",
+      "bytes": 11380
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs",
+      "bytes": 4311
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs",
+      "bytes": 4573
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs",
+      "bytes": 3610
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs",
+      "bytes": 3696
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs",
+      "bytes": 3068
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs",
+      "bytes": 10637
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs",
+      "bytes": 1332
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs",
+      "bytes": 507
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs",
+      "bytes": 1125
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs",
+      "bytes": 2344
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs",
+      "bytes": 1353
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs",
+      "bytes": 1815
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs",
+      "bytes": 6837
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs",
+      "bytes": 2834
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs",
+      "bytes": 3782
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs",
+      "bytes": 9122
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs",
+      "bytes": 2780
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs",
+      "bytes": 726
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs",
+      "bytes": 2122
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs",
+      "bytes": 5163
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs",
+      "bytes": 3521
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs",
+      "bytes": 2664
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs",
+      "bytes": 9668
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs",
+      "bytes": 30811
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs",
+      "bytes": 6825
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs",
+      "bytes": 24590
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs",
+      "bytes": 4894
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs",
+      "bytes": 3329
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs",
+      "bytes": 3127
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs",
+      "bytes": 7113
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs",
+      "bytes": 6846
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs",
+      "bytes": 8724
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs",
+      "bytes": 8533
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs",
+      "bytes": 5999
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png",
+      "bytes": 178491
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd",
+      "bytes": 482546
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg",
+      "bytes": 28175
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg",
+      "bytes": 71537
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg",
+      "bytes": 155648
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg",
+      "bytes": 150089
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg",
+      "bytes": 11688
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg",
+      "bytes": 11341
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg",
+      "bytes": 11336
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd",
+      "bytes": 38488
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg",
+      "bytes": 95326
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg",
+      "bytes": 126976
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg",
+      "bytes": 273488
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png",
+      "bytes": 26169
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png",
+      "bytes": 49290
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd",
+      "bytes": 32696
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd",
+      "bytes": 33064
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd",
+      "bytes": 33155
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd",
+      "bytes": 34433
+    },
+    {
+      "path": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt",
+      "bytes": 4469
+    },
+    {
+      "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+      "bytes": 350200
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat",
+      "bytes": 2975
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "bytes": 9365
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat",
+      "bytes": 2889
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "bytes": 2256862
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt",
+      "bytes": 269
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt",
+      "bytes": 95
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset",
+      "bytes": 13441
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+      "bytes": 5539
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+      "bytes": 1852
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+      "bytes": 6021
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+      "bytes": 3836
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+      "bytes": 4071
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+      "bytes": 3839
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+      "bytes": 11054
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+      "bytes": 12438
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph",
+      "bytes": 287427
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph",
+      "bytes": 279909
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+      "bytes": 8273
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+      "bytes": 8081
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+      "bytes": 3064
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+      "bytes": 11795
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "bytes": 8074
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+      "bytes": 3523
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+      "bytes": 4353
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph",
+      "bytes": 283866
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph",
+      "bytes": 277012
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "bytes": 11027
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+      "bytes": 3446
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+      "bytes": 2277
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+      "bytes": 5453
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+      "bytes": 2707
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+      "bytes": 3515
+    },
+    {
+      "path": "Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt",
+      "bytes": 185
+    },
+    {
+      "path": "Assets/TextMesh Pro/Sprites/EmojiOne.json",
+      "bytes": 3966
+    },
+    {
+      "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+      "bytes": 112319
+    },
+    {
+      "path": "Assets/UI/Logos/Company Logo_1.png",
+      "bytes": 773723
+    },
+    {
+      "path": "Assets/UI/Logos/FourFusion.png",
+      "bytes": 2149214
+    },
+    {
+      "path": "Assets/UI/Logos/Transparent.png",
+      "bytes": 743476
+    },
+    {
+      "path": "Assets/UI/sprites/bg.png",
+      "bytes": 1709545
+    },
+    {
+      "path": "Assets/UI/sprites/BoardCell.png",
+      "bytes": 1173841
+    },
+    {
+      "path": "Assets/UI/sprites/BoardHole.png",
+      "bytes": 182655
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/back button - four fusion.png",
+      "bytes": 1127806
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/combo 1 button - four fusion.png",
+      "bytes": 884979
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/combo 2 button - four fusion.png",
+      "bytes": 884822
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/easy button - four fusion.png",
+      "bytes": 936634
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/exit button - four fusion.png",
+      "bytes": 1117604
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/hard button - four fusion.png",
+      "bytes": 725439
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/human vs bot button - four fusion.png",
+      "bytes": 960148
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/human vs human button - four fusion.png",
+      "bytes": 928134
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/main menu button image - four fusion.png",
+      "bytes": 813966
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/medium button - four fusion.png",
+      "bytes": 862709
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/play again button - four fusion.png",
+      "bytes": 829266
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/play button - four fusion.png",
+      "bytes": 706205
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/restart button - four fusion.png",
+      "bytes": 817871
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/settings button - four fusion.png",
+      "bytes": 803080
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/try agin button - four fusion.png",
+      "bytes": 816046
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/undo button - four fusion.png",
+      "bytes": 860288
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/blue coin - four fusion.png",
+      "bytes": 2118025
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/green coin - four fusion.png",
+      "bytes": 2135785
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/red coin - four fusion.png",
+      "bytes": 2124108
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/WinCoin.png",
+      "bytes": 2326190
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/yellow coin - four fusion.png",
+      "bytes": 2097648
+    },
+    {
+      "path": "Assets/UI/sprites/panels/draw panel org - four fusion.png",
+      "bytes": 1296304
+    },
+    {
+      "path": "Assets/UI/sprites/panels/GameBackGround.png",
+      "bytes": 903324
+    },
+    {
+      "path": "Assets/UI/sprites/panels/level selection panel - four fusion.png",
+      "bytes": 1105996
+    },
+    {
+      "path": "Assets/UI/sprites/panels/lose panel org- four fusion.png",
+      "bytes": 1173426
+    },
+    {
+      "path": "Assets/UI/sprites/panels/mode selection panel - four fusion.png",
+      "bytes": 1195896
+    },
+    {
+      "path": "Assets/UI/sprites/panels/new home page - four fusion.png",
+      "bytes": 1406301
+    },
+    {
+      "path": "Assets/UI/sprites/panels/new settings panel - four fusion.png",
+      "bytes": 1444357
+    },
+    {
+      "path": "Assets/UI/sprites/panels/NoAds.png",
+      "bytes": 1640090
+    },
+    {
+      "path": "Assets/UI/sprites/panels/vsbotwin panel - four fusion.png",
+      "bytes": 1541820
+    },
+    {
+      "path": "Assets/UI/sprites/panels/win panel org - four fusion.png",
+      "bytes": 1347504
+    },
+    {
+      "path": "Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "bytes": 25760
+    }
+  ],
+  "scenes": {
+    "Assets/_Recovery/0 (1).unity": {
+      "objects": [
+        "mainmenuButton",
+        "HumanVsBot",
+        "MenuManager",
+        "MenuPanel",
+        "Back",
+        "'combo2Button '",
+        "Canvas",
+        "Medium",
+        "Fill Area",
+        "LevelSelectionPanel",
+        "volumeSlider",
+        "EventSystem",
+        "Handle",
+        "Settings",
+        "Background",
+        "Exit",
+        "Play",
+        "Main Camera",
+        "AdsManager",
+        "Human vs Human",
+        "combo1Button",
+        "Image",
+        "Easy",
+        "Image",
+        "Hard",
+        "Handle Slide Area",
+        "Back",
+        "SettingsPanel",
+        "ColorManager",
+        "Fill",
+        "ModeSelectionPanel"
+      ],
+      "scripts": [
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "50d7dd393f4605248a9155f3c7d33229",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "dc42784cf147c0c48a680349fa168899",
+        "0cd44c1031e13a943bb63640046fad76",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "67db9e8f0e2ae9c40bc1e2b64352a6b4",
+        "01614664b831546d2ae94a42149d80ac",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "b3f03841c714f984580893fdbf1821e9",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "29d3942907a4cea41837800ac0d57b7b",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc"
+      ],
+      "actions": [
+        "CloseSettings",
+        "HumanVsAI",
+        "BackToMainMenu",
+        "SelectCombo2",
+        "Medium",
+        "OpenSettings",
+        "ExitGame",
+        "PlayButton",
+        "HumanVsHuman",
+        "SelectCombo1",
+        "Easy",
+        "Hard",
+        "BackToModeSelection"
+      ]
+    },
+    "Assets/_Recovery/0.unity": {
+      "objects": [
+        "mainmenuButton",
+        "HumanVsBot",
+        "MenuManager",
+        "MenuPanel",
+        "Back",
+        "'combo2Button '",
+        "Canvas",
+        "Medium",
+        "Fill Area",
+        "LevelSelectionPanel",
+        "volumeSlider",
+        "EventSystem",
+        "Handle",
+        "Settings",
+        "Background",
+        "Exit",
+        "Play",
+        "Main Camera",
+        "AdsManager",
+        "Human vs Human",
+        "combo1Button",
+        "Image",
+        "Easy",
+        "Image",
+        "Hard",
+        "Handle Slide Area",
+        "Back",
+        "SettingsPanel",
+        "ColorManager",
+        "Fill",
+        "ModeSelectionPanel"
+      ],
+      "scripts": [
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "50d7dd393f4605248a9155f3c7d33229",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "dc42784cf147c0c48a680349fa168899",
+        "0cd44c1031e13a943bb63640046fad76",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "67db9e8f0e2ae9c40bc1e2b64352a6b4",
+        "01614664b831546d2ae94a42149d80ac",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "b3f03841c714f984580893fdbf1821e9",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "29d3942907a4cea41837800ac0d57b7b",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc"
+      ],
+      "actions": [
+        "CloseSettings",
+        "HumanVsAI",
+        "BackToMainMenu",
+        "SelectCombo2",
+        "Medium",
+        "OpenSettings",
+        "ExitGame",
+        "PlayButton",
+        "HumanVsHuman",
+        "SelectCombo1",
+        "Easy",
+        "Hard",
+        "BackToModeSelection"
+      ]
+    },
+    "Assets/Scenes/GameScene.unity": {
+      "objects": [
+        "Column4",
+        "'lose panel '",
+        "Managers",
+        "winner text",
+        "win panel",
+        "TopPanel",
+        "Column2",
+        "RestartButton",
+        "UiManager",
+        "EventSystem",
+        "Pieces",
+        "Board",
+        "Column3",
+        "playagainButton",
+        "modeText",
+        "Canvas",
+        "AiManager",
+        "Main Camera",
+        "Column1",
+        "Bg",
+        "Column6",
+        "homeButton",
+        "homeButton",
+        "AdUnavailablePanel",
+        "Column5",
+        "UndoButton",
+        "tryagainButton",
+        "drawPanel",
+        "GameManager",
+        "BackGround",
+        "Column0",
+        "TurnText",
+        "ColumnButtons",
+        "homebutton",
+        "homebutton",
+        "HomeButton",
+        "UndoButton",
+        "playagainbutton",
+        "vsBotWinPanel",
+        "BottomPanel",
+        "playagainButton",
+        "InputManager"
+      ],
+      "scripts": [
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "979be3500a0e51f4a87e88c60f0425d2",
+        "01614664b831546d2ae94a42149d80ac",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "e245c6e4dabf73b4480e9e70ce521926",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "dc42784cf147c0c48a680349fa168899",
+        "0cd44c1031e13a943bb63640046fad76",
+        "9ff158b2571ea7a4bafeafd6725c89f8",
+        "38aa74ae54f24194f94f9e82e9c0ba35",
+        "a79441f348de89743a2939f4d699eac1",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "6978dacfdc850834d820b0c5bde21ea0",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "ff0a3cdf92597114ea027e3c67cf1a4b",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "e5a57dca206f0a7429079a255ab0e1e4"
+      ],
+      "actions": [
+        "RestartGame",
+        "RestartGame",
+        "Home",
+        "Home",
+        "ResultPanelUndo",
+        "RestartGame",
+        "Home",
+        "Home",
+        "Home",
+        "UndoMove",
+        "RestartGame",
+        "RestartGame"
+      ]
+    },
+    "Assets/Scenes/MainMenu.unity": {
+      "objects": [
+        "mainmenuButton",
+        "HumanVsBot",
+        "MenuManager",
+        "MenuPanel",
+        "Back",
+        "'combo2Button '",
+        "Canvas",
+        "Medium",
+        "AudioManager",
+        "Fill Area",
+        "LevelSelectionPanel",
+        "volumeSlider",
+        "EventSystem",
+        "Handle",
+        "Settings",
+        "Background",
+        "Exit",
+        "Play",
+        "Main Camera",
+        "AdsManager",
+        "Human vs Human",
+        "combo1Button",
+        "Image",
+        "Easy",
+        "Image",
+        "Hard",
+        "Handle Slide Area",
+        "Back",
+        "SettingsPanel",
+        "ColorManager",
+        "Fill",
+        "ModeSelectionPanel"
+      ],
+      "scripts": [
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "50d7dd393f4605248a9155f3c7d33229",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "dc42784cf147c0c48a680349fa168899",
+        "0cd44c1031e13a943bb63640046fad76",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "1756c9cb9b08ebb45baf4bf2508efb12",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "67db9e8f0e2ae9c40bc1e2b64352a6b4",
+        "01614664b831546d2ae94a42149d80ac",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "b3f03841c714f984580893fdbf1821e9",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "4e29b1a8efbd4b44bb3f3716e73f07ff",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "9cbda95bbb7dae4459822177986fe1d7",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "29d3942907a4cea41837800ac0d57b7b",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc"
+      ],
+      "actions": [
+        "CloseSettings",
+        "HumanVsAI",
+        "BackToMainMenu",
+        "SelectCombo2",
+        "Medium",
+        "SetVolume",
+        "OpenSettings",
+        "ExitGame",
+        "PlayButton",
+        "HumanVsHuman",
+        "SelectCombo1",
+        "Easy",
+        "Hard",
+        "BackToModeSelection"
+      ]
+    },
+    "Assets/Scenes/Splash.unity": {
+      "objects": [
+        "Canvas",
+        "Main Camera",
+        "SplashManager",
+        "EventSystem",
+        "CompanyLogo",
+        "Background",
+        "GameLogo"
+      ],
+      "scripts": [
+        "dc42784cf147c0c48a680349fa168899",
+        "0cd44c1031e13a943bb63640046fad76",
+        "e0868657630ba9940aeb753263811c4a",
+        "01614664b831546d2ae94a42149d80ac",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc",
+        "fe87c0e1cc204ed48ad3b37840f39efc"
+      ],
+      "actions": []
+    },
+    "Assets/Settings/Scenes/URP2DSceneTemplate.unity": {
+      "objects": [
+        "Main Camera",
+        "Global Light 2D"
+      ],
+      "scripts": [
+        "a79441f348de89743a2939f4d699eac1",
+        "073797afb82c5a1438f328866b10b3f0"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity": {
+      "objects": [
+        "Main Camera",
+        "Simple Example"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/02 - Multi-line TextMesh Pro.unity": {
+      "objects": [
+        "Main Camera",
+        "Multi Line TextMesh Pro"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/03 - Line Justification.unity": {
+      "objects": [
+        "1 - Left Justified",
+        "Main Camera",
+        "3 - Right Justified",
+        "2 - Center Justified",
+        "4 - Justified"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/04 - Word Wrapping.unity": {
+      "objects": [
+        "Main Camera",
+        "Word Wrapping"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/05 - Style Tags.unity": {
+      "objects": [
+        "TextMesh Pro - Caption",
+        "TextMesh Pro - Styles",
+        "TextMeshPro - Styles",
+        "TextMeshPro - Caption",
+        "Main Camera",
+        "Canvas"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity": {
+      "objects": [
+        "Main Camera",
+        "Canvas",
+        "TextMeshPro Text",
+        "EventSystem",
+        "TextMeshPro Text"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/07 - Superscript & Subscript Example.unity": {
+      "objects": [
+        "TextMesh Pro - Styles",
+        "Main Camera"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity": {
+      "objects": [
+        "Canvas",
+        "TextMeshPro Text",
+        "EventSystem",
+        "Main Camera"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "21256c5b62f346f18640dad779911e20",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity": {
+      "objects": [
+        "Canvas",
+        "EventSystem",
+        "TextMeshPro Text",
+        "Main Camera",
+        "Frame",
+        "TextMeshPro Text (1)",
+        "TextMeshPro"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/10 - Bullets & Numbered List Example.unity": {
+      "objects": [
+        "Main Camera",
+        "TMP SubMeshUI [TextMeshPro/Sprite]",
+        "EventSystem",
+        "TMP SubMeshUI [TextMeshPro/Sprite]",
+        "TextMeshPro Text",
+        "Canvas"
+      ],
+      "scripts": [
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/11 - The Style Tag.unity": {
+      "objects": [
+        "Main Camera",
+        "Canvas",
+        "Frame",
+        "TextMeshPro Text",
+        "EventSystem"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity": {
+      "objects": [
+        "Canvas",
+        "EventSystem",
+        "TextMeshPro Text",
+        "TMP SubMeshUI [Bangers SDF - Drop Shadow]",
+        "TextMeshPro Text",
+        "Main Camera"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "a05dcd8be7ec4ccbb35c26219884aa37",
+        "21256c5b62f346f18640dad779911e20",
+        "f4688fdb7df04437aeb418b961361dc5"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/12a - Text Interactions.unity": {
+      "objects": [
+        "Event Processor",
+        "EventSystem",
+        "Main Camera",
+        "Canvas",
+        "TextMeshPro",
+        "TextMeshPro Text"
+      ],
+      "scripts": [
+        "d736ce056cf444ca96e424f4d9c42b76",
+        "4f231c4fb786f3946a6b90b886c48677",
+        "76c392e42b5098c458856cdf6ecaaaa1",
+        "dc42784cf147c0c48a680349fa168899",
+        "21256c5b62f346f18640dad779911e20",
+        "1312ae25639a4bae8e25ae223209cc50",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "1312ae25639a4bae8e25ae223209cc50",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "21256c5b62f346f18640dad779911e20"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/13 - Soft Hyphenation.unity": {
+      "objects": [
+        "Main Camera",
+        "EventSystem",
+        "Canvas",
+        "TextMeshPro Text"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity": {
+      "objects": [
+        "Main Camera",
+        "TextMeshPro",
+        "TMP SubMesh [Anton SDF - Drop Shadow]",
+        "TMP SubMesh [TextMeshPro/Sprite]"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/15 - Inline Graphics & Sprites.unity": {
+      "objects": [
+        "TextMeshPro Text",
+        "EventSystem",
+        "Main Camera",
+        "TMP SubMeshUI [TMPro/Sprite]",
+        "Canvas"
+      ],
+      "scripts": [
+        "f4688fdb7df04437aeb418b961361dc5",
+        "e32c266ee6204b21a427753cb0694c81",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/16 - Linked text overflow mode example.unity": {
+      "objects": [
+        "Image 2",
+        "Main Camera",
+        "TextMeshPro Text - Master",
+        "Canvas",
+        "TextMeshPro Text - Linked 1",
+        "EventSystem",
+        "TextMeshPro Text - Linked 3",
+        "Image 1",
+        "TextMeshPro Text - Linked 2"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity": {
+      "objects": [
+        "Panel",
+        "Main Camera",
+        "Panel",
+        "EventSystem",
+        "Canvas",
+        "TextMeshPro Text"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "43bcd35a1c0c40ccb6d472893fe2093f",
+        "f4688fdb7df04437aeb418b961361dc5"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity": {
+      "objects": [
+        "Text",
+        "TextMeshPro Text",
+        "Anchor",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "Answer E",
+        "TextMeshPro Text",
+        "Answer B",
+        "Answer C",
+        "TextMeshPro Text",
+        "Panel",
+        "Answer A",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "Panel",
+        "Answer D",
+        "Text",
+        "Text",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "Answer B",
+        "Answer D",
+        "Scroll Rect",
+        "Panel",
+        "Anchor",
+        "Text",
+        "Text",
+        "TextMeshPro Text",
+        "Canvas UI Text",
+        "Scroll Rect",
+        "TextMeshPro Text",
+        "TextMeshPro Text",
+        "Text",
+        "Answer D",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "Panel",
+        "Question",
+        "TextMeshPro Text",
+        "Text",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "Canvas UI Text",
+        "TextMeshPro Text",
+        "Scroll Rect",
+        "EventSystem",
+        "TextMeshPro Text",
+        "Question",
+        "Text",
+        "Text",
+        "Question",
+        "Text",
+        "Answer D",
+        "Side by Side",
+        "Anchor",
+        "TMP SubMeshUI [Bangers SDF Material]",
+        "Anchor",
+        "Answer C",
+        "Question",
+        "Answer E",
+        "Answer A",
+        "Answer E",
+        "Panel",
+        "Canvas TMP",
+        "Answer C",
+        "TMP SubMeshUI [Anton SDF Material]",
+        "TextMeshPro Text",
+        "Answer A",
+        "Canvas TMP",
+        "TextMeshPro Text",
+        "Text",
+        "Answer B",
+        "Main Camera",
+        "Panel",
+        "Answer A",
+        "Answer E",
+        "TextMeshPro Text",
+        "Answer B",
+        "Scroll Rect",
+        "Answer C",
+        "Panel",
+        "TMP SubMeshUI [TextMeshPro/Sprite]",
+        "Panel",
+        "Text"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "24b0dc2d1d494adbbec1f4db26b4cf83",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "24b0dc2d1d494adbbec1f4db26b4cf83",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "24b0dc2d1d494adbbec1f4db26b4cf83",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "24b0dc2d1d494adbbec1f4db26b4cf83",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/19 - Masking Texture & Soft Mask.unity": {
+      "objects": [
+        "Main Camera",
+        "TextMeshPro Text",
+        "EventSystem",
+        "Canvas",
+        "Image"
+      ],
+      "scripts": [
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/20 - Input Field with Scrollbar.unity": {
+      "objects": [
+        "Content",
+        "Main Camera",
+        "Canvas",
+        "Text Area",
+        "Text Area",
+        "Chat Output - Scrollview",
+        "Text",
+        "Text",
+        "Handle",
+        "Placeholder",
+        "Placeholder",
+        "Handle",
+        "Viewport",
+        "Chat Controller",
+        "Scrollbar",
+        "Sliding Area",
+        "Scrollbar Vertical",
+        "Simple Chat",
+        "TextMeshPro Text",
+        "TMP InputField + Scrollbar",
+        "Sliding Area",
+        "EventSystem",
+        "Chat Input Field"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "53d91f98a2664f5cb9af11de72ac54ec",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "2da0c512f12947e489f739169773d7ca",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "2da0c512f12947e489f739169773d7ca",
+        "f5f67c52d1564df4a8936ccd202a3bd8"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity": {
+      "objects": [
+        "Main Camera",
+        "Simple Script"
+      ],
+      "scripts": [
+        "9eff140b25d64601aabc6ba32245d099"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/22 - Basic Scripting Example.unity": {
+      "objects": [
+        "EventSystem",
+        "Canvas",
+        "'Text Object #1'",
+        "Main Camera",
+        "'Text Object #2'"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "6f2c5b59b6874405865e2616e4ec276a",
+        "6f2c5b59b6874405865e2616e4ec276a"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/23 - Animating Vertex Attributes.unity": {
+      "objects": [
+        "Canvas",
+        "EventSystem",
+        "Main Camera",
+        "TextMeshPro Text"
+      ],
+      "scripts": [
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "2ed57967c52645d390a89dcf8f61ba73",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "91b8ba3d52e041fab2d0e0f169855539"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example URP.unity": {
+      "objects": [
+        "Crate",
+        "Crate",
+        "Ground",
+        "TextMesh Pro - Caption",
+        "Crate Group",
+        "Point Light - Red",
+        "Crate",
+        "Main Camera",
+        "Crate Group",
+        "Crate",
+        "Camera Anchor",
+        "Spotlight - Blue",
+        "Point Light - Blue",
+        "Directional light",
+        "Crate",
+        "Crate",
+        "Spotlight - Green",
+        "Spotlight - White",
+        "Crate Group",
+        "Crate",
+        "Spotlight - Red",
+        "Pointlight - Group",
+        "Crate",
+        "Crate",
+        "Point Light - Green",
+        "Spotlight - Backlight",
+        "TextMesh Pro - Text",
+        "Spotlight - Group"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "2d687537154440a3913a9a3c7977978c",
+        "686ec78b56aa445795335fbadafcfaa4",
+        "a79441f348de89743a2939f4d699eac1",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "474bcb49853aa07438625e644c072ee6",
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity": {
+      "objects": [
+        "Crate",
+        "Crate",
+        "Ground",
+        "TextMesh Pro - Caption",
+        "Crate Group",
+        "Point Light - Red",
+        "Crate",
+        "Main Camera",
+        "Crate Group",
+        "Crate",
+        "Camera Anchor",
+        "Spotlight - Blue",
+        "Point Light - Blue",
+        "Directional light",
+        "Crate",
+        "Crate",
+        "Spotlight - Green",
+        "Spotlight - White",
+        "Crate Group",
+        "Crate",
+        "Spotlight - Red",
+        "Pointlight - Group",
+        "Crate",
+        "Crate",
+        "Point Light - Green",
+        "Spotlight - Backlight",
+        "TextMesh Pro - Text",
+        "Spotlight - Group"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "2d687537154440a3913a9a3c7977978c",
+        "686ec78b56aa445795335fbadafcfaa4",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/25 - Sunny Days Example.unity": {
+      "objects": [
+        "Main Camera",
+        "TextMeshPro Text",
+        "Canvas",
+        "EventSystem",
+        "TMP SubMeshUI [IMPACT SDF - Sunny Days + LiberationSans SDF Atlas]"
+      ],
+      "scripts": [
+        "f4688fdb7df04437aeb418b961361dc5",
+        "790744c462254b7ba8038e6ed28b3db2",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "f5f67c52d1564df4a8936ccd202a3bd8",
+        "058cba836c1846c3aa1c5fd2e28aea77"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity": {
+      "objects": [
+        "Placeholder",
+        "Text",
+        "Template",
+        "Item Checkmark",
+        "Label",
+        "Item Background",
+        "Sliding Area",
+        "Scrollbar",
+        "Main Camera",
+        "Arrow",
+        "Viewport",
+        "Label",
+        "Item Background",
+        "Content",
+        "Item",
+        "EventSystem",
+        "Item Label",
+        "Viewport",
+        "DropdownWithPlaceholder",
+        "Item Label",
+        "Arrow",
+        "Button",
+        "Item Checkmark",
+        "Item",
+        "Sliding Area",
+        "Template",
+        "Scrollbar",
+        "Text",
+        "DropdownWithoutPlaceholder",
+        "Handle",
+        "Canvas",
+        "Handle",
+        "Content"
+      ],
+      "scripts": [
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "7b743370ac3e4ec2a1668f5455a8ef8a",
+        "f70555f144d8491a825f0804e09c671c",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f4688fdb7df04437aeb418b961361dc5",
+        "7b743370ac3e4ec2a1668f5455a8ef8a",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "f70555f144d8491a825f0804e09c671c",
+        "ac1eb05af6d391b4eb0f4c070a99f1d0",
+        "f70555f144d8491a825f0804e09c671c"
+      ],
+      "actions": [
+        "OnButtonClick"
+      ]
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/27 - Double Pass Shader Example.unity": {
+      "objects": [
+        "Main Camera",
+        "Text (TMP)",
+        "Text (TMP) (1)"
+      ],
+      "scripts": [
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "9541d86e2fd84c1d9990edf0852d74ab"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity": {
+      "objects": [
+        "Ground Plane",
+        "Unity Flat Logo",
+        "Point Light - Blue",
+        "Point Light - Red",
+        "Lights",
+        "Text (TMP) - Lit Plain",
+        "Spot Light - Background",
+        "Point Light - Green",
+        "Text (TMP) - Lit Bloom",
+        "Sky and Fog Volume",
+        "Text (TMP) - Unlit",
+        "Main Camera"
+      ],
+      "scripts": [
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "7a68c43fe1f2a47cfa234b5eeaa98012",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "7a68c43fe1f2a47cfa234b5eeaa98012",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "7a68c43fe1f2a47cfa234b5eeaa98012",
+        "4f19c7f94c794c5097d8bd11e39c750d",
+        "7a68c43fe1f2a47cfa234b5eeaa98012",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "172515602e62fb746b5d573b38a5fe58",
+        "172515602e62fb746b5d573b38a5fe58",
+        "9541d86e2fd84c1d9990edf0852d74ab",
+        "23c1ce4fb46143f46bc5cb5224c934f6"
+      ],
+      "actions": []
+    },
+    "Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity": {
+      "objects": [
+        "Ground",
+        "Main Camera",
+        "Directional light",
+        "Benchmark (Shader Perf)"
+      ],
+      "scripts": [
+        "2d687537154440a3913a9a3c7977978c",
+        "686ec78b56aa445795335fbadafcfaa4",
+        "e8538afcddc14efbb5d9e94b7ae50197"
+      ],
+      "actions": []
+    }
+  },
+  "textures": [
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/1024x768.png",
+      "size": [
+        1024,
+        768
+      ],
+      "rgba_bytes": 3145728
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/300x250.png",
+      "size": [
+        300,
+        250
+      ],
+      "rgba_bytes": 300000
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x100.png",
+      "size": [
+        320,
+        100
+      ],
+      "rgba_bytes": 128000
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x480.png",
+      "size": [
+        320,
+        480
+      ],
+      "rgba_bytes": 614400
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x50.png",
+      "size": [
+        320,
+        50
+      ],
+      "rgba_bytes": 64000
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/468x60.png",
+      "size": [
+        468,
+        60
+      ],
+      "rgba_bytes": 112320
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/480x320.png",
+      "size": [
+        480,
+        320
+      ],
+      "rgba_bytes": 614400
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/728x90.png",
+      "size": [
+        728,
+        90
+      ],
+      "rgba_bytes": 262080
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/768x1024.png",
+      "size": [
+        768,
+        1024
+      ],
+      "rgba_bytes": 3145728
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/AdInspectorHome.png",
+      "size": [
+        645,
+        1395
+      ],
+      "rgba_bytes": 3599100
+    },
+    {
+      "path": "Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.png",
+      "size": [
+        973,
+        1574
+      ],
+      "rgba_bytes": 6126008
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg",
+      "size": [
+        512,
+        356
+      ],
+      "rgba_bytes": 729088
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg",
+      "size": [
+        520,
+        390
+      ],
+      "rgba_bytes": 811200
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg",
+      "size": [
+        600,
+        600
+      ],
+      "rgba_bytes": 1440000
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg",
+      "size": [
+        16,
+        16
+      ],
+      "rgba_bytes": 1024
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg",
+      "size": [
+        16,
+        16
+      ],
+      "rgba_bytes": 1024
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg",
+      "size": [
+        16,
+        16
+      ],
+      "rgba_bytes": 1024
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd",
+      "size": [
+        128,
+        128
+      ],
+      "rgba_bytes": 65536
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg",
+      "size": [
+        2048,
+        1024
+      ],
+      "rgba_bytes": 8388608
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png",
+      "size": [
+        640,
+        480
+      ],
+      "rgba_bytes": 1228800
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png",
+      "size": [
+        500,
+        357
+      ],
+      "rgba_bytes": 714000
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd",
+      "size": [
+        64,
+        64
+      ],
+      "rgba_bytes": 16384
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd",
+      "size": [
+        64,
+        64
+      ],
+      "rgba_bytes": 16384
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd",
+      "size": [
+        64,
+        64
+      ],
+      "rgba_bytes": 16384
+    },
+    {
+      "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd",
+      "size": [
+        64,
+        64
+      ],
+      "rgba_bytes": 16384
+    },
+    {
+      "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+      "size": [
+        512,
+        512
+      ],
+      "rgba_bytes": 1048576
+    },
+    {
+      "path": "Assets/UI/Logos/Company Logo_1.png",
+      "size": [
+        1774,
+        887
+      ],
+      "rgba_bytes": 6294152
+    },
+    {
+      "path": "Assets/UI/Logos/FourFusion.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_bytes": 6290064
+    },
+    {
+      "path": "Assets/UI/Logos/Transparent.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/bg.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "rgba_bytes": 6292352
+    },
+    {
+      "path": "Assets/UI/sprites/BoardCell.png",
+      "size": [
+        976,
+        996
+      ],
+      "rgba_bytes": 3888384
+    },
+    {
+      "path": "Assets/UI/sprites/BoardHole.png",
+      "size": [
+        497,
+        502
+      ],
+      "rgba_bytes": 997976
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/back button - four fusion.png",
+      "size": [
+        2172,
+        724
+      ],
+      "rgba_bytes": 6290112
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/combo 1 button - four fusion.png",
+      "size": [
+        1915,
+        821
+      ],
+      "rgba_bytes": 6288860
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/combo 2 button - four fusion.png",
+      "size": [
+        1974,
+        797
+      ],
+      "rgba_bytes": 6293112
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/easy button - four fusion.png",
+      "size": [
+        1913,
+        822
+      ],
+      "rgba_bytes": 6289944
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/exit button - four fusion.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/hard button - four fusion.png",
+      "size": [
+        1923,
+        818
+      ],
+      "rgba_bytes": 6292056
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/human vs bot button - four fusion.png",
+      "size": [
+        1808,
+        870
+      ],
+      "rgba_bytes": 6291840
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/human vs human button - four fusion.png",
+      "size": [
+        1756,
+        896
+      ],
+      "rgba_bytes": 6293504
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/main menu button image - four fusion.png",
+      "size": [
+        1961,
+        802
+      ],
+      "rgba_bytes": 6290888
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/medium button - four fusion.png",
+      "size": [
+        1940,
+        810
+      ],
+      "rgba_bytes": 6285600
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/play again button - four fusion.png",
+      "size": [
+        1774,
+        887
+      ],
+      "rgba_bytes": 6294152
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/play button - four fusion.png",
+      "size": [
+        1190,
+        1322
+      ],
+      "rgba_bytes": 6292720
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/restart button - four fusion.png",
+      "size": [
+        1774,
+        887
+      ],
+      "rgba_bytes": 6294152
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/settings button - four fusion.png",
+      "size": [
+        1774,
+        887
+      ],
+      "rgba_bytes": 6294152
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/try agin button - four fusion.png",
+      "size": [
+        1968,
+        799
+      ],
+      "rgba_bytes": 6289728
+    },
+    {
+      "path": "Assets/UI/sprites/buttons/undo button - four fusion.png",
+      "size": [
+        1828,
+        860
+      ],
+      "rgba_bytes": 6288320
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/blue coin - four fusion.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/green coin - four fusion.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/red coin - four fusion.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/WinCoin.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/Coins/yellow coin - four fusion.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba_bytes": 6291456
+    },
+    {
+      "path": "Assets/UI/sprites/panels/draw panel org - four fusion.png",
+      "size": [
+        853,
+        1844
+      ],
+      "rgba_bytes": 6291728
+    },
+    {
+      "path": "Assets/UI/sprites/panels/GameBackGround.png",
+      "size": [
+        941,
+        1672
+      ],
+      "rgba_bytes": 6293408
+    },
+    {
+      "path": "Assets/UI/sprites/panels/level selection panel - four fusion.png",
+      "size": [
+        853,
+        1844
+      ],
+      "rgba_bytes": 6291728
+    },
+    {
+      "path": "Assets/UI/sprites/panels/lose panel org- four fusion.png",
+      "size": [
+        853,
+        1844
+      ],
+      "rgba_bytes": 6291728
+    },
+    {
+      "path": "Assets/UI/sprites/panels/mode selection panel - four fusion.png",
+      "size": [
+        864,
+        1821
+      ],
+      "rgba_bytes": 6293376
+    },
+    {
+      "path": "Assets/UI/sprites/panels/new home page - four fusion.png",
+      "size": [
+        853,
+        1844
+      ],
+      "rgba_bytes": 6291728
+    },
+    {
+      "path": "Assets/UI/sprites/panels/new settings panel - four fusion.png",
+      "size": [
+        854,
+        1842
+      ],
+      "rgba_bytes": 6292272
+    },
+    {
+      "path": "Assets/UI/sprites/panels/NoAds.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "rgba_bytes": 6290064
+    },
+    {
+      "path": "Assets/UI/sprites/panels/vsbotwin panel - four fusion.png",
+      "size": [
+        852,
+        1846
+      ],
+      "rgba_bytes": 6291168
+    },
+    {
+      "path": "Assets/UI/sprites/panels/win panel org - four fusion.png",
+      "size": [
+        852,
+        1846
+      ],
+      "rgba_bytes": 6291168
+    }
+  ],
+  "audio_imports": {
+    "Assets/Audio/background music/game background music - four fusion.mp3": "fileFormatVersion: 2\nguid: 6c460856a207cc84da0f670dcafc5331\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 8\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 1\n    conversionMode: 0\n    preloadAudioData: 0\n  platformSettingOverrides: {}\n  forceToMono: 0\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+    "Assets/Audio/sfx audios/click sound - four fusion.mp3": "fileFormatVersion: 2\nguid: 459615e913373b844b8ee5f17b6fc247\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 8\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 1\n    conversionMode: 0\n    preloadAudioData: 0\n  platformSettingOverrides: {}\n  forceToMono: 0\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+    "Assets/Audio/sfx audios/coin placement sound - four fusion.mp3": "fileFormatVersion: 2\nguid: 97cb4fe0f510a0a46910beb12c5ffe75\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 8\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 1\n    conversionMode: 0\n    preloadAudioData: 0\n  platformSettingOverrides: {}\n  forceToMono: 0\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+    "Assets/Audio/sfx audios/lose sound - four fusion.mp3": "fileFormatVersion: 2\nguid: f764a7670e1ec354897d7ff12067007b\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 8\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 1\n    conversionMode: 0\n    preloadAudioData: 0\n  platformSettingOverrides: {}\n  forceToMono: 0\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+    "Assets/Audio/sfx audios/win sound - four fusion.mp3": "fileFormatVersion: 2\nguid: 5113be3e8e83d6349b91f4e8745f133f\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 8\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 1\n    conversionMode: 0\n    preloadAudioData: 0\n  platformSettingOverrides: {}\n  forceToMono: 0\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n"
+  },
+  "extension_counts": {
+    ".unity": 37,
+    ".anim": 2,
+    ".controller": 2,
+    ".mp3": 5,
+    ".asset": 23,
+    ".dll": 15,
+    ".pdb": 5,
+    ".md": 3,
+    ".txt": 12,
+    "": 4,
+    ".cs": 67,
+    ".json": 2,
+    ".asmdef": 1,
+    ".xml": 5,
+    ".png": 52,
+    ".prefab": 22,
+    ".inputactions": 1,
+    ".aar": 1,
+    ".gradle": 5,
+    ".properties": 2,
+    ".h": 1,
+    ".xib": 2,
+    ".plist": 3,
+    ".scenetemplate": 1,
+    ".ttf": 6,
+    ".TTF": 1,
+    ".mat": 26,
+    ".psd": 6,
+    ".jpg": 10,
+    ".hlsl": 1,
+    ".shader": 14,
+    ".shadergraph": 4,
+    ".cginc": 4
+  }
+}

@@ -19,7 +19,7 @@ public class MainMenuManager : MonoBehaviour
         modeSelectionPanel.SetActive(false);
         difficultyPanel.SetActive(false);
 
-        AdManager.Instance.ShowBanner();
+        AdManager.Instance?.ShowBanner();
 
         GameSettings.Theme =
             (PieceTheme)PlayerPrefs.GetInt("Theme", 0);
@@ -51,7 +51,7 @@ public class MainMenuManager : MonoBehaviour
     {
         GameSettings.GameMode = GameMode.HumanVsHuman;
 
-        SceneManager.LoadScene("GameScene");
+        SceneTransition.Load("GameScene");
     }
 
     public void HumanVsAI()
@@ -66,21 +66,21 @@ public class MainMenuManager : MonoBehaviour
     {
         GameSettings.Difficulty = Difficulty.Easy;
 
-        SceneManager.LoadScene("GameScene");
+        SceneTransition.Load("GameScene");
     }
 
     public void Medium()
     {
         GameSettings.Difficulty = Difficulty.Medium;
 
-        SceneManager.LoadScene("GameScene");
+        SceneTransition.Load("GameScene");
     }
 
     public void Hard()
     {
         GameSettings.Difficulty = Difficulty.Hard;
 
-        SceneManager.LoadScene("GameScene");
+        SceneTransition.Load("GameScene");
     }
 
     public void BackToMainMenu()

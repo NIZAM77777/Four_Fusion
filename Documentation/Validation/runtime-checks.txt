@@ -1,0 +1,12 @@
+PASS: Main menu presentation boot
+PASS: Original board dimensions
+PASS: Persistent services after scene load
+PASS: Bounds protection
+PASS: First move accepted
+PASS: Rapid duplicate drop blocked
+PASS: Undo blocked during drop
+PASS: Original board detects vertical victory
+PASS: Result undo restores correct turn and count
+PASS: No duplicate audio service
+PASS: No duplicate ad service
+PASS: No duplicate theme service

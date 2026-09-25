@@ -17,18 +17,27 @@ public class PieceThemeManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
+
+    private void OnDestroy() { if (Instance == this) Instance = null; }
 
     public Sprite GetPlayer1Sprite()
     {
-        switch (GameSettings.Theme)
+        return GetThemeSprite(GameSettings.Theme, false);
+    }
+
+    public Sprite GetThemeSprite(PieceTheme theme, bool second)
+    {
+        switch (theme)
         {
             case PieceTheme.Combo2:
-                return combo2Player1;
+                return second ? combo2Player2 : combo2Player1;
 
             default:
-                return combo1Player1;
+                return second ? combo1Player2 : combo1Player1;
         }
     }
 

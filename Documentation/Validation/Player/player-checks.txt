@@ -1,0 +1,21 @@
+PASS: Main menu starts
+PASS: Persisted language en
+PASS: Persisted language ar
+PASS: Persisted language hi
+PASS: Persisted language ml
+PASS: Persisted language ta
+PASS: Persisted language ur
+PASS: 7x6 board preserved
+PASS: Column UI enabled after scene transition
+PASS: Invalid columns rejected
+PASS: First drop accepted
+PASS: Duplicate drop rejected
+PASS: Undo locked during animation
+PASS: Win detection
+PASS: Correct result undo
+PASS: One music service after return
+PASS: One ad service after return
+PASS: One theme service after return
+PASS: Human cannot play AI turn
+PASS: Hard AI plays exactly one reply
+PASS: AI paired free undo

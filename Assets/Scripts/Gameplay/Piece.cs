@@ -15,6 +15,8 @@ public class Piece : MonoBehaviour
 
     private bool isMoving;
     private Vector3 targetPosition;
+    private Vector3 restingScale;
+    private void Awake() { restingScale = transform.localScale; }
 
     public PieceType PieceType;
 
@@ -24,30 +26,24 @@ public class Piece : MonoBehaviour
     {
         targetPosition = target;
         isMoving = true;
+        StartCoroutine(MoveRoutine());
     }
 
-    private void Update()
+    private IEnumerator MoveRoutine()
     {
-        if (!isMoving)
-            return;
-
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            targetPosition,
-            moveSpeed * Time.deltaTime);
-
-        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
+        while ((transform.position - targetPosition).sqrMagnitude > .0001f)
         {
-            transform.position = targetPosition;
-
-            isMoving = false;
-
-            StartCoroutine(BounceLanding());
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Mathf.Max(1, moveSpeed) * Time.deltaTime);
+            yield return null;
         }
+        transform.position = targetPosition;
+        yield return BounceLanding();
+        isMoving = false;
     }
 
     public void Highlight()
     {
+        if (PieceThemeManager.Instance == null) return;
         if (PieceType == PieceType.Player1)
         {
             spriteRenderer.sprite =
@@ -62,6 +58,10 @@ public class Piece : MonoBehaviour
 
     public void ResetHighlight()
     {
+        StopAllCoroutines();
+        transform.position = targetPosition;
+        transform.localScale = restingScale;
+        if (PieceThemeManager.Instance == null) return;
         if (PieceType == PieceType.Player1)
         {
             spriteRenderer.sprite =
@@ -151,6 +151,7 @@ public class Piece : MonoBehaviour
 
     public void SetSprite(Sprite sprite)
     {
-        spriteRenderer.sprite = sprite;
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+        if (sprite != null && spriteRenderer != null) spriteRenderer.sprite = sprite;
     }
 }

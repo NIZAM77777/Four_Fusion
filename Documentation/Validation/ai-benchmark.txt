@@ -1,0 +1,4 @@
+ï»¿baseline: 1000 evaluations; 25.8788 ms; 3768000 bytes
+updated: 1000 evaluations; 18.6807 ms; 0 bytes
+PASS: 100 seeded board evaluations preserve heuristic scores
+Hard opening search: 1585.8429 ms; column 3

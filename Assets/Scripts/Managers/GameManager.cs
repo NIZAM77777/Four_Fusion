@@ -5,307 +5,88 @@ using System.Collections;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
-
-    //==================================================
-    // UNDO SETTINGS
-    //==================================================
-
-    private int freeUndoCount = 0;
-
-    private const int HUMAN_VS_HUMAN_FREE_UNDOS = 3;
-
-    private const int HUMAN_VS_AI_FREE_UNDOS = 1;
-
-
-    //==================================================
-    // INTERSTITIAL SETTINGS
-    //==================================================
-
-    private int completedGames = 0;
-
-    // Show interstitial after every completed game
-    [SerializeField] private int interstitialFrequency = 1;
-
-
-    //==================================================
-    // UI
-    //==================================================
-
+    private int freeUndoCount;
+    private static int completedGames;
+    [SerializeField] private int interstitialFrequency = 3;
     [SerializeField] private GameObject columnButtons;
-
     [SerializeField] private float resultPanelDelay = 1.1f;
     [SerializeField] private float interstitialDelay = 1f;
-
-
-    //==================================================
-    // GAME STATE
-    //==================================================
-
     public bool IsGameOver { get; private set; }
-
+    public bool IsPaused { get; private set; }
+    public bool InputBlocked => IsGameOver || IsPaused || SceneTransition.IsLoading || (AdManager.Instance != null && AdManager.Instance.IsShowingAd);
     public GameMode CurrentGameMode { get; private set; }
-
-
-    //==================================================
-    // UNITY
-    //==================================================
-
+    public int FreeUndosRemaining => Mathf.Max(0, (CurrentGameMode == GameMode.HumanVsHuman ? 3 : 1) - freeUndoCount);
+    private bool countedResult;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStatics() { Instance = null; completedGames = 0; }
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-    }
-
-
-    private void Start()
-    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
         CurrentGameMode = GameSettings.GameMode;
-
-        // Reset free undo count for this new game
-        freeUndoCount = 0;
-
-        // Gameplay does not show banner
-        AdManager.Instance.HideBanner();
-
-        BoardManager.Instance.UpdateUndoButton();
-
-        AudioManager.Instance.StopMusic();
     }
-
-
-    //==================================================
-    // GAME MODE
-    //==================================================
-
-    public void SetGameMode(GameMode mode)
+    private void Start() { AdManager.Instance?.HideBanner(); BoardManager.Instance?.UpdateUndoButton(); }
+    private void OnDestroy() { if (Instance == this) Instance = null; Time.timeScale = 1; }
+    public void SetGameMode(GameMode mode) => CurrentGameMode = mode;
+    public void SetPaused(bool value)
     {
-        CurrentGameMode = mode;
+        IsPaused = value;
+        Time.timeScale = value ? 0 : 1;
+        FusionUI.Instance?.RefreshGameplay();
     }
-
-
-    //==================================================
-    // WIN
-    //==================================================
-
-    public void EndGame(PieceType winner)
+    private void OnApplicationPause(bool paused)
+    {
+        if (paused && !IsGameOver && (AdManager.Instance == null || !AdManager.Instance.IsShowingAd)) SetPaused(true);
+    }
+    public void EndGame(PieceType winner) { if (!IsGameOver) StartResult(winner); }
+    public void DrawGame() { if (!IsGameOver) StartResult(PieceType.Empty); }
+    private void StartResult(PieceType winner)
     {
         IsGameOver = true;
-
-        if (columnButtons != null)
-        {
-            columnButtons.SetActive(false);
-        }
-
-        StartCoroutine(
-            ShowResultAfterDelay(winner));
+        if (columnButtons != null) columnButtons.SetActive(false);
+        BoardManager.Instance?.UpdateUndoButton();
+        StartCoroutine(ShowResult(winner));
     }
-
-
-    private IEnumerator ShowResultAfterDelay(
-        PieceType winner)
+    private IEnumerator ShowResult(PieceType winner)
     {
-        yield return new WaitForSeconds(
-            resultPanelDelay);
-
-
-        // Show correct result panel
-        if (CurrentGameMode ==
-            GameMode.HumanVsHuman)
+        yield return new WaitForSeconds(resultPanelDelay);
+        if (winner == PieceType.Empty) { UIManager.Instance?.ShowDraw(); AudioManager.Instance?.PlayDraw(); }
+        else if (CurrentGameMode == GameMode.HumanVsHuman) { UIManager.Instance?.ShowWinner(winner); AudioManager.Instance?.PlayWin(); }
+        else if (winner == PieceType.Player1) { UIManager.Instance?.ShowVsBotWinner(winner); AudioManager.Instance?.PlayWin(); }
+        else { UIManager.Instance?.ShowLoser(); AudioManager.Instance?.PlayLose(); }
+        AdManager.Instance?.ShowBanner();
+        if (!countedResult)
         {
-            UIManager.Instance.ShowWinner(winner);
-
-            AudioManager.Instance.PlayWin();
-        }
-        else
-        {
-            if (winner == PieceType.Player1)
+            countedResult = true;
+            completedGames++;
+            if (completedGames % Mathf.Max(3, interstitialFrequency) == 0)
             {
-                UIManager.Instance.ShowVsBotWinner(
-                    winner);
-
-                AudioManager.Instance.PlayWin();
-            }
-            else
-            {
-                UIManager.Instance.ShowLoser();
-
-                AudioManager.Instance.PlayLose();
+                yield return new WaitForSeconds(interstitialDelay);
+                if (IsGameOver) AdManager.Instance?.ShowInterstitial();
             }
         }
-
-
-        AdManager.Instance.ShowBanner();
-
-        completedGames++;
-
-        if (completedGames %
-            interstitialFrequency == 0)
-        {
-            yield return new WaitForSeconds(interstitialDelay);
-
-            AdManager.Instance.ShowInterstitial();
-        }
     }
-
-
-    //==================================================
-    // DRAW
-    //==================================================
-
-    public void DrawGame()
-    {
-        IsGameOver = true;
-
-        if (columnButtons != null)
-        {
-            columnButtons.SetActive(false);
-        }
-
-        StartCoroutine(
-            ShowDrawAfterDelay());
-    }
-
-
-    private IEnumerator ShowDrawAfterDelay()
-    {
-        yield return new WaitForSeconds(
-            resultPanelDelay);
-
-
-        UIManager.Instance.ShowDraw();
-
-
-        // Show banner on draw screen
-        AdManager.Instance.ShowBanner();
-
-
-        completedGames++;
-
-        if (completedGames %
-            interstitialFrequency == 0)
-        {
-            yield return new WaitForSeconds(interstitialDelay);
-
-            AdManager.Instance.ShowInterstitial();
-        }
-
-        AudioManager.Instance.PlayLose();
-    }
-
-
-    //==================================================
-    // RESTART
-    //==================================================
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex);
-    }
-
-
-    //==================================================
-    // HOME
-    //==================================================
-
-    public void Home()
-    {
-        AudioManager.Instance.PlayMusic();
-
-        SceneManager.LoadScene("MainMenu");
-    }
-
-
-    //==================================================
-    // RESUME AFTER UNDO
-    //==================================================
-
+    public void RestartGame() { if (SceneTransition.IsLoading || (AdManager.Instance != null && AdManager.Instance.IsShowingAd)) return; SetPaused(false); SceneTransition.Load(SceneManager.GetActiveScene().name); }
+    public void Home() { if (SceneTransition.IsLoading || (AdManager.Instance != null && AdManager.Instance.IsShowingAd)) return; SetPaused(false); SceneTransition.Load("MainMenu"); }
     public void ResumeGame()
     {
+        StopAllCoroutines();
         IsGameOver = false;
-
-
-        if (columnButtons != null)
-        {
-            columnButtons.SetActive(true);
-        }
-
-
-        // Gameplay screen should not have banner
-        AdManager.Instance.HideBanner();
-
-
-        UIManager.Instance.ShowGameplayUI();
+        if (columnButtons != null) columnButtons.SetActive(true);
+        AdManager.Instance?.HideBanner();
+        UIManager.Instance?.ShowGameplayUI();
     }
-
-
-    //==================================================
-    // NORMAL GAMEPLAY UNDO
-    //==================================================
-
     public void UndoMove()
     {
-        // Cannot undo if game is over
-        if (IsGameOver)
-            return;
-
-
-        // Cannot undo if board doesn't allow it
-        if (!BoardManager.Instance.CanUndo())
-            return;
-
-
-        int freeUndoLimit =
-            CurrentGameMode ==
-            GameMode.HumanVsHuman
-            ? HUMAN_VS_HUMAN_FREE_UNDOS
-            : HUMAN_VS_AI_FREE_UNDOS;
-
-
-        //==================================================
-        // FREE UNDO
-        //==================================================
-
-        if (freeUndoCount <
-            freeUndoLimit)
-        {
-            freeUndoCount++;
-
-            BoardManager.Instance
-                .UndoLastTwoMoves();
-
-            return;
-        }
-
-
-        //==================================================
-        // REWARDED UNDO
-        //==================================================
-
-        AdManager.Instance.ShowRewardedUndo();
+        if (InputBlocked || BoardManager.Instance == null || !BoardManager.Instance.CanUndo()) return;
+        if (FreeUndosRemaining > 0) { freeUndoCount++; BoardManager.Instance.UndoLastTwoMoves(); }
+        else if (AdManager.Instance != null) AdManager.Instance.ShowRewardedUndo();
+        else UIManager.Instance?.ShowAdUnavailableMessage();
     }
-
-
-    //==================================================
-    // RESULT PANEL UNDO
-    //==================================================
-
     public void ResultPanelUndo()
     {
-        if (!BoardManager.Instance
-            .CanUndoFromResultPanel())
-        {
-            return;
-        }
-
-        AdManager.Instance.ShowRewardedResultPanelUndo();
+        if (!IsGameOver || SceneTransition.IsLoading || BoardManager.Instance == null || !BoardManager.Instance.CanUndoFromResultPanel()) return;
+        if (AdManager.Instance != null) AdManager.Instance.ShowRewardedResultPanelUndo();
+        else UIManager.Instance?.ShowAdUnavailableMessage();
     }
 }

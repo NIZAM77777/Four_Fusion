@@ -35,6 +35,11 @@ public class BoardManager : MonoBehaviour
     public PieceType CurrentPlayer => currentPlayer;
     public int Columns => columns;
     public int Rows => rows;
+    public bool IsBusy => isDroppingPiece;
+    public int Revision { get; private set; }
+    public int MoveCount => moveHistory.Count;
+    private readonly List<Vector2Int> connectedPieces = new List<Vector2Int>(13);
+    private void OnDestroy() { if (Instance == this) Instance = null; }
 
     private void Start()
     {
@@ -90,62 +95,45 @@ public class BoardManager : MonoBehaviour
 
     public void DropPiece(int column)
     {
-        if (GameManager.Instance.IsGameOver)
-            return;
+        TryDropPiece(column, false);
+    }
+
+    public bool TryDropPiece(int column, bool fromAI)
+    {
+        if (GameManager.Instance == null || GameManager.Instance.InputBlocked || boardState == null)
+            return false;
+        bool aiTurn = GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI && currentPlayer == PieceType.Player2;
+        if (aiTurn != fromAI || !IsValidMove(column))
+            return false;
 
         if (isDroppingPiece)
-            return;
-
-        if (IsColumnFull(column))
-            return;
+            return false;
 
         int row = GetNextAvailableRow(column);
-
         if (row == -1)
-            return;
+            return false;
 
-        boardState[column, row] = currentPlayer;
-
-        Piece prefab =
-            currentPlayer == PieceType.Player1
-            ? redPiecePrefab
-            : yellowPiecePrefab;
-
-        Vector3 targetPosition =
-            board[column, row].transform.position;
-
-        Vector3 spawnPosition =
-            targetPosition + Vector3.up * 8f;
-
-        Piece piece = Instantiate(
-            prefab,
-            spawnPosition,
-            Quaternion.identity,
-            piecesParent);
-
-        if (currentPlayer == PieceType.Player1)
+        Piece prefab = currentPlayer == PieceType.Player1 ? redPiecePrefab : yellowPiecePrefab;
+        if (prefab == null || board[column, row] == null)
         {
-            piece.SetSprite(
-                PieceThemeManager.Instance.GetPlayer1Sprite());
+            Debug.LogError("Board piece/cell prefab is missing.");
+            return false;
         }
-        else
-        {
-            piece.SetSprite(
-                PieceThemeManager.Instance.GetPlayer2Sprite());
-        }
-
-        spawnedPieces[column, row] = piece;
-
-        moveHistory.Add( new MoveData( column, row, currentPlayer, piece ));
-
-        piece.MoveTo(targetPosition);
-
-        AudioManager.Instance.PlayPiecePlace();
-
         isDroppingPiece = true;
-
-        StartCoroutine(
-            WaitForPiece(piece, column, row));
+        Revision++;
+        boardState[column, row] = currentPlayer;
+        Vector3 targetPosition = board[column, row].transform.position;
+        Piece piece = Instantiate(prefab, targetPosition + Vector3.up * 8f, Quaternion.identity, piecesParent);
+        piece.PieceType = currentPlayer;
+        if (PieceThemeManager.Instance != null)
+            piece.SetSprite(currentPlayer == PieceType.Player1 ? PieceThemeManager.Instance.GetPlayer1Sprite() : PieceThemeManager.Instance.GetPlayer2Sprite());
+        spawnedPieces[column, row] = piece;
+        moveHistory.Add(new MoveData(column, row, currentPlayer, piece));
+        piece.MoveTo(targetPosition);
+        AudioManager.Instance?.PlayPiecePlace();
+        UpdateUndoButton();
+        StartCoroutine(WaitForPiece(piece, column, row));
+        return true;
     }
 
     private IEnumerator WaitForPiece(
@@ -202,11 +190,12 @@ public class BoardManager : MonoBehaviour
 
     public bool IsColumnFull(int column)
     {
-        return boardState[column, rows - 1] != PieceType.Empty;
+        return boardState == null || column < 0 || column >= columns || boardState[column, rows - 1] != PieceType.Empty;
     }
 
     public int GetNextAvailableRow(int column)
     {
+        if (boardState == null || column < 0 || column >= columns) return -1;
         for (int row = 0; row < rows; row++)
         {
             if (boardState[column, row] == PieceType.Empty)
@@ -248,7 +237,7 @@ public class BoardManager : MonoBehaviour
 
     private bool CheckDirection(int column, int row, int xDirection, int yDirection)
     {
-        List<Vector2Int> connectedPieces = new List<Vector2Int>();
+        connectedPieces.Clear();
 
         connectedPieces.Add(new Vector2Int(column, row));
 
@@ -268,7 +257,8 @@ public class BoardManager : MonoBehaviour
 
         if (connectedPieces.Count >= 4)
         {
-            winningCells = connectedPieces;
+            winningCells.Clear();
+            winningCells.AddRange(connectedPieces);
             return true;
         }
 
@@ -452,22 +442,30 @@ public class BoardManager : MonoBehaviour
 
     public void UndoLastTwoMoves()
     {
-        ResetAllPieceHighlights();
-
-        if (moveHistory.Count < 2)
+        if (isDroppingPiece || moveHistory.Count < 2 || SceneTransition.IsLoading)
             return;
 
-        UndoSingleMove();
+        AIManager.Instance?.CancelTurn();
+        StopAllCoroutines();
+        ResetAllPieceHighlights();
+        // After a human winning move, undo it and the prior AI reply, then
+        // return to that AI turn. Do not give the human two successive moves.
+        PieceType restoredPlayer = moveHistory[moveHistory.Count - 2].Player;
 
         UndoSingleMove();
 
-        currentPlayer = PieceType.Player1;
+        UndoSingleMove();
+
+        currentPlayer = restoredPlayer;
+        Revision++;
 
         UIManager.Instance.UpdateTurn(currentPlayer);
 
         GameManager.Instance.ResumeGame();
 
         UpdateUndoButton();
+        if (GameManager.Instance.CurrentGameMode == GameMode.HumanVsAI && currentPlayer == PieceType.Player2)
+            AIManager.Instance?.PlayTurn();
     }
 
     private void UndoSingleMove()
@@ -504,6 +502,7 @@ public class BoardManager : MonoBehaviour
 
     public bool CanUndo()
     {
+        if (isDroppingPiece || SceneTransition.IsLoading || GameManager.Instance == null || GameManager.Instance.IsPaused) return false;
         if (moveHistory.Count < 2)
             return false;
 
@@ -522,11 +521,13 @@ public class BoardManager : MonoBehaviour
 
     public bool CanUndoFromResultPanel()
     {
-        return moveHistory.Count >= 2;
+        return !isDroppingPiece && moveHistory.Count >= 2 && !SceneTransition.IsLoading;
     }
 
     public void UpdateUndoButton()
     {
+        FusionUI.Instance?.RefreshGameplay();
+        if (GameManager.Instance == null || UIManager.Instance == null) return;
         if (GameManager.Instance.IsGameOver)
         {
             UIManager.Instance.HideUndoButton();

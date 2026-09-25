@@ -5,6 +5,8 @@ public class UIButtonSound : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        AudioManager.Instance.PlayButtonClick();
+        var button = GetComponent<UnityEngine.UI.Button>();
+        if (button != null && button.IsInteractable() && eventData.button == PointerEventData.InputButton.Left)
+            AudioManager.Instance?.PlayButtonClick();
     }
 }

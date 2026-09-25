@@ -1,0 +1,9 @@
+Android validation AAB: NOT PRODUCED.
+Unity 6000.3.11f1 compiled the Android scripts and processed scenes/assets.
+Native packaging failed because Windows Application Control blocked:
+C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll
+Error: System.IO.FileLoadException, HRESULT 0x800711C7.
+The run was already elevated. No security policy was disabled or bypassed.
+An administrator-approved Unity Android toolchain is required to finish packaging.
+No Android device was attached to ADB. No device or Play pre-launch tests were performed.
+Release signing settings in the original project were not changed.

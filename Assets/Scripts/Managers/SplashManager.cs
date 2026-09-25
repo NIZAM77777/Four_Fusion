@@ -8,8 +8,10 @@ public class SplashManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        yield return new WaitForSeconds(splashTime);
-
-        SceneManager.LoadScene("MainMenu");
+        // Import/load the menu while the existing splash animation is visible.
+        var loading = SceneManager.LoadSceneAsync("MainMenu");
+        loading.allowSceneActivation = false;
+        yield return new WaitForSecondsRealtime(Mathf.Min(splashTime, 1.2f));
+        loading.allowSceneActivation = true;
     }
 }
