@@ -7,6 +7,14 @@
       "font": "NotoSans",
       "entries": [
         {
+          "key": "MENU_EXIT",
+          "value": "Exit"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "Better luck next round!"
+        },
+        {
           "key": "MENU_PLAY",
           "value": "Play"
         },
@@ -278,6 +286,14 @@
       "rtl": true,
       "font": "NotoSansArabic",
       "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "خروج"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "حظاً أوفر في الجولة القادمة!"
+        },
         {
           "key": "MENU_PLAY",
           "value": "العب"
@@ -551,6 +567,14 @@
       "font": "NotoSansDevanagari",
       "entries": [
         {
+          "key": "MENU_EXIT",
+          "value": "बाहर निकलें"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "अगले दौर के लिए शुभकामनाएँ!"
+        },
+        {
           "key": "MENU_PLAY",
           "value": "खेलें"
         },
@@ -822,6 +846,14 @@
       "rtl": false,
       "font": "NotoSansMalayalam",
       "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "പുറത്തുകടക്കുക"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "അടുത്ത റൗണ്ടിൽ വിജയിക്കട്ടെ!"
+        },
         {
           "key": "MENU_PLAY",
           "value": "കളിക്കുക"
@@ -1095,6 +1127,14 @@
       "font": "NotoSansTamil",
       "entries": [
         {
+          "key": "MENU_EXIT",
+          "value": "வெளியேறு"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "அடுத்த சுற்றில் வெற்றி பெற வாழ்த்துகள்!"
+        },
+        {
           "key": "MENU_PLAY",
           "value": "விளையாடு"
         },
@@ -1366,6 +1406,14 @@
       "rtl": true,
       "font": "NotoSansArabic",
       "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "باہر نکلیں"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "اگلے راؤنڈ کے لیے نیک خواہشات!"
+        },
         {
           "key": "MENU_PLAY",
           "value": "کھیلیں"

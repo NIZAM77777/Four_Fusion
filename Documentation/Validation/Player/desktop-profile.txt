@@ -1,5 +1,5 @@
 Development Windows player, 120 idle gameplay frames; not Android or baseline comparison.
-Mean FPS: 59.92159
-Max frame ms: 18.0507
-Unity allocated bytes: 405732023
-Unity reserved bytes: 600895488
+Mean FPS: 59.90159
+Max frame ms: 18.1823
+Unity allocated bytes: 540769997
+Unity reserved bytes: 735186944

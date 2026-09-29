@@ -1,21 +1,68 @@
 PASS: Main menu starts
+PASS: Packaged artwork: Logo
+PASS: Packaged artwork: Backdrop
+PASS: Packaged artwork: BoardHero
+PASS: Packaged artwork: Robot
+PASS: Packaged artwork: LocalPlayers
+PASS: UI action available: MENU_PLAY
+PASS: UI action available: MODE_HUMAN_VS_AI
+PASS: Start button visible without scrolling: difficulty-en
+PASS: UI action available: DIFFICULTY_HARD
+PASS: UI action available: BUTTON_BACK
+PASS: UI action available: BUTTON_BACK
+PASS: UI action available: MENU_SETTINGS
+PASS: Music toggle retains setting callback
+PASS: Sound toggle retains setting callback
+PASS: Volume slider callback
+PASS: UI action available: THEME_TWO
+PASS: Red and blue skin selection
+PASS: UI action available: THEME_ONE
+PASS: Green and gold skin selection
+PASS: UI action available: ABOUT_TITLE
+PASS: UI action available: BUTTON_BACK
+PASS: UI action available: BUTTON_BACK
+PASS: UI action available: MENU_HELP
+PASS: UI action available: BUTTON_BACK
 PASS: Persisted language en
 PASS: Persisted language ar
 PASS: Persisted language hi
 PASS: Persisted language ml
 PASS: Persisted language ta
 PASS: Persisted language ur
+PASS: Start button visible without scrolling: small-difficulty
+PASS: UI action available: MODE_HUMAN_VS_HUMAN
 PASS: 7x6 board preserved
 PASS: Column UI enabled after scene transition
 PASS: Invalid columns rejected
-PASS: First drop accepted
+PASS: UI action available: column-0
+PASS: Column UI dispatches first drop
 PASS: Duplicate drop rejected
 PASS: Undo locked during animation
 PASS: Win detection
 PASS: Correct result undo
+PASS: UI action available: BUTTON_PAUSE
+PASS: Pause button
+PASS: UI action available: BUTTON_RESUME
+PASS: Resume button
+PASS: UI action available: BUTTON_RESTART
+PASS: UI action available: BUTTON_CANCEL
+PASS: Restart cancellation preserves board
+PASS: UI action available: BUTTON_HOME
+PASS: UI action available: BUTTON_HOME
 PASS: One music service after return
 PASS: One ad service after return
 PASS: One theme service after return
+PASS: UI action available: THEME_TWO
+PASS: UI action available: MODE_HUMAN_VS_AI
+PASS: UI action available: DIFFICULTY_HARD
+PASS: UI action available: BUTTON_START
 PASS: Human cannot play AI turn
 PASS: Hard AI plays exactly one reply
+PASS: UI action available: BUTTON_UNDO
 PASS: AI paired free undo
+PASS: UI action available: BUTTON_REMATCH
+PASS: Result rematch starts fresh board
+PASS: UI action available: column-2
+PASS: UI action available: BUTTON_RESTART
+PASS: UI action available: BUTTON_RESTART
+PASS: Confirmed restart starts fresh board

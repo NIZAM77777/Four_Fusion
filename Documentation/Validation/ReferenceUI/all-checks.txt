@@ -1,0 +1,99 @@
+PASS: Win direction (1, 0)
+PASS: No false opponent win (1, 0)
+PASS: Win direction (0, 1)
+PASS: No false opponent win (0, 1)
+PASS: Win direction (1, 1)
+PASS: No false opponent win (1, 1)
+PASS: Win direction (1, -1)
+PASS: No false opponent win (1, -1)
+PASS: Full-board draw
+PASS: AI full-board termination
+PASS: AI blocks immediate loss
+PASS: AI takes immediate win
+PASS: AI cancellation
+PASS: No reward while ad open
+PASS: Exactly one reward, order=True
+PASS: No reward without earning
+PASS: Exactly one reward, order=False
+PASS: Failed ad cannot reward
+PASS: Splash/Main Camera no missing scripts
+PASS: Splash/Canvas no missing scripts
+PASS: Splash/Background no missing scripts
+PASS: Splash/GameLogo no missing scripts
+PASS: Splash/CompanyLogo no missing scripts
+PASS: Splash/EventSystem no missing scripts
+PASS: Splash/SplashManager no missing scripts
+PASS: MainMenu/Main Camera no missing scripts
+PASS: MainMenu/Canvas no missing scripts
+PASS: MainMenu/MenuPanel no missing scripts
+PASS: MainMenu/Play no missing scripts
+PASS: MainMenu/Settings no missing scripts
+PASS: MainMenu/Exit no missing scripts
+PASS: MainMenu/SettingsPanel no missing scripts
+PASS: MainMenu/mainmenuButton no missing scripts
+PASS: MainMenu/combo1Button no missing scripts
+PASS: MainMenu/Image no missing scripts
+PASS: MainMenu/combo2Button  no missing scripts
+PASS: MainMenu/Image no missing scripts
+PASS: MainMenu/volumeSlider no missing scripts
+PASS: MainMenu/Background no missing scripts
+PASS: MainMenu/Fill Area no missing scripts
+PASS: MainMenu/Fill no missing scripts
+PASS: MainMenu/Handle Slide Area no missing scripts
+PASS: MainMenu/Handle no missing scripts
+PASS: MainMenu/ModeSelectionPanel no missing scripts
+PASS: MainMenu/Human vs Human no missing scripts
+PASS: MainMenu/HumanVsBot no missing scripts
+PASS: MainMenu/Back no missing scripts
+PASS: MainMenu/LevelSelectionPanel no missing scripts
+PASS: MainMenu/Easy no missing scripts
+PASS: MainMenu/Medium no missing scripts
+PASS: MainMenu/Hard no missing scripts
+PASS: MainMenu/Back no missing scripts
+PASS: MainMenu/EventSystem no missing scripts
+PASS: MainMenu/MenuManager no missing scripts
+PASS: MainMenu/ColorManager no missing scripts
+PASS: MainMenu/AdsManager no missing scripts
+PASS: MainMenu/AudioManager no missing scripts
+PASS: GameScene/Main Camera no missing scripts
+PASS: GameScene/Pieces no missing scripts
+PASS: GameScene/Bg no missing scripts
+PASS: GameScene/Board no missing scripts
+PASS: GameScene/ColumnButtons no missing scripts
+PASS: GameScene/Column0 no missing scripts
+PASS: GameScene/Column1 no missing scripts
+PASS: GameScene/Column2 no missing scripts
+PASS: GameScene/Column3 no missing scripts
+PASS: GameScene/Column4 no missing scripts
+PASS: GameScene/Column5 no missing scripts
+PASS: GameScene/Column6 no missing scripts
+PASS: GameScene/Canvas no missing scripts
+PASS: GameScene/TopPanel no missing scripts
+PASS: GameScene/TurnText no missing scripts
+PASS: GameScene/modeText no missing scripts
+PASS: GameScene/BottomPanel no missing scripts
+PASS: GameScene/RestartButton no missing scripts
+PASS: GameScene/UndoButton no missing scripts
+PASS: GameScene/HomeButton no missing scripts
+PASS: GameScene/lose panel  no missing scripts
+PASS: GameScene/tryagainButton no missing scripts
+PASS: GameScene/homebutton no missing scripts
+PASS: GameScene/UndoButton no missing scripts
+PASS: GameScene/win panel no missing scripts
+PASS: GameScene/playagainButton no missing scripts
+PASS: GameScene/homebutton no missing scripts
+PASS: GameScene/winner text no missing scripts
+PASS: GameScene/drawPanel no missing scripts
+PASS: GameScene/playagainButton no missing scripts
+PASS: GameScene/homeButton no missing scripts
+PASS: GameScene/vsBotWinPanel no missing scripts
+PASS: GameScene/playagainbutton no missing scripts
+PASS: GameScene/homeButton no missing scripts
+PASS: GameScene/AdUnavailablePanel no missing scripts
+PASS: GameScene/BackGround no missing scripts
+PASS: GameScene/EventSystem no missing scripts
+PASS: GameScene/Managers no missing scripts
+PASS: GameScene/InputManager no missing scripts
+PASS: GameScene/GameManager no missing scripts
+PASS: GameScene/UiManager no missing scripts
+PASS: GameScene/AiManager no missing scripts

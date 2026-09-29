@@ -6,8 +6,8 @@ public class BoardCell : MonoBehaviour
     public int Row;
     private void Awake()
     {
-        // Keep the authored board silhouette, soften its bright blue plate for the HUD palette.
+        // Presentation only: a continuous blue plate and transparent coin socket.
         var renderer = GetComponent<SpriteRenderer>();
-        if (renderer != null) renderer.color = new Color(.35f, .42f, .58f, 1);
+        if (renderer != null) { renderer.sprite = FusionArt.CellSprite; renderer.color = Color.white; }
     }
 }
