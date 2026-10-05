@@ -327,19 +327,17 @@ public sealed class FusionUI : MonoBehaviour
         volume.AddToClassList("volume");
         volume.RegisterValueChangedCallback(evt => AudioManager.Instance?.SetMasterVolume(evt.newValue)); audio.Add(volume);
         Section(body, "MENU_LANGUAGE", "language");
-        var languages = Element(body, "language-grid");
-        for (int i = 0; i < Localization.Codes.Length; i++)
-        {
-            string code = Localization.Codes[i];
-            var button = new Button(() => { AudioManager.Instance?.PlayButtonClick(); Localization.SetLanguage(code); }) { name = "language-" + code };
-            button.style.unityFontDefinition = FontDefinition.FromSDFFont(GetFont(code));
-            button.languageDirection = code == "ar" || code == "ur" ? LanguageDirection.RTL : LanguageDirection.LTR;
-            button.AddToClassList("action"); button.AddToClassList("language");
-            button.EnableInClassList("selected", code == Localization.Language); languages.Add(button);
-            var surface = new FusionSurface(FusionTone.Blue, true); surface.Accent(code == Localization.Language); button.Add(surface);
-            Literal(button, Localization.Names[i], "action-label");
-            if(code == Localization.Language) Selection(button);
-        }
+        var languages = Element(body, "language-carousel");
+        languages.languageDirection = LanguageDirection.LTR;
+        LanguageArrow(languages, -1, "back");
+        int languageIndex = Array.IndexOf(Localization.Codes, Localization.Language);
+        if (languageIndex < 0) languageIndex = 0;
+        var currentLanguage = Element(languages, "language-current");
+        currentLanguage.Add(new FusionSurface(FusionTone.Blue, true));
+        var languageName = Literal(currentLanguage, Localization.Names[languageIndex], "language-name");
+        languageName.style.unityFontDefinition = FontDefinition.FromSDFFont(GetFont(Localization.Codes[languageIndex]));
+        languageName.languageDirection = Localization.IsRTL ? LanguageDirection.RTL : LanguageDirection.LTR;
+        LanguageArrow(languages, 1, "next");
         Section(body, "VISUAL_TITLE", "pieces");
         var themes = Element(body, "row");
         for (int i = 0; i < 2; i++)
@@ -359,6 +357,23 @@ public sealed class FusionUI : MonoBehaviour
         if (AdManager.Instance != null && AdManager.Instance.PrivacyOptionsRequired) Action(body, "PRIVACY_OPTIONS", () => AdManager.Instance.ShowPrivacyOptions(), "information");
         Action(body, "ABOUT_TITLE", () => Navigate("about"), "information");
         Literal(body, Localization.Get("VERSION") + " " + Application.version, "footer");
+    }
+    private void LanguageArrow(VisualElement parent, int direction, string icon)
+    {
+        var button = new Button(() => CycleLanguage(direction)) { name = direction < 0 ? "language-previous" : "language-next" };
+        button.AddToClassList("action"); button.AddToClassList("language-arrow");
+        button.Add(new FusionSurface(FusionTone.Blue, true));
+        button.Add(new FusionIcon(icon));
+        parent.Add(button);
+    }
+    private void CycleLanguage(int direction)
+    {
+        if (Localization.Codes.Length == 0) return;
+        AudioManager.Instance?.PlayButtonClick();
+        int index = Array.IndexOf(Localization.Codes, Localization.Language);
+        if (index < 0) index = 0;
+        index = (index + direction + Localization.Codes.Length) % Localization.Codes.Length;
+        Localization.SetLanguage(Localization.Codes[index]);
     }
     private void Toggle(VisualElement parent, string key, bool value, Action<bool> change)
     {

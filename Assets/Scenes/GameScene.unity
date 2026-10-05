@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIManager
   boardManager: {fileID: 515049331}
-  thinkingTime: 0.5
+  thinkingTime: 0.25
 --- !u!1 &773040364
 GameObject:
   m_ObjectHideFlags: 0

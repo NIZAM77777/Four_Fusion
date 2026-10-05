@@ -31,7 +31,15 @@ public static class Localization
             foreach (var entry in table.entries) dictionary.Add(entry.key, entry.value);
             values.Add(table.code, dictionary);
         }
-        string device = Application.systemLanguage == SystemLanguage.Arabic ? "ar" : Application.systemLanguage == SystemLanguage.Hindi ? "hi" : "en";
+        string device = Application.systemLanguage switch
+        {
+            SystemLanguage.Spanish => "es",
+            SystemLanguage.French => "fr",
+            SystemLanguage.Portuguese => "pt",
+            SystemLanguage.Arabic => "ar",
+            SystemLanguage.Hindi => "hi",
+            _ => "en"
+        };
         Language = PlayerPrefs.GetString("Language", device);
         if (!values.ContainsKey(Language)) Language = "en";
     }

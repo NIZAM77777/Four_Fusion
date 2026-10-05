@@ -1,8 +1,10 @@
 from pathlib import Path
 import json
 
-# Stable keys and six reviewed-in-context draft translations. Native-language QA remains required.
-data = '''MENU_PLAY|Play|العب|खेलें|കളിക്കുക|விளையாடு|کھیلیں
+# Stable keys and globally oriented draft translations. Native-language QA remains required.
+data = '''MENU_EXIT|Exit|خروج|बाहर निकलें|പുറത്തുകടക്കുക|வெளியேறு|باہر نکلیں
+RESULT_LOSE_DETAIL|Better luck next round!|حظاً أوفر في الجولة القادمة!|अगले दौर के लिए शुभकामनाएँ!|അടുത്ത റൗണ്ടിൽ വിജയിക്കട്ടെ!|அடுத்த சுற்றில் வெற்றி பெற வாழ்த்துகள்!|اگلے راؤنڈ کے لیے نیک خواہشات!
+MENU_PLAY|Play|العب|खेलें|കളിക്കുക|விளையாடு|کھیلیں
 MENU_SETTINGS|Settings|الإعدادات|सेटिंग्स|ക്രമീകരണങ്ങൾ|அமைப்புகள்|ترتیبات
 MENU_LANGUAGE|Language|اللغة|भाषा|ഭാഷ|மொழி|زبان
 TAGLINE|A little strategy. A perfect four.|قليل من الاستراتيجية. أربعة للفوز.|थोड़ी रणनीति। चार से जीत।|അല്പം തന്ത്രം. നാലിൽ വിജയം.|சிறிது உத்தி. நான்கில் வெற்றி.|تھوڑی حکمت۔ چار سے جیت۔
@@ -72,10 +74,84 @@ entries=[]
 for line in data.splitlines():
     cells=line.split('|'); assert len(cells)==7, line
     entries.append(dict(zip(['key','en','ar','hi','ml','ta','ur'],cells)))
+world_data = '''MENU_EXIT|Salir|Quitter|Sair
+RESULT_LOSE_DETAIL|¡Más suerte en la próxima ronda!|Bonne chance pour la prochaine manche !|Mais sorte na próxima rodada!
+MENU_PLAY|Jugar|Jouer|Jogar
+MENU_SETTINGS|Ajustes|Paramètres|Configurações
+MENU_LANGUAGE|Idioma|Langue|Idioma
+TAGLINE|Un poco de estrategia. Cuatro perfectos.|Un peu de stratégie. Un quatre parfait.|Um pouco de estratégia. Quatro perfeitos.
+MENU_HELP|Cómo jugar|Comment jouer|Como jogar
+MODE_TITLE|Elige a tu oponente|Choisissez votre adversaire|Escolha seu oponente
+MODE_HUMAN_VS_HUMAN|Dos jugadores|Deux joueurs|Dois jogadores
+MODE_HUMAN_VS_AI|Jugar contra la IA|Jouer contre l'IA|Jogar contra a IA
+MODE_LOCAL_DETAIL|Comparte la pantalla. Reta a un amigo.|Partagez l'écran. Défiez un ami.|Compartilhe a tela. Desafie um amigo.
+MODE_AI_DETAIL|Encuentra tu nivel. Mejora tu estrategia.|Trouvez votre niveau. Affinez votre stratégie.|Encontre seu nível. Aprimore sua estratégia.
+DIFFICULTY_TITLE|Elige tu desafío|Choisissez votre défi|Escolha seu desafio
+DIFFICULTY_EASY|Fácil|Facile|Fácil
+DIFFICULTY_MEDIUM|Medio|Moyen|Médio
+DIFFICULTY_HARD|Difícil|Difficile|Difícil
+EASY_DETAIL|Aprende el ritmo|Apprenez le rythme|Aprenda o ritmo
+MEDIUM_DETAIL|Piensa un paso adelante|Pensez un coup à l'avance|Pense um passo à frente
+HARD_DETAIL|Planifica cada movimiento|Planifiez chaque coup|Planeje cada jogada
+BUTTON_START|Iniciar partida|Commencer la partie|Iniciar partida
+BUTTON_BACK|Atrás|Retour|Voltar
+BUTTON_HOME|Inicio|Accueil|Início
+BUTTON_RESTART|Reiniciar|Recommencer|Reiniciar
+BUTTON_REMATCH|Jugar de nuevo|Rejouer|Jogar novamente
+BUTTON_UNDO|Deshacer|Annuler|Desfazer
+BUTTON_REWARDED_UNDO|Ver anuncio para deshacer|Voir une pub pour annuler|Ver anúncio para desfazer
+BUTTON_PAUSE|Pausa|Pause|Pausar
+BUTTON_RESUME|Continuar|Reprendre|Continuar
+BUTTON_CANCEL|Cancelar|Annuler|Cancelar
+PLAYER_ONE|Jugador 1|Joueur 1|Jogador 1
+PLAYER_TWO|Jugador 2|Joueur 2|Jogador 2
+PLAYER_YOU|Tú|Vous|Você
+PLAYER_AI|Computadora|Ordinateur|Computador
+TURN_ONE|Turno del jugador 1|Tour du joueur 1|Vez do jogador 1
+TURN_TWO|Turno del jugador 2|Tour du joueur 2|Vez do jogador 2
+TURN_YOU|Tu turno|À vous de jouer|Sua vez
+TURN_AI|Pensando…|Réflexion…|Pensando…
+DROP_HINT|Toca una columna para soltar una ficha|Touchez une colonne pour placer un pion|Toque em uma coluna para soltar uma peça
+RESULT_WIN|¡Conectaste cuatro!|Vous avez aligné quatre pions !|Você conectou quatro!
+RESULT_LOSE|La computadora gana|L'ordinateur gagne|O computador venceu
+RESULT_DRAW|Empate muy reñido|Match nul bien disputé|Empate equilibrado
+RESULT_ONE|El jugador 1 gana|Le joueur 1 gagne|O jogador 1 venceu
+RESULT_TWO|El jugador 2 gana|Le joueur 2 gagne|O jogador 2 venceu
+RESULT_DETAIL|¿Listo para otra ronda?|Prêt pour une autre manche ?|Pronto para outra rodada?
+PAUSE_TITLE|Tómate tu tiempo|Prenez votre temps|Sem pressa
+RESTART_CONFIRM|¿Empezar un tablero nuevo?|Commencer une nouvelle grille ?|Começar um novo tabuleiro?
+HOME_CONFIRM|¿Salir de esta partida?|Quitter cette partie ?|Sair desta partida?
+AUDIO_TITLE|Audio|Audio|Áudio
+AUDIO_MUSIC|Música|Musique|Música
+AUDIO_SFX|Efectos de sonido|Effets sonores|Efeitos sonoros
+AUDIO_VOLUME|Volumen|Volume|Volume
+VISUAL_TITLE|Tus fichas|Vos pions|Suas peças
+THEME_ONE|Verde y dorado|Vert et or|Verde e dourado
+THEME_TWO|Rojo y azul|Rouge et bleu|Vermelho e azul
+OTHER_TITLE|Información|Informations|Informações
+PRIVACY_POLICY|Política de privacidad|Politique de confidentialité|Política de privacidade
+PRIVACY_OPTIONS|Opciones de privacidad|Choix de confidentialité|Opções de privacidade
+ABOUT_TITLE|Acerca de Four Fusion|À propos de Four Fusion|Sobre o Four Fusion
+ABOUT_BODY|Creado por MN7 Studio. Cuatro fichas. Posibilidades infinitas.|Créé par MN7 Studio. Quatre pions. Des possibilités infinies.|Criado pela MN7 Studio. Quatro peças. Possibilidades infinitas.
+VERSION|Versión|Version|Versão
+HELP_BODY|Por turnos, suelten una ficha en una columna. Conecta cuatro fichas en horizontal, vertical o diagonal para ganar. Si el tablero se llena sin ganador, hay empate.|À tour de rôle, placez un pion dans une colonne. Alignez-en quatre horizontalement, verticalement ou en diagonale pour gagner. Une grille pleine sans gagnant donne un match nul.|Em turnos, solte uma peça em uma coluna. Conecte quatro peças na horizontal, vertical ou diagonal para vencer. Um tabuleiro cheio sem vencedor termina em empate.
+HELP_UNDO|Deshacer retira los dos últimos movimientos. Las partidas de dos jugadores incluyen tres usos gratis; contra la IA, uno. Los usos adicionales y los de la pantalla de resultado requieren un anuncio con recompensa.|Annuler retire les deux derniers coups. Les parties à deux joueurs offrent trois annulations gratuites ; contre l'IA, une. Les suivantes et celles après le résultat nécessitent une pub récompensée.|Desfazer remove as duas últimas jogadas. Partidas com dois jogadores incluem três usos grátis; contra a IA, um. Usos adicionais e na tela de resultado exigem um anúncio recompensado.
+ADS_UNAVAILABLE|No hay anuncios disponibles. Inténtalo más tarde.|Aucune publicité disponible. Réessayez plus tard.|Nenhum anúncio disponível. Tente novamente mais tarde.
+ERROR_SCENE|No se puede abrir esta pantalla. Reinicia la aplicación.|Impossible d'ouvrir cet écran. Redémarrez l'application.|Não foi possível abrir esta tela. Reinicie o aplicativo.
+ERROR_PRIVACY|Las opciones de privacidad no están disponibles. Inténtalo más tarde.|Les choix de confidentialité sont indisponibles. Réessayez plus tard.|As opções de privacidade estão indisponíveis. Tente novamente mais tarde.
+LOADING|Abriendo la partida…|Ouverture de la partie…|Abrindo sua partida…
+SELECTED|Seleccionado|Sélectionné|Selecionado
+UNDO_FREE|Deshacer gratis restante|Annulations gratuites restantes|Desfazer grátis restante'''
+world_entries = {}
+for line in world_data.splitlines():
+    cells=line.split('|'); assert len(cells)==4, line
+    world_entries[cells[0]] = dict(zip(['es','fr','pt'],cells[1:]))
+for entry in entries:
+    entry.update(world_entries[entry['key']])
 p=Path('Assets/Resources/Fusion/Localization.json'); p.parent.mkdir(parents=True,exist_ok=True)
-codes=['en','ar','hi','ml','ta','ur']
-names=['English','العربية','हिन्दी','മലയാളം','தமிழ்','اردو']
-fonts=['NotoSans','NotoSansArabic','NotoSansDevanagari','NotoSansMalayalam','NotoSansTamil','NotoSansArabic']
-tables=[{'code':code,'name':name,'rtl':code in ('ar','ur'),'font':font,'entries':[{'key':e['key'],'value':e[code]} for e in entries]} for code,name,font in zip(codes,names,fonts)]
+codes=['en','es','fr','pt','ar','hi']
+names=['English','Español','Français','Português','العربية','हिन्दी']
+fonts=['NotoSans','NotoSans','NotoSans','NotoSans','NotoSansArabic','NotoSansDevanagari']
+tables=[{'code':code,'name':name,'rtl':code == 'ar','font':font,'entries':[{'key':e['key'],'value':e[code]} for e in entries]} for code,name,font in zip(codes,names,fonts)]
 p.write_text(json.dumps({'tables':tables},ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'{len(entries)} keys × 6 languages')

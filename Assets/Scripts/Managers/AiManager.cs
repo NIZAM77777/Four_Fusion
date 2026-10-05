@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class AIManager : MonoBehaviour
 {
+    private const int HardSearchMilliseconds = 550;
     public static AIManager Instance;
     [SerializeField] private BoardManager boardManager;
     [SerializeField] private float thinkingTime = .35f;
@@ -40,7 +41,7 @@ public class AIManager : MonoBehaviour
             cancellation = new CancellationTokenSource();
             var token = cancellation.Token;
             var snapshot = boardManager.GetBoardCopy();
-            var search = Task.Run(() => AISearch.FindBestMove(snapshot, token), token);
+            var search = Task.Run(() => AISearch.FindBestMoveTimed(snapshot, token, 8, HardSearchMilliseconds), token);
             while (!search.IsCompleted) yield return null;
             if (search.IsCanceled) { turn = null; yield break; }
             if (search.IsFaulted) { Debug.LogException(search.Exception); column = MediumMove(); }

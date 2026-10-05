@@ -281,6 +281,846 @@
       ]
     },
     {
+      "code": "es",
+      "name": "Español",
+      "rtl": false,
+      "font": "NotoSans",
+      "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "Salir"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "¡Más suerte en la próxima ronda!"
+        },
+        {
+          "key": "MENU_PLAY",
+          "value": "Jugar"
+        },
+        {
+          "key": "MENU_SETTINGS",
+          "value": "Ajustes"
+        },
+        {
+          "key": "MENU_LANGUAGE",
+          "value": "Idioma"
+        },
+        {
+          "key": "TAGLINE",
+          "value": "Un poco de estrategia. Cuatro perfectos."
+        },
+        {
+          "key": "MENU_HELP",
+          "value": "Cómo jugar"
+        },
+        {
+          "key": "MODE_TITLE",
+          "value": "Elige a tu oponente"
+        },
+        {
+          "key": "MODE_HUMAN_VS_HUMAN",
+          "value": "Dos jugadores"
+        },
+        {
+          "key": "MODE_HUMAN_VS_AI",
+          "value": "Jugar contra la IA"
+        },
+        {
+          "key": "MODE_LOCAL_DETAIL",
+          "value": "Comparte la pantalla. Reta a un amigo."
+        },
+        {
+          "key": "MODE_AI_DETAIL",
+          "value": "Encuentra tu nivel. Mejora tu estrategia."
+        },
+        {
+          "key": "DIFFICULTY_TITLE",
+          "value": "Elige tu desafío"
+        },
+        {
+          "key": "DIFFICULTY_EASY",
+          "value": "Fácil"
+        },
+        {
+          "key": "DIFFICULTY_MEDIUM",
+          "value": "Medio"
+        },
+        {
+          "key": "DIFFICULTY_HARD",
+          "value": "Difícil"
+        },
+        {
+          "key": "EASY_DETAIL",
+          "value": "Aprende el ritmo"
+        },
+        {
+          "key": "MEDIUM_DETAIL",
+          "value": "Piensa un paso adelante"
+        },
+        {
+          "key": "HARD_DETAIL",
+          "value": "Planifica cada movimiento"
+        },
+        {
+          "key": "BUTTON_START",
+          "value": "Iniciar partida"
+        },
+        {
+          "key": "BUTTON_BACK",
+          "value": "Atrás"
+        },
+        {
+          "key": "BUTTON_HOME",
+          "value": "Inicio"
+        },
+        {
+          "key": "BUTTON_RESTART",
+          "value": "Reiniciar"
+        },
+        {
+          "key": "BUTTON_REMATCH",
+          "value": "Jugar de nuevo"
+        },
+        {
+          "key": "BUTTON_UNDO",
+          "value": "Deshacer"
+        },
+        {
+          "key": "BUTTON_REWARDED_UNDO",
+          "value": "Ver anuncio para deshacer"
+        },
+        {
+          "key": "BUTTON_PAUSE",
+          "value": "Pausa"
+        },
+        {
+          "key": "BUTTON_RESUME",
+          "value": "Continuar"
+        },
+        {
+          "key": "BUTTON_CANCEL",
+          "value": "Cancelar"
+        },
+        {
+          "key": "PLAYER_ONE",
+          "value": "Jugador 1"
+        },
+        {
+          "key": "PLAYER_TWO",
+          "value": "Jugador 2"
+        },
+        {
+          "key": "PLAYER_YOU",
+          "value": "Tú"
+        },
+        {
+          "key": "PLAYER_AI",
+          "value": "Computadora"
+        },
+        {
+          "key": "TURN_ONE",
+          "value": "Turno del jugador 1"
+        },
+        {
+          "key": "TURN_TWO",
+          "value": "Turno del jugador 2"
+        },
+        {
+          "key": "TURN_YOU",
+          "value": "Tu turno"
+        },
+        {
+          "key": "TURN_AI",
+          "value": "Pensando…"
+        },
+        {
+          "key": "DROP_HINT",
+          "value": "Toca una columna para soltar una ficha"
+        },
+        {
+          "key": "RESULT_WIN",
+          "value": "¡Conectaste cuatro!"
+        },
+        {
+          "key": "RESULT_LOSE",
+          "value": "La computadora gana"
+        },
+        {
+          "key": "RESULT_DRAW",
+          "value": "Empate muy reñido"
+        },
+        {
+          "key": "RESULT_ONE",
+          "value": "El jugador 1 gana"
+        },
+        {
+          "key": "RESULT_TWO",
+          "value": "El jugador 2 gana"
+        },
+        {
+          "key": "RESULT_DETAIL",
+          "value": "¿Listo para otra ronda?"
+        },
+        {
+          "key": "PAUSE_TITLE",
+          "value": "Tómate tu tiempo"
+        },
+        {
+          "key": "RESTART_CONFIRM",
+          "value": "¿Empezar un tablero nuevo?"
+        },
+        {
+          "key": "HOME_CONFIRM",
+          "value": "¿Salir de esta partida?"
+        },
+        {
+          "key": "AUDIO_TITLE",
+          "value": "Audio"
+        },
+        {
+          "key": "AUDIO_MUSIC",
+          "value": "Música"
+        },
+        {
+          "key": "AUDIO_SFX",
+          "value": "Efectos de sonido"
+        },
+        {
+          "key": "AUDIO_VOLUME",
+          "value": "Volumen"
+        },
+        {
+          "key": "VISUAL_TITLE",
+          "value": "Tus fichas"
+        },
+        {
+          "key": "THEME_ONE",
+          "value": "Verde y dorado"
+        },
+        {
+          "key": "THEME_TWO",
+          "value": "Rojo y azul"
+        },
+        {
+          "key": "OTHER_TITLE",
+          "value": "Información"
+        },
+        {
+          "key": "PRIVACY_POLICY",
+          "value": "Política de privacidad"
+        },
+        {
+          "key": "PRIVACY_OPTIONS",
+          "value": "Opciones de privacidad"
+        },
+        {
+          "key": "ABOUT_TITLE",
+          "value": "Acerca de Four Fusion"
+        },
+        {
+          "key": "ABOUT_BODY",
+          "value": "Creado por MN7 Studio. Cuatro fichas. Posibilidades infinitas."
+        },
+        {
+          "key": "VERSION",
+          "value": "Versión"
+        },
+        {
+          "key": "HELP_BODY",
+          "value": "Por turnos, suelten una ficha en una columna. Conecta cuatro fichas en horizontal, vertical o diagonal para ganar. Si el tablero se llena sin ganador, hay empate."
+        },
+        {
+          "key": "HELP_UNDO",
+          "value": "Deshacer retira los dos últimos movimientos. Las partidas de dos jugadores incluyen tres usos gratis; contra la IA, uno. Los usos adicionales y los de la pantalla de resultado requieren un anuncio con recompensa."
+        },
+        {
+          "key": "ADS_UNAVAILABLE",
+          "value": "No hay anuncios disponibles. Inténtalo más tarde."
+        },
+        {
+          "key": "ERROR_SCENE",
+          "value": "No se puede abrir esta pantalla. Reinicia la aplicación."
+        },
+        {
+          "key": "ERROR_PRIVACY",
+          "value": "Las opciones de privacidad no están disponibles. Inténtalo más tarde."
+        },
+        {
+          "key": "LOADING",
+          "value": "Abriendo la partida…"
+        },
+        {
+          "key": "SELECTED",
+          "value": "Seleccionado"
+        },
+        {
+          "key": "UNDO_FREE",
+          "value": "Deshacer gratis restante"
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "rtl": false,
+      "font": "NotoSans",
+      "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "Quitter"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "Bonne chance pour la prochaine manche !"
+        },
+        {
+          "key": "MENU_PLAY",
+          "value": "Jouer"
+        },
+        {
+          "key": "MENU_SETTINGS",
+          "value": "Paramètres"
+        },
+        {
+          "key": "MENU_LANGUAGE",
+          "value": "Langue"
+        },
+        {
+          "key": "TAGLINE",
+          "value": "Un peu de stratégie. Un quatre parfait."
+        },
+        {
+          "key": "MENU_HELP",
+          "value": "Comment jouer"
+        },
+        {
+          "key": "MODE_TITLE",
+          "value": "Choisissez votre adversaire"
+        },
+        {
+          "key": "MODE_HUMAN_VS_HUMAN",
+          "value": "Deux joueurs"
+        },
+        {
+          "key": "MODE_HUMAN_VS_AI",
+          "value": "Jouer contre l'IA"
+        },
+        {
+          "key": "MODE_LOCAL_DETAIL",
+          "value": "Partagez l'écran. Défiez un ami."
+        },
+        {
+          "key": "MODE_AI_DETAIL",
+          "value": "Trouvez votre niveau. Affinez votre stratégie."
+        },
+        {
+          "key": "DIFFICULTY_TITLE",
+          "value": "Choisissez votre défi"
+        },
+        {
+          "key": "DIFFICULTY_EASY",
+          "value": "Facile"
+        },
+        {
+          "key": "DIFFICULTY_MEDIUM",
+          "value": "Moyen"
+        },
+        {
+          "key": "DIFFICULTY_HARD",
+          "value": "Difficile"
+        },
+        {
+          "key": "EASY_DETAIL",
+          "value": "Apprenez le rythme"
+        },
+        {
+          "key": "MEDIUM_DETAIL",
+          "value": "Pensez un coup à l'avance"
+        },
+        {
+          "key": "HARD_DETAIL",
+          "value": "Planifiez chaque coup"
+        },
+        {
+          "key": "BUTTON_START",
+          "value": "Commencer la partie"
+        },
+        {
+          "key": "BUTTON_BACK",
+          "value": "Retour"
+        },
+        {
+          "key": "BUTTON_HOME",
+          "value": "Accueil"
+        },
+        {
+          "key": "BUTTON_RESTART",
+          "value": "Recommencer"
+        },
+        {
+          "key": "BUTTON_REMATCH",
+          "value": "Rejouer"
+        },
+        {
+          "key": "BUTTON_UNDO",
+          "value": "Annuler"
+        },
+        {
+          "key": "BUTTON_REWARDED_UNDO",
+          "value": "Voir une pub pour annuler"
+        },
+        {
+          "key": "BUTTON_PAUSE",
+          "value": "Pause"
+        },
+        {
+          "key": "BUTTON_RESUME",
+          "value": "Reprendre"
+        },
+        {
+          "key": "BUTTON_CANCEL",
+          "value": "Annuler"
+        },
+        {
+          "key": "PLAYER_ONE",
+          "value": "Joueur 1"
+        },
+        {
+          "key": "PLAYER_TWO",
+          "value": "Joueur 2"
+        },
+        {
+          "key": "PLAYER_YOU",
+          "value": "Vous"
+        },
+        {
+          "key": "PLAYER_AI",
+          "value": "Ordinateur"
+        },
+        {
+          "key": "TURN_ONE",
+          "value": "Tour du joueur 1"
+        },
+        {
+          "key": "TURN_TWO",
+          "value": "Tour du joueur 2"
+        },
+        {
+          "key": "TURN_YOU",
+          "value": "À vous de jouer"
+        },
+        {
+          "key": "TURN_AI",
+          "value": "Réflexion…"
+        },
+        {
+          "key": "DROP_HINT",
+          "value": "Touchez une colonne pour placer un pion"
+        },
+        {
+          "key": "RESULT_WIN",
+          "value": "Vous avez aligné quatre pions !"
+        },
+        {
+          "key": "RESULT_LOSE",
+          "value": "L'ordinateur gagne"
+        },
+        {
+          "key": "RESULT_DRAW",
+          "value": "Match nul bien disputé"
+        },
+        {
+          "key": "RESULT_ONE",
+          "value": "Le joueur 1 gagne"
+        },
+        {
+          "key": "RESULT_TWO",
+          "value": "Le joueur 2 gagne"
+        },
+        {
+          "key": "RESULT_DETAIL",
+          "value": "Prêt pour une autre manche ?"
+        },
+        {
+          "key": "PAUSE_TITLE",
+          "value": "Prenez votre temps"
+        },
+        {
+          "key": "RESTART_CONFIRM",
+          "value": "Commencer une nouvelle grille ?"
+        },
+        {
+          "key": "HOME_CONFIRM",
+          "value": "Quitter cette partie ?"
+        },
+        {
+          "key": "AUDIO_TITLE",
+          "value": "Audio"
+        },
+        {
+          "key": "AUDIO_MUSIC",
+          "value": "Musique"
+        },
+        {
+          "key": "AUDIO_SFX",
+          "value": "Effets sonores"
+        },
+        {
+          "key": "AUDIO_VOLUME",
+          "value": "Volume"
+        },
+        {
+          "key": "VISUAL_TITLE",
+          "value": "Vos pions"
+        },
+        {
+          "key": "THEME_ONE",
+          "value": "Vert et or"
+        },
+        {
+          "key": "THEME_TWO",
+          "value": "Rouge et bleu"
+        },
+        {
+          "key": "OTHER_TITLE",
+          "value": "Informations"
+        },
+        {
+          "key": "PRIVACY_POLICY",
+          "value": "Politique de confidentialité"
+        },
+        {
+          "key": "PRIVACY_OPTIONS",
+          "value": "Choix de confidentialité"
+        },
+        {
+          "key": "ABOUT_TITLE",
+          "value": "À propos de Four Fusion"
+        },
+        {
+          "key": "ABOUT_BODY",
+          "value": "Créé par MN7 Studio. Quatre pions. Des possibilités infinies."
+        },
+        {
+          "key": "VERSION",
+          "value": "Version"
+        },
+        {
+          "key": "HELP_BODY",
+          "value": "À tour de rôle, placez un pion dans une colonne. Alignez-en quatre horizontalement, verticalement ou en diagonale pour gagner. Une grille pleine sans gagnant donne un match nul."
+        },
+        {
+          "key": "HELP_UNDO",
+          "value": "Annuler retire les deux derniers coups. Les parties à deux joueurs offrent trois annulations gratuites ; contre l'IA, une. Les suivantes et celles après le résultat nécessitent une pub récompensée."
+        },
+        {
+          "key": "ADS_UNAVAILABLE",
+          "value": "Aucune publicité disponible. Réessayez plus tard."
+        },
+        {
+          "key": "ERROR_SCENE",
+          "value": "Impossible d'ouvrir cet écran. Redémarrez l'application."
+        },
+        {
+          "key": "ERROR_PRIVACY",
+          "value": "Les choix de confidentialité sont indisponibles. Réessayez plus tard."
+        },
+        {
+          "key": "LOADING",
+          "value": "Ouverture de la partie…"
+        },
+        {
+          "key": "SELECTED",
+          "value": "Sélectionné"
+        },
+        {
+          "key": "UNDO_FREE",
+          "value": "Annulations gratuites restantes"
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "rtl": false,
+      "font": "NotoSans",
+      "entries": [
+        {
+          "key": "MENU_EXIT",
+          "value": "Sair"
+        },
+        {
+          "key": "RESULT_LOSE_DETAIL",
+          "value": "Mais sorte na próxima rodada!"
+        },
+        {
+          "key": "MENU_PLAY",
+          "value": "Jogar"
+        },
+        {
+          "key": "MENU_SETTINGS",
+          "value": "Configurações"
+        },
+        {
+          "key": "MENU_LANGUAGE",
+          "value": "Idioma"
+        },
+        {
+          "key": "TAGLINE",
+          "value": "Um pouco de estratégia. Quatro perfeitos."
+        },
+        {
+          "key": "MENU_HELP",
+          "value": "Como jogar"
+        },
+        {
+          "key": "MODE_TITLE",
+          "value": "Escolha seu oponente"
+        },
+        {
+          "key": "MODE_HUMAN_VS_HUMAN",
+          "value": "Dois jogadores"
+        },
+        {
+          "key": "MODE_HUMAN_VS_AI",
+          "value": "Jogar contra a IA"
+        },
+        {
+          "key": "MODE_LOCAL_DETAIL",
+          "value": "Compartilhe a tela. Desafie um amigo."
+        },
+        {
+          "key": "MODE_AI_DETAIL",
+          "value": "Encontre seu nível. Aprimore sua estratégia."
+        },
+        {
+          "key": "DIFFICULTY_TITLE",
+          "value": "Escolha seu desafio"
+        },
+        {
+          "key": "DIFFICULTY_EASY",
+          "value": "Fácil"
+        },
+        {
+          "key": "DIFFICULTY_MEDIUM",
+          "value": "Médio"
+        },
+        {
+          "key": "DIFFICULTY_HARD",
+          "value": "Difícil"
+        },
+        {
+          "key": "EASY_DETAIL",
+          "value": "Aprenda o ritmo"
+        },
+        {
+          "key": "MEDIUM_DETAIL",
+          "value": "Pense um passo à frente"
+        },
+        {
+          "key": "HARD_DETAIL",
+          "value": "Planeje cada jogada"
+        },
+        {
+          "key": "BUTTON_START",
+          "value": "Iniciar partida"
+        },
+        {
+          "key": "BUTTON_BACK",
+          "value": "Voltar"
+        },
+        {
+          "key": "BUTTON_HOME",
+          "value": "Início"
+        },
+        {
+          "key": "BUTTON_RESTART",
+          "value": "Reiniciar"
+        },
+        {
+          "key": "BUTTON_REMATCH",
+          "value": "Jogar novamente"
+        },
+        {
+          "key": "BUTTON_UNDO",
+          "value": "Desfazer"
+        },
+        {
+          "key": "BUTTON_REWARDED_UNDO",
+          "value": "Ver anúncio para desfazer"
+        },
+        {
+          "key": "BUTTON_PAUSE",
+          "value": "Pausar"
+        },
+        {
+          "key": "BUTTON_RESUME",
+          "value": "Continuar"
+        },
+        {
+          "key": "BUTTON_CANCEL",
+          "value": "Cancelar"
+        },
+        {
+          "key": "PLAYER_ONE",
+          "value": "Jogador 1"
+        },
+        {
+          "key": "PLAYER_TWO",
+          "value": "Jogador 2"
+        },
+        {
+          "key": "PLAYER_YOU",
+          "value": "Você"
+        },
+        {
+          "key": "PLAYER_AI",
+          "value": "Computador"
+        },
+        {
+          "key": "TURN_ONE",
+          "value": "Vez do jogador 1"
+        },
+        {
+          "key": "TURN_TWO",
+          "value": "Vez do jogador 2"
+        },
+        {
+          "key": "TURN_YOU",
+          "value": "Sua vez"
+        },
+        {
+          "key": "TURN_AI",
+          "value": "Pensando…"
+        },
+        {
+          "key": "DROP_HINT",
+          "value": "Toque em uma coluna para soltar uma peça"
+        },
+        {
+          "key": "RESULT_WIN",
+          "value": "Você conectou quatro!"
+        },
+        {
+          "key": "RESULT_LOSE",
+          "value": "O computador venceu"
+        },
+        {
+          "key": "RESULT_DRAW",
+          "value": "Empate equilibrado"
+        },
+        {
+          "key": "RESULT_ONE",
+          "value": "O jogador 1 venceu"
+        },
+        {
+          "key": "RESULT_TWO",
+          "value": "O jogador 2 venceu"
+        },
+        {
+          "key": "RESULT_DETAIL",
+          "value": "Pronto para outra rodada?"
+        },
+        {
+          "key": "PAUSE_TITLE",
+          "value": "Sem pressa"
+        },
+        {
+          "key": "RESTART_CONFIRM",
+          "value": "Começar um novo tabuleiro?"
+        },
+        {
+          "key": "HOME_CONFIRM",
+          "value": "Sair desta partida?"
+        },
+        {
+          "key": "AUDIO_TITLE",
+          "value": "Áudio"
+        },
+        {
+          "key": "AUDIO_MUSIC",
+          "value": "Música"
+        },
+        {
+          "key": "AUDIO_SFX",
+          "value": "Efeitos sonoros"
+        },
+        {
+          "key": "AUDIO_VOLUME",
+          "value": "Volume"
+        },
+        {
+          "key": "VISUAL_TITLE",
+          "value": "Suas peças"
+        },
+        {
+          "key": "THEME_ONE",
+          "value": "Verde e dourado"
+        },
+        {
+          "key": "THEME_TWO",
+          "value": "Vermelho e azul"
+        },
+        {
+          "key": "OTHER_TITLE",
+          "value": "Informações"
+        },
+        {
+          "key": "PRIVACY_POLICY",
+          "value": "Política de privacidade"
+        },
+        {
+          "key": "PRIVACY_OPTIONS",
+          "value": "Opções de privacidade"
+        },
+        {
+          "key": "ABOUT_TITLE",
+          "value": "Sobre o Four Fusion"
+        },
+        {
+          "key": "ABOUT_BODY",
+          "value": "Criado pela MN7 Studio. Quatro peças. Possibilidades infinitas."
+        },
+        {
+          "key": "VERSION",
+          "value": "Versão"
+        },
+        {
+          "key": "HELP_BODY",
+          "value": "Em turnos, solte uma peça em uma coluna. Conecte quatro peças na horizontal, vertical ou diagonal para vencer. Um tabuleiro cheio sem vencedor termina em empate."
+        },
+        {
+          "key": "HELP_UNDO",
+          "value": "Desfazer remove as duas últimas jogadas. Partidas com dois jogadores incluem três usos grátis; contra a IA, um. Usos adicionais e na tela de resultado exigem um anúncio recompensado."
+        },
+        {
+          "key": "ADS_UNAVAILABLE",
+          "value": "Nenhum anúncio disponível. Tente novamente mais tarde."
+        },
+        {
+          "key": "ERROR_SCENE",
+          "value": "Não foi possível abrir esta tela. Reinicie o aplicativo."
+        },
+        {
+          "key": "ERROR_PRIVACY",
+          "value": "As opções de privacidade estão indisponíveis. Tente novamente mais tarde."
+        },
+        {
+          "key": "LOADING",
+          "value": "Abrindo sua partida…"
+        },
+        {
+          "key": "SELECTED",
+          "value": "Selecionado"
+        },
+        {
+          "key": "UNDO_FREE",
+          "value": "Desfazer grátis restante"
+        }
+      ]
+    },
+    {
       "code": "ar",
       "name": "العربية",
       "rtl": true,
@@ -837,846 +1677,6 @@
         {
           "key": "UNDO_FREE",
           "value": "मुफ्त मौके शेष"
-        }
-      ]
-    },
-    {
-      "code": "ml",
-      "name": "മലയാളം",
-      "rtl": false,
-      "font": "NotoSansMalayalam",
-      "entries": [
-        {
-          "key": "MENU_EXIT",
-          "value": "പുറത്തുകടക്കുക"
-        },
-        {
-          "key": "RESULT_LOSE_DETAIL",
-          "value": "അടുത്ത റൗണ്ടിൽ വിജയിക്കട്ടെ!"
-        },
-        {
-          "key": "MENU_PLAY",
-          "value": "കളിക്കുക"
-        },
-        {
-          "key": "MENU_SETTINGS",
-          "value": "ക്രമീകരണങ്ങൾ"
-        },
-        {
-          "key": "MENU_LANGUAGE",
-          "value": "ഭാഷ"
-        },
-        {
-          "key": "TAGLINE",
-          "value": "അല്പം തന്ത്രം. നാലിൽ വിജയം."
-        },
-        {
-          "key": "MENU_HELP",
-          "value": "എങ്ങനെ കളിക്കാം"
-        },
-        {
-          "key": "MODE_TITLE",
-          "value": "എതിരാളിയെ തിരഞ്ഞെടുക്കുക"
-        },
-        {
-          "key": "MODE_HUMAN_VS_HUMAN",
-          "value": "രണ്ട് കളിക്കാർ"
-        },
-        {
-          "key": "MODE_HUMAN_VS_AI",
-          "value": "കമ്പ്യൂട്ടറിനെതിരെ കളിക്കുക"
-        },
-        {
-          "key": "MODE_LOCAL_DETAIL",
-          "value": "ഒരേ സ്ക്രീനിൽ സുഹൃത്തിനെ വെല്ലുവിളിക്കുക."
-        },
-        {
-          "key": "MODE_AI_DETAIL",
-          "value": "നില തിരഞ്ഞെടുത്ത് തന്ത്രം മെച്ചപ്പെടുത്തുക."
-        },
-        {
-          "key": "DIFFICULTY_TITLE",
-          "value": "വെല്ലുവിളി തിരഞ്ഞെടുക്കുക"
-        },
-        {
-          "key": "DIFFICULTY_EASY",
-          "value": "എളുപ്പം"
-        },
-        {
-          "key": "DIFFICULTY_MEDIUM",
-          "value": "ഇടത്തരം"
-        },
-        {
-          "key": "DIFFICULTY_HARD",
-          "value": "കഠിനം"
-        },
-        {
-          "key": "EASY_DETAIL",
-          "value": "കളിയുടെ താളം പഠിക്കുക"
-        },
-        {
-          "key": "MEDIUM_DETAIL",
-          "value": "ഒരു പടി മുന്നിൽ ചിന്തിക്കുക"
-        },
-        {
-          "key": "HARD_DETAIL",
-          "value": "ഓരോ നീക്കവും ആസൂത്രണം ചെയ്യുക"
-        },
-        {
-          "key": "BUTTON_START",
-          "value": "കളി ആരംഭിക്കുക"
-        },
-        {
-          "key": "BUTTON_BACK",
-          "value": "തിരികെ"
-        },
-        {
-          "key": "BUTTON_HOME",
-          "value": "ഹോം"
-        },
-        {
-          "key": "BUTTON_RESTART",
-          "value": "വീണ്ടും തുടങ്ങുക"
-        },
-        {
-          "key": "BUTTON_REMATCH",
-          "value": "വീണ്ടും കളിക്കുക"
-        },
-        {
-          "key": "BUTTON_UNDO",
-          "value": "നീക്കം തിരുത്തുക"
-        },
-        {
-          "key": "BUTTON_REWARDED_UNDO",
-          "value": "പരസ്യം കണ്ട് നീക്കം തിരുത്തുക"
-        },
-        {
-          "key": "BUTTON_PAUSE",
-          "value": "താൽക്കാലികമായി നിർത്തുക"
-        },
-        {
-          "key": "BUTTON_RESUME",
-          "value": "തുടരുക"
-        },
-        {
-          "key": "BUTTON_CANCEL",
-          "value": "റദ്ദാക്കുക"
-        },
-        {
-          "key": "PLAYER_ONE",
-          "value": "കളിക്കാരൻ 1"
-        },
-        {
-          "key": "PLAYER_TWO",
-          "value": "കളിക്കാരൻ 2"
-        },
-        {
-          "key": "PLAYER_YOU",
-          "value": "നിങ്ങൾ"
-        },
-        {
-          "key": "PLAYER_AI",
-          "value": "കമ്പ്യൂട്ടർ"
-        },
-        {
-          "key": "TURN_ONE",
-          "value": "കളിക്കാരൻ 1 ന്റെ ഊഴം"
-        },
-        {
-          "key": "TURN_TWO",
-          "value": "കളിക്കാരൻ 2 ന്റെ ഊഴം"
-        },
-        {
-          "key": "TURN_YOU",
-          "value": "നിങ്ങളുടെ ഊഴം"
-        },
-        {
-          "key": "TURN_AI",
-          "value": "ചിന്തിക്കുന്നു…"
-        },
-        {
-          "key": "DROP_HINT",
-          "value": "കരു ഇടാൻ ഒരു നിരയിൽ തൊടുക"
-        },
-        {
-          "key": "RESULT_WIN",
-          "value": "നിങ്ങൾ നാലെണ്ണം ചേർത്തു!"
-        },
-        {
-          "key": "RESULT_LOSE",
-          "value": "കമ്പ്യൂട്ടർ ജയിച്ചു"
-        },
-        {
-          "key": "RESULT_DRAW",
-          "value": "ഒപ്പത്തിനൊപ്പം സമനില"
-        },
-        {
-          "key": "RESULT_ONE",
-          "value": "കളിക്കാരൻ 1 ജയിച്ചു"
-        },
-        {
-          "key": "RESULT_TWO",
-          "value": "കളിക്കാരൻ 2 ജയിച്ചു"
-        },
-        {
-          "key": "RESULT_DETAIL",
-          "value": "മറ്റൊരു കളിക്ക് തയ്യാറാണോ?"
-        },
-        {
-          "key": "PAUSE_TITLE",
-          "value": "സമയമെടുക്കൂ"
-        },
-        {
-          "key": "RESTART_CONFIRM",
-          "value": "പുതിയ കളി തുടങ്ങണോ?"
-        },
-        {
-          "key": "HOME_CONFIRM",
-          "value": "ഈ കളി വിടണോ?"
-        },
-        {
-          "key": "AUDIO_TITLE",
-          "value": "ശബ്ദം"
-        },
-        {
-          "key": "AUDIO_MUSIC",
-          "value": "സംഗീതം"
-        },
-        {
-          "key": "AUDIO_SFX",
-          "value": "ശബ്ദപ്രഭാവങ്ങൾ"
-        },
-        {
-          "key": "AUDIO_VOLUME",
-          "value": "ശബ്ദനില"
-        },
-        {
-          "key": "VISUAL_TITLE",
-          "value": "നിങ്ങളുടെ കരുക്കൾ"
-        },
-        {
-          "key": "THEME_ONE",
-          "value": "പച്ചയും സ്വർണവും"
-        },
-        {
-          "key": "THEME_TWO",
-          "value": "ചുവപ്പും നീലയും"
-        },
-        {
-          "key": "OTHER_TITLE",
-          "value": "വിവരങ്ങൾ"
-        },
-        {
-          "key": "PRIVACY_POLICY",
-          "value": "സ്വകാര്യതാ നയം"
-        },
-        {
-          "key": "PRIVACY_OPTIONS",
-          "value": "സ്വകാര്യതാ തിരഞ്ഞെടുപ്പുകൾ"
-        },
-        {
-          "key": "ABOUT_TITLE",
-          "value": "Four Fusion നെക്കുറിച്ച്"
-        },
-        {
-          "key": "ABOUT_BODY",
-          "value": "MN7 Studio നിർമ്മിച്ചത്. നാല് കരുക്കൾ, അനന്ത സാധ്യതകൾ."
-        },
-        {
-          "key": "VERSION",
-          "value": "പതിപ്പ്"
-        },
-        {
-          "key": "HELP_BODY",
-          "value": "ഊഴമനുസരിച്ച് ഒരു നിരയിൽ കരു ഇടുക. നാലെണ്ണം തിരശ്ചീനമായോ ലംബമായോ ചരിഞ്ഞോ ചേർത്താൽ ജയിക്കും. വിജയിയില്ലാതെ ബോർഡ് നിറഞ്ഞാൽ സമനില."
-        },
-        {
-          "key": "HELP_UNDO",
-          "value": "അവസാന രണ്ട് നീക്കങ്ങൾ തിരുത്താം. രണ്ട് കളിക്കാർക്ക് മൂന്ന് സൗജന്യ അവസരങ്ങൾ, കമ്പ്യൂട്ടറിനെതിരെ ഒന്ന്. തുടർന്നും ഫലത്തിന് ശേഷവും പരസ്യം കാണണം."
-        },
-        {
-          "key": "ADS_UNAVAILABLE",
-          "value": "പരസ്യം ലഭ്യമല്ല. പിന്നീട് ശ്രമിക്കുക."
-        },
-        {
-          "key": "ERROR_SCENE",
-          "value": "സ്ക്രീൻ തുറക്കാനായില്ല. ആപ്പ് വീണ്ടും തുടങ്ങുക."
-        },
-        {
-          "key": "ERROR_PRIVACY",
-          "value": "സ്വകാര്യതാ തിരഞ്ഞെടുപ്പുകൾ ലഭ്യമല്ല. പിന്നീട് ശ്രമിക്കുക."
-        },
-        {
-          "key": "LOADING",
-          "value": "കളി തുറക്കുന്നു…"
-        },
-        {
-          "key": "SELECTED",
-          "value": "തിരഞ്ഞെടുത്തു"
-        },
-        {
-          "key": "UNDO_FREE",
-          "value": "സൗജന്യ അവസരങ്ങൾ ബാക്കി"
-        }
-      ]
-    },
-    {
-      "code": "ta",
-      "name": "தமிழ்",
-      "rtl": false,
-      "font": "NotoSansTamil",
-      "entries": [
-        {
-          "key": "MENU_EXIT",
-          "value": "வெளியேறு"
-        },
-        {
-          "key": "RESULT_LOSE_DETAIL",
-          "value": "அடுத்த சுற்றில் வெற்றி பெற வாழ்த்துகள்!"
-        },
-        {
-          "key": "MENU_PLAY",
-          "value": "விளையாடு"
-        },
-        {
-          "key": "MENU_SETTINGS",
-          "value": "அமைப்புகள்"
-        },
-        {
-          "key": "MENU_LANGUAGE",
-          "value": "மொழி"
-        },
-        {
-          "key": "TAGLINE",
-          "value": "சிறிது உத்தி. நான்கில் வெற்றி."
-        },
-        {
-          "key": "MENU_HELP",
-          "value": "விளையாடுவது எப்படி"
-        },
-        {
-          "key": "MODE_TITLE",
-          "value": "எதிராளியைத் தேர்ந்தெடு"
-        },
-        {
-          "key": "MODE_HUMAN_VS_HUMAN",
-          "value": "இரு வீரர்கள்"
-        },
-        {
-          "key": "MODE_HUMAN_VS_AI",
-          "value": "கணினியுடன் விளையாடு"
-        },
-        {
-          "key": "MODE_LOCAL_DETAIL",
-          "value": "ஒரே திரையில் நண்பருடன் போட்டியிடு."
-        },
-        {
-          "key": "MODE_AI_DETAIL",
-          "value": "உன் நிலையைத் தேர்ந்து உத்தியை மேம்படுத்து."
-        },
-        {
-          "key": "DIFFICULTY_TITLE",
-          "value": "சவாலைத் தேர்ந்தெடு"
-        },
-        {
-          "key": "DIFFICULTY_EASY",
-          "value": "எளிது"
-        },
-        {
-          "key": "DIFFICULTY_MEDIUM",
-          "value": "நடுத்தரம்"
-        },
-        {
-          "key": "DIFFICULTY_HARD",
-          "value": "கடினம்"
-        },
-        {
-          "key": "EASY_DETAIL",
-          "value": "ஆட்டத்தின் ஓட்டத்தைக் கற்றுக்கொள்"
-        },
-        {
-          "key": "MEDIUM_DETAIL",
-          "value": "ஒரு படி முன்னே யோசி"
-        },
-        {
-          "key": "HARD_DETAIL",
-          "value": "ஒவ்வொரு நகர்வையும் திட்டமிடு"
-        },
-        {
-          "key": "BUTTON_START",
-          "value": "ஆட்டத்தைத் தொடங்கு"
-        },
-        {
-          "key": "BUTTON_BACK",
-          "value": "பின்செல்"
-        },
-        {
-          "key": "BUTTON_HOME",
-          "value": "முகப்பு"
-        },
-        {
-          "key": "BUTTON_RESTART",
-          "value": "மீண்டும் தொடங்கு"
-        },
-        {
-          "key": "BUTTON_REMATCH",
-          "value": "மீண்டும் விளையாடு"
-        },
-        {
-          "key": "BUTTON_UNDO",
-          "value": "நகர்வை மீளமை"
-        },
-        {
-          "key": "BUTTON_REWARDED_UNDO",
-          "value": "விளம்பரம் பார்த்து நகர்வை மீளமை"
-        },
-        {
-          "key": "BUTTON_PAUSE",
-          "value": "இடைநிறுத்து"
-        },
-        {
-          "key": "BUTTON_RESUME",
-          "value": "தொடர்"
-        },
-        {
-          "key": "BUTTON_CANCEL",
-          "value": "ரத்து செய்"
-        },
-        {
-          "key": "PLAYER_ONE",
-          "value": "வீரர் 1"
-        },
-        {
-          "key": "PLAYER_TWO",
-          "value": "வீரர் 2"
-        },
-        {
-          "key": "PLAYER_YOU",
-          "value": "நீ"
-        },
-        {
-          "key": "PLAYER_AI",
-          "value": "கணினி"
-        },
-        {
-          "key": "TURN_ONE",
-          "value": "வீரர் 1 முறை"
-        },
-        {
-          "key": "TURN_TWO",
-          "value": "வீரர் 2 முறை"
-        },
-        {
-          "key": "TURN_YOU",
-          "value": "உன் முறை"
-        },
-        {
-          "key": "TURN_AI",
-          "value": "யோசிக்கிறது…"
-        },
-        {
-          "key": "DROP_HINT",
-          "value": "காயை இட ஒரு நெடுவரிசையைத் தொடு"
-        },
-        {
-          "key": "RESULT_WIN",
-          "value": "நான்கை இணைத்துவிட்டாய்!"
-        },
-        {
-          "key": "RESULT_LOSE",
-          "value": "கணினி வென்றது"
-        },
-        {
-          "key": "RESULT_DRAW",
-          "value": "சமமான ஆட்டம்"
-        },
-        {
-          "key": "RESULT_ONE",
-          "value": "வீரர் 1 வென்றார்"
-        },
-        {
-          "key": "RESULT_TWO",
-          "value": "வீரர் 2 வென்றார்"
-        },
-        {
-          "key": "RESULT_DETAIL",
-          "value": "அடுத்த சுற்றுக்குத் தயாரா?"
-        },
-        {
-          "key": "PAUSE_TITLE",
-          "value": "நேரம் எடுத்துக்கொள்"
-        },
-        {
-          "key": "RESTART_CONFIRM",
-          "value": "புதிய ஆட்டத்தைத் தொடங்கவா?"
-        },
-        {
-          "key": "HOME_CONFIRM",
-          "value": "இந்த ஆட்டத்தை விட்டு வெளியேறவா?"
-        },
-        {
-          "key": "AUDIO_TITLE",
-          "value": "ஒலி"
-        },
-        {
-          "key": "AUDIO_MUSIC",
-          "value": "இசை"
-        },
-        {
-          "key": "AUDIO_SFX",
-          "value": "ஒலி விளைவுகள்"
-        },
-        {
-          "key": "AUDIO_VOLUME",
-          "value": "ஒலி அளவு"
-        },
-        {
-          "key": "VISUAL_TITLE",
-          "value": "உன் காய்கள்"
-        },
-        {
-          "key": "THEME_ONE",
-          "value": "பச்சை மற்றும் பொன்"
-        },
-        {
-          "key": "THEME_TWO",
-          "value": "சிவப்பு மற்றும் நீலம்"
-        },
-        {
-          "key": "OTHER_TITLE",
-          "value": "தகவல்"
-        },
-        {
-          "key": "PRIVACY_POLICY",
-          "value": "தனியுரிமைக் கொள்கை"
-        },
-        {
-          "key": "PRIVACY_OPTIONS",
-          "value": "தனியுரிமைத் தேர்வுகள்"
-        },
-        {
-          "key": "ABOUT_TITLE",
-          "value": "Four Fusion பற்றி"
-        },
-        {
-          "key": "ABOUT_BODY",
-          "value": "MN7 Studio உருவாக்கம். நான்கு காய்கள், முடிவற்ற வாய்ப்புகள்."
-        },
-        {
-          "key": "VERSION",
-          "value": "பதிப்பு"
-        },
-        {
-          "key": "HELP_BODY",
-          "value": "மாறி மாறி ஒரு நெடுவரிசையில் காயை இடு. உன் நான்கு காய்களை கிடைமட்டமாக, செங்குத்தாக அல்லது குறுக்காக இணைத்தால் வெற்றி. வெற்றியின்றி பலகை நிறைந்தால் சமநிலை."
-        },
-        {
-          "key": "HELP_UNDO",
-          "value": "கடைசி இரு நகர்வுகளை மீளமைக்கலாம். இரு வீரர்களுக்கு மூன்று இலவச வாய்ப்புகள்; கணினியுடன் ஒன்று. அதன் பிறகும் முடிவுத் திரையிலும் விளம்பரம் பார்க்க வேண்டும்."
-        },
-        {
-          "key": "ADS_UNAVAILABLE",
-          "value": "விளம்பரம் இல்லை. பிறகு முயற்சிக்கவும்."
-        },
-        {
-          "key": "ERROR_SCENE",
-          "value": "திரையைத் திறக்க முடியவில்லை. செயலியை மீண்டும் தொடங்கு."
-        },
-        {
-          "key": "ERROR_PRIVACY",
-          "value": "தனியுரிமைத் தேர்வுகள் இல்லை. பிறகு முயற்சிக்கவும்."
-        },
-        {
-          "key": "LOADING",
-          "value": "ஆட்டம் திறக்கிறது…"
-        },
-        {
-          "key": "SELECTED",
-          "value": "தேர்ந்தெடுக்கப்பட்டது"
-        },
-        {
-          "key": "UNDO_FREE",
-          "value": "மீதமுள்ள இலவச வாய்ப்புகள்"
-        }
-      ]
-    },
-    {
-      "code": "ur",
-      "name": "اردو",
-      "rtl": true,
-      "font": "NotoSansArabic",
-      "entries": [
-        {
-          "key": "MENU_EXIT",
-          "value": "باہر نکلیں"
-        },
-        {
-          "key": "RESULT_LOSE_DETAIL",
-          "value": "اگلے راؤنڈ کے لیے نیک خواہشات!"
-        },
-        {
-          "key": "MENU_PLAY",
-          "value": "کھیلیں"
-        },
-        {
-          "key": "MENU_SETTINGS",
-          "value": "ترتیبات"
-        },
-        {
-          "key": "MENU_LANGUAGE",
-          "value": "زبان"
-        },
-        {
-          "key": "TAGLINE",
-          "value": "تھوڑی حکمت۔ چار سے جیت۔"
-        },
-        {
-          "key": "MENU_HELP",
-          "value": "کھیلنے کا طریقہ"
-        },
-        {
-          "key": "MODE_TITLE",
-          "value": "حریف منتخب کریں"
-        },
-        {
-          "key": "MODE_HUMAN_VS_HUMAN",
-          "value": "دو کھلاڑی"
-        },
-        {
-          "key": "MODE_HUMAN_VS_AI",
-          "value": "کمپیوٹر کے خلاف کھیلیں"
-        },
-        {
-          "key": "MODE_LOCAL_DETAIL",
-          "value": "ایک اسکرین پر دوست کو چیلنج کریں۔"
-        },
-        {
-          "key": "MODE_AI_DETAIL",
-          "value": "اپنی سطح چنیں اور حکمت بہتر بنائیں۔"
-        },
-        {
-          "key": "DIFFICULTY_TITLE",
-          "value": "چیلنج منتخب کریں"
-        },
-        {
-          "key": "DIFFICULTY_EASY",
-          "value": "آسان"
-        },
-        {
-          "key": "DIFFICULTY_MEDIUM",
-          "value": "درمیانہ"
-        },
-        {
-          "key": "DIFFICULTY_HARD",
-          "value": "مشکل"
-        },
-        {
-          "key": "EASY_DETAIL",
-          "value": "کھیل کی تال سیکھیں"
-        },
-        {
-          "key": "MEDIUM_DETAIL",
-          "value": "ایک قدم آگے سوچیں"
-        },
-        {
-          "key": "HARD_DETAIL",
-          "value": "ہر چال کی منصوبہ بندی کریں"
-        },
-        {
-          "key": "BUTTON_START",
-          "value": "کھیل شروع کریں"
-        },
-        {
-          "key": "BUTTON_BACK",
-          "value": "واپس"
-        },
-        {
-          "key": "BUTTON_HOME",
-          "value": "ہوم"
-        },
-        {
-          "key": "BUTTON_RESTART",
-          "value": "دوبارہ شروع کریں"
-        },
-        {
-          "key": "BUTTON_REMATCH",
-          "value": "پھر کھیلیں"
-        },
-        {
-          "key": "BUTTON_UNDO",
-          "value": "چال واپس لیں"
-        },
-        {
-          "key": "BUTTON_REWARDED_UNDO",
-          "value": "اشتہار دیکھ کر چال واپس لیں"
-        },
-        {
-          "key": "BUTTON_PAUSE",
-          "value": "وقفہ"
-        },
-        {
-          "key": "BUTTON_RESUME",
-          "value": "جاری رکھیں"
-        },
-        {
-          "key": "BUTTON_CANCEL",
-          "value": "منسوخ کریں"
-        },
-        {
-          "key": "PLAYER_ONE",
-          "value": "کھلاڑی ۱"
-        },
-        {
-          "key": "PLAYER_TWO",
-          "value": "کھلاڑی ۲"
-        },
-        {
-          "key": "PLAYER_YOU",
-          "value": "آپ"
-        },
-        {
-          "key": "PLAYER_AI",
-          "value": "کمپیوٹر"
-        },
-        {
-          "key": "TURN_ONE",
-          "value": "کھلاڑی ۱ کی باری"
-        },
-        {
-          "key": "TURN_TWO",
-          "value": "کھلاڑی ۲ کی باری"
-        },
-        {
-          "key": "TURN_YOU",
-          "value": "آپ کی باری"
-        },
-        {
-          "key": "TURN_AI",
-          "value": "سوچ رہا ہے…"
-        },
-        {
-          "key": "DROP_HINT",
-          "value": "مہرہ ڈالنے کے لیے کالم چھوئیں"
-        },
-        {
-          "key": "RESULT_WIN",
-          "value": "آپ نے چار جوڑ دیے!"
-        },
-        {
-          "key": "RESULT_LOSE",
-          "value": "کمپیوٹر جیت گیا"
-        },
-        {
-          "key": "RESULT_DRAW",
-          "value": "برابر کا مقابلہ"
-        },
-        {
-          "key": "RESULT_ONE",
-          "value": "کھلاڑی ۱ جیت گیا"
-        },
-        {
-          "key": "RESULT_TWO",
-          "value": "کھلاڑی ۲ جیت گیا"
-        },
-        {
-          "key": "RESULT_DETAIL",
-          "value": "ایک اور باری کے لیے تیار ہیں؟"
-        },
-        {
-          "key": "PAUSE_TITLE",
-          "value": "اپنا وقت لیں"
-        },
-        {
-          "key": "RESTART_CONFIRM",
-          "value": "نیا کھیل شروع کریں؟"
-        },
-        {
-          "key": "HOME_CONFIRM",
-          "value": "یہ کھیل چھوڑ دیں؟"
-        },
-        {
-          "key": "AUDIO_TITLE",
-          "value": "آواز"
-        },
-        {
-          "key": "AUDIO_MUSIC",
-          "value": "موسیقی"
-        },
-        {
-          "key": "AUDIO_SFX",
-          "value": "صوتی اثرات"
-        },
-        {
-          "key": "AUDIO_VOLUME",
-          "value": "آواز کی سطح"
-        },
-        {
-          "key": "VISUAL_TITLE",
-          "value": "آپ کے مہرے"
-        },
-        {
-          "key": "THEME_ONE",
-          "value": "سبز اور سنہری"
-        },
-        {
-          "key": "THEME_TWO",
-          "value": "سرخ اور نیلا"
-        },
-        {
-          "key": "OTHER_TITLE",
-          "value": "معلومات"
-        },
-        {
-          "key": "PRIVACY_POLICY",
-          "value": "رازداری کی پالیسی"
-        },
-        {
-          "key": "PRIVACY_OPTIONS",
-          "value": "رازداری کے اختیارات"
-        },
-        {
-          "key": "ABOUT_TITLE",
-          "value": "Four Fusion کے بارے میں"
-        },
-        {
-          "key": "ABOUT_BODY",
-          "value": "MN7 Studio کی پیشکش۔ چار مہرے، بے شمار امکانات۔"
-        },
-        {
-          "key": "VERSION",
-          "value": "ورژن"
-        },
-        {
-          "key": "HELP_BODY",
-          "value": "باری باری کالم میں مہرہ ڈالیں۔ جیتنے کے لیے اپنے چار مہرے افقی، عمودی یا ترچھے جوڑیں۔ فاتح کے بغیر بھرا بورڈ برابر ہے۔"
-        },
-        {
-          "key": "HELP_UNDO",
-          "value": "آخری دو چالیں واپس ہوتی ہیں۔ دو کھلاڑیوں کو تین اور کمپیوٹر کے خلاف ایک مفت موقع ملتا ہے۔ مزید اور نتیجے کے بعد اشتہار دیکھنا ہوگا۔"
-        },
-        {
-          "key": "ADS_UNAVAILABLE",
-          "value": "اشتہار دستیاب نہیں۔ بعد میں کوشش کریں۔"
-        },
-        {
-          "key": "ERROR_SCENE",
-          "value": "اسکرین نہیں کھل سکی۔ ایپ دوبارہ شروع کریں۔"
-        },
-        {
-          "key": "ERROR_PRIVACY",
-          "value": "رازداری کے اختیارات دستیاب نہیں۔ بعد میں کوشش کریں۔"
-        },
-        {
-          "key": "LOADING",
-          "value": "کھیل کھل رہا ہے…"
-        },
-        {
-          "key": "SELECTED",
-          "value": "منتخب"
-        },
-        {
-          "key": "UNDO_FREE",
-          "value": "باقی مفت مواقع"
         }
       ]
     }

@@ -109,13 +109,17 @@ public static class FusionValidation
         var full = new AIBoard(draw);
         Check(!full.HasValidMoves() && !full.CheckWinner(PieceType.Player1) && !full.CheckWinner(PieceType.Player2), "Full-board draw");
         Check(AISearch.FindBestMove(draw, CancellationToken.None, 3) == -1, "AI full-board termination");
+        Check(AISearch.FindBestMoveTimed(draw, CancellationToken.None) == -1, "Timed Hard AI full-board termination");
         var threat = new PieceType[7, 6];
         threat[0,0] = threat[1,0] = threat[2,0] = PieceType.Player1;
         Check(AISearch.FindBestMove(threat, CancellationToken.None, 3) == 3, "AI blocks immediate loss");
         threat[0,0] = threat[1,0] = threat[2,0] = PieceType.Player2;
         Check(AISearch.FindBestMove(threat, CancellationToken.None, 3) == 3, "AI takes immediate win");
+        Check(AISearch.FindBestMoveTimed(threat, CancellationToken.None) == 3, "Timed Hard AI keeps immediate win");
+        threat[0,0] = threat[1,0] = threat[2,0] = PieceType.Player1;
+        Check(AISearch.FindBestMoveTimed(threat, CancellationToken.None) == 3, "Timed Hard AI keeps immediate block");
         var cancel = new CancellationTokenSource(); cancel.Cancel(); bool cancelled = false;
-        try { AISearch.FindBestMove(threat, cancel.Token); } catch (OperationCanceledException) { cancelled = true; }
+        try { AISearch.FindBestMoveTimed(threat, cancel.Token); } catch (OperationCanceledException) { cancelled = true; }
         Check(cancelled, "AI cancellation"); cancel.Dispose();
         foreach (bool rewardFirst in new[] { true, false })
         {
@@ -161,12 +165,12 @@ public static class FusionValidation
         try
         {
             if (phase == 0) { Check(FusionUI.Instance != null, "Main menu presentation boot"); Capture("01-menu-en"); phase++; }
-            else if (phase == 1) { Localization.SetLanguage("ar"); phase++; }
-            else if (phase == 2) { Capture("02-menu-ar"); Localization.SetLanguage("ur"); phase++; }
-            else if (phase == 3) { Capture("03-menu-ur"); Localization.SetLanguage("hi"); phase++; }
-            else if (phase == 4) { Capture("04-menu-hi"); Localization.SetLanguage("ml"); phase++; }
-            else if (phase == 5) { Capture("05-menu-ml"); Localization.SetLanguage("ta"); phase++; }
-            else if (phase == 6) { Capture("06-menu-ta"); Localization.SetLanguage("en"); GameSettings.GameMode = GameMode.HumanVsHuman; SceneTransition.Load("GameScene"); phase++; next += 3; }
+            else if (phase == 1) { Localization.SetLanguage("es"); phase++; }
+            else if (phase == 2) { Capture("02-menu-es"); Localization.SetLanguage("fr"); phase++; }
+            else if (phase == 3) { Capture("03-menu-fr"); Localization.SetLanguage("pt"); phase++; }
+            else if (phase == 4) { Capture("04-menu-pt"); Localization.SetLanguage("ar"); phase++; }
+            else if (phase == 5) { Capture("05-menu-ar"); Localization.SetLanguage("hi"); phase++; }
+            else if (phase == 6) { Capture("06-menu-hi"); Localization.SetLanguage("en"); GameSettings.GameMode = GameMode.HumanVsHuman; SceneTransition.Load("GameScene"); phase++; next += 3; }
             else if (phase == 7)
             {
                 Check(BoardManager.Instance != null && BoardManager.Instance.Columns == 7 && BoardManager.Instance.Rows == 6, "Original board dimensions");
