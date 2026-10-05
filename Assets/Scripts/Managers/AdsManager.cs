@@ -8,9 +8,9 @@ public class AdManager : MonoBehaviour
 {
     public static AdManager Instance;
 #if UNITY_ANDROID && !UNITY_EDITOR && !DEVELOPMENT_BUILD
-    private const string BannerId = "ca-app-pub-1729898546273793/6166062447";
-    private const string InterstitialId = "ca-app-pub-1729898546273793/4852980773";
-    private const string RewardedId = "ca-app-pub-1729898546273793/3668605627";
+    private const string BannerId = "ca-app-pub-2830084422237874/1526537294";
+    private const string InterstitialId = "ca-app-pub-2830084422237874/5082638920";
+    private const string RewardedId = "ca-app-pub-2830084422237874/7649092517";
 #else
     private const string BannerId = "ca-app-pub-3940256099942544/6300978111";
     private const string InterstitialId = "ca-app-pub-3940256099942544/1033173712";
