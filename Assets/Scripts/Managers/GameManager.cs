@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private int freeUndoCount;
     private static int completedGames;
-    [SerializeField] private int interstitialFrequency = 3;
+    [SerializeField] private int interstitialFrequency = 2;
     [SerializeField] private GameObject columnButtons;
     [SerializeField] private float resultPanelDelay = 1.1f;
     [SerializeField] private float interstitialDelay = 1f;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         {
             countedResult = true;
             completedGames++;
-            if (completedGames % Mathf.Max(3, interstitialFrequency) == 0)
+            if (completedGames % Mathf.Max(2, interstitialFrequency) == 0)
             {
                 yield return new WaitForSeconds(interstitialDelay);
                 if (IsGameOver) AdManager.Instance?.ShowInterstitial();
