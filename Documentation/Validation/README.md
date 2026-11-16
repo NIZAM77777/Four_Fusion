@@ -9,7 +9,7 @@ Use `../PRODUCTION_UPGRADE.md` for the complete audit, implementation and releas
 - `scene-audit.txt`: shipping-scene script reference audit.
 - `runtime-checks.txt`, `runtime-errors.txt`, `result.txt`: original isolated Editor run. Assertions passed but an internal Unity SearchDatabase exception caused overall FAIL; this evidence is retained.
 - `Player/player-checks.txt`, `player-errors.txt`, `player-result.txt`: latest reference UI development Windows player run. A clean run has 68 PASS entries, an empty error file and PASS result.
-- `Player/*.png`: 40 actual Unity camera/UI Toolkit offscreen renders. They are layout evidence, not simulated advertising/device screenshots. Settings screenshots include top and scrolled-bottom views for every language.
+- Generated `Player/*.png` captures are intentionally excluded from the repository to keep the project lightweight. Recreate them with the documented development-player command when visual evidence is needed.
 - `ReferenceUI/`: fresh 18-rule and 81-scene-object reference checks for the reference redesign. See `../UI_REFERENCE_REDESIGN.md` for its scope and limitations.
 - `Player/desktop-profile.txt`: 120 idle frames in a hidden development window. This is not a representative visible-rendering benchmark and has no baseline or Android comparison.
 - `android-build-status.txt`: Android packaging failure due to Windows Application Control; no bundle is available.

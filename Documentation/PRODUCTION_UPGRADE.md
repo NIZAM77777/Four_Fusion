@@ -12,7 +12,7 @@ The pre-change inventory records 345 non-meta assets, 37 scenes and 68 textures.
 
 Working systems retained: gravity, board dimensions, horizontal/vertical/both-diagonal wins, full-board draw detection, two-player mode, Easy/Medium/Hard AI, paired undo, 3/1 free undo quotas, two sprite themes and rewarded undo. Existing settings used PlayerPrefs. There was no match-resume save system or localization architecture.
 
-Confirmed issues included duplicate placement/loss audio, a theme service destroyed before gameplay used it, unsafe invalid columns and overlapping undo/drop paths, incorrect turn restoration after a human result, uncancelled result routines, Easy AI full-board looping, Hard AI main-thread blocking/allocation, unsafe global-state reward callbacks, missing consent handling and image-baked English UI. See `Audit/IMPLEMENTATION.md` and `Audit/baseline-inventory.json`.
+Confirmed issues included duplicate placement/loss audio, a theme service destroyed before gameplay used it, unsafe invalid columns and overlapping undo/drop paths, incorrect turn restoration after a human result, uncancelled result routines, Easy AI full-board looping, Hard AI main-thread blocking/allocation, unsafe global-state reward callbacks, missing consent handling and image-baked English UI.
 
 ## 2–3. UI and UX
 

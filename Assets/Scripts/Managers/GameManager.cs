@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public bool IsPaused { get; private set; }
     public bool InputBlocked => IsGameOver || IsPaused || SceneTransition.IsLoading || (AdManager.Instance != null && AdManager.Instance.IsShowingAd);
     public GameMode CurrentGameMode { get; private set; }
-    public int FreeUndosRemaining => Mathf.Max(0, (CurrentGameMode == GameMode.HumanVsHuman ? 3 : 1) - freeUndoCount);
+    public int FreeUndosRemaining => Mathf.Max(0, (CurrentGameMode == GameMode.HumanVsHuman ? 1 : 1) - freeUndoCount);
     private bool countedResult;
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void ResetStatics() { Instance = null; completedGames = 0; }

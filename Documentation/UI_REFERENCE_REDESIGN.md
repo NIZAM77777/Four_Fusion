@@ -44,11 +44,3 @@ Fresh rule and scene-reference evidence is in `Validation/ReferenceUI`. `FusionP
 This checkout contains local two-player and AI modes. No networking package, room/lobby implementation, host/client synchronization, disconnect UI, or separate direction-selection control was found in its active scripts. There was no corresponding online interface to reskin or exercise.
 
 Physical Android touch/notches, live AdMob/UMP callbacks, and device performance were not verified in this pass. Reward transaction logic was tested; desktop screenshots do not certify live ads. The existing Android packaging evidence remains historical. Native-language visual inspection and catalog checks do not substitute for translation review.
-
-## Preview
-
-![Home](Validation/Player/menu-en.png)
-
-![Opponent selection](Validation/Player/mode-en.png)
-
-![Gameplay with existing red and blue pieces](Validation/Player/gameplay-red-blue.png)
